@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌比較 - 飲料社群粉絲專頁分析</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- 引入Plotly.js用於互動式圖表 -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>飲料品牌社群表現比較</h1>
+        <nav>
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="/analysis" class="active">品牌比較</a></li>
+                <li><a href="/visualization">視覺化分析</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="analysis-content">
+        <section class="section-intro">
+            <h2>互動數據分析</h2>
+            <p>本頁面比較了各家飲料品牌在社群媒體上的互動表現。下方圖表呈現了不同品牌的互動數據統計和比較。</p>
+        </section>
+
+        <section class="chart-section">
+            <h3>各品牌貼文總數比較</h3>
+            <div id="post-count-chart" class="chart-container"></div>
+            <p class="chart-description">各品牌在觀測期間內發布的貼文數量比較</p>
+        </section>
+
+        <section class="chart-section">
+            <h3>各品牌互動量比較</h3>
+            <div id="total-interactions-chart" class="chart-container"></div>
+            <p class="chart-description">各品牌獲得的總互動數（按讚+留言+分享）比較</p>
+        </section>
+
+        <section class="chart-section">
+            <h3>平均每貼文互動類型比較</h3>
+            <div id="avg-engagement-chart" class="chart-container"></div>
+            <p class="chart-description">各品牌平均每則貼文獲得的按讚、留言、分享數量</p>
+        </section>
+
+        <section class="chart-section">
+            <h3>互動效率比較</h3>
+            <div id="interaction-rate-chart" class="chart-container"></div>
+            <p class="chart-description">各品牌的互動率比較（平均互動分數/1000）</p>
+        </section>
+
+        <section class="insights">
+            <h3>主要發現</h3>
+            <ul id="insights-list">
+                <li>載入中...</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 飲料社群粉絲專頁分析 | 資料科學專案</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 載入品牌數據
+            fetchBrandStats()
+                .then(function(data) {
+                    renderPostCountChart(data);
+                    renderTotalInteractionsChart(data);
+                    renderInteractionRateChart(data);
+                    generateInsights(data);
+                })
+                .catch(function(error) {
+                    console.error('獲取品牌數據失敗:', error);
+                });
+            
+            // 載入互動比較數據
+            fetchEngagementComparison()
+                .then(function(data) {
+                    renderAvgEngagementChart(data);
+                })
+                .catch(function(error) {
+                    console.error('獲取互動比較數據失敗:', error);
+                });
+        });
+
+        // 獲取品牌統計數據
+        function fetchBrandStats() {
+            return fetch('/api/brand_stats')
+                .then(function(response) {
+                    return response.json();
+                });
+        }
+
+        // 獲取互動比較數據
+        function fetchEngagementComparison() {
+            return fetch('/api/engagement_comparison')
+                .then(function(response) {
+                    return response.json();
+                });
+        }
+
+        // 渲染貼文數量比較圖
+        function renderPostCountChart(data) {
+            var brands = Object.keys(data);
+            var postCounts = brands.map(function(brand) {
+                return data[brand].post_count;
+            });
+
+            var trace = {
+                x: brands,
+                y: postCounts,
+                type: 'bar',
+                marker: {
+                    color: '#1e88e5',
+                    line: {
+                        color: '#0d47a1',
+                        width: 1.5
+                    }
+                }
+            };
+
+            var layout = {
+                title: '各品牌貼文數量',
+                xaxis: {
+                    title: '品牌'
+                },
+                yaxis: {
+                    title: '貼文數量'
+                }
+            };
+
+            Plotly.newPlot('post-count-chart', [trace], layout);
+        }
+
+        // 渲染總互動量比較圖
+        function renderTotalInteractionsChart(data) {
+            var brands = Object.keys(data);
+            var likes = brands.map(function(brand) {
+                return data[brand].total_likes;
+            });
+            var comments = brands.map(function(brand) {
+                return data[brand].total_comments;
+            });
+            var shares = brands.map(function(brand) {
+                return data[brand].total_shares;
+            });
+
+            var trace1 = {
+                x: brands,
+                y: likes,
+                name: '按讚',
+                type: 'bar'
+            };
+
+            var trace2 = {
+                x: brands,
+                y: comments,
+                name: '留言',
+                type: 'bar'
+            };
+
+            var trace3 = {
+                x: brands,
+                y: shares,
+                name: '分享',
+                type: 'bar'
+            };
+
+            var layout = {
+                title: '各品牌總互動量',
+                barmode: 'stack',
+                xaxis: {
+                    title: '品牌'
+                },
+                yaxis: {
+                    title: '互動數量'
+                }
+            };
+
+            Plotly.newPlot('total-interactions-chart', [trace1, trace2, trace3], layout);
+        }
+
+        // 渲染平均每貼文互動類型比較圖
+        function renderAvgEngagementChart(data) {
+            var trace1 = {
+                x: data.brands,
+                y: data.likes,
+                name: '按讚',
+                type: 'bar'
+            };
+
+            var trace2 = {
+                x: data.brands,
+                y: data.comments,
+                name: '留言',
+                type: 'bar'
+            };
+
+            var trace3 = {
+                x: data.brands,
+                y: data.shares,
+                name: '分享',
+                type: 'bar'
+            };
+
+            var layout = {
+                title: '各品牌平均每貼文互動類型',
+                barmode: 'group',
+                xaxis: {
+                    title: '品牌'
+                },
+                yaxis: {
+                    title: '平均互動數量'
+                }
+            };
+
+            Plotly.newPlot('avg-engagement-chart', [trace1, trace2, trace3], layout);
+        }
+
+        // 渲染互動率比較圖
+        function renderInteractionRateChart(data) {
+            var brands = Object.keys(data);
+            var rates = brands.map(function(brand) {
+                return data[brand].avg_interactions_per_post;
+            });
+
+            var trace = {
+                x: brands,
+                y: rates,
+                type: 'bar',
+                marker: {
+                    color: '#ff9800',
+                    line: {
+                        color: '#f57c00',
+                        width: 1.5
+                    }
+                }
+            };
+
+            var layout = {
+                title: '各品牌平均每貼文互動分數',
+                xaxis: {
+                    title: '品牌'
+                },
+                yaxis: {
+                    title: '平均互動分數'
+                }
+            };
+
+            Plotly.newPlot('interaction-rate-chart', [trace], layout);
+        }
+
+        // 生成洞察發現
+        function generateInsights(data) {
+            var brands = Object.keys(data);
+            
+            // 查找發文最多的品牌
+            var mostPosts = brands.reduce(function(a, b) {
+                return data[a].post_count > data[b].post_count ? a : b;
+            });
+            
+            // 查找總互動最高的品牌
+            var mostInteractions = brands.reduce(function(a, b) {
+                return data[a].total_interactions > data[b].total_interactions ? a : b;
+            });
+            
+            // 查找平均每貼文互動最高的品牌
+            var mostEfficient = brands.reduce(function(a, b) {
+                return data[a].avg_interactions_per_post > data[b].avg_interactions_per_post ? a : b;
+            });
+            
+            // 生成洞察列表
+            var insights = [
+                `${mostPosts} 是發佈貼文最多的品牌，共有 ${data[mostPosts].post_count} 則貼文。`,
+                `${mostInteractions} 獲得的總互動量最高，共有 ${data[mostInteractions].total_interactions} 次互動。`,
+                `${mostEfficient} 的平均每則貼文互動分數最高，達 ${data[mostEfficient].avg_interactions_per_post.toFixed(2)}，互動效率最佳。`,
+                `平均來說，按讚是最常見的互動形式，其次是留言和分享。`
+            ];
+            
+            // 更新洞察列表
+            var insightsList = document.getElementById('insights-list');
+            insightsList.innerHTML = '';
+            insights.forEach(function(insight) {
+                var li = document.createElement('li');
+                li.textContent = insight;
+                insightsList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html> 

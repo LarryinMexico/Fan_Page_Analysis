@@ -1,0 +1,5597 @@
+{
+  "model_comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9855072463768116,
+      "Precision": 0.9655172413793104,
+      "Recall": 0.9655172413793104,
+      "F1-Score": 0.9655172413793104
+    },
+    {
+      "Model": "SVM",
+      "Accuracy": 0.9565217391304348,
+      "Precision": 1.0,
+      "Recall": 0.7931034482758621,
+      "F1-Score": 0.8846153846153846
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.9565217391304348,
+      "Precision": 1.0,
+      "Recall": 0.7931034482758621,
+      "F1-Score": 0.8846153846153846
+    },
+    {
+      "Model": "AdaBoost",
+      "Accuracy": 0.9710144927536232,
+      "Precision": 1.0,
+      "Recall": 0.8620689655172413,
+      "F1-Score": 0.9259259259259259
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.9782608695652174,
+      "Precision": 0.9642857142857143,
+      "Recall": 0.9310344827586207,
+      "F1-Score": 0.9473684210526315
+    }
+  ],
+  "feature_importance": {
+    "like": 0.5531175835771398,
+    "comment": 0.17757386275722406,
+    "share": 0.2478134095585898,
+    "sentiment_score": 0.02149514410704644
+  },
+  "brand_sentiment_data": {
+    "一沐日": [
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 307.0,
+        "content": "6/2出新品，你準備好了嗎:墨镜笑脸:",
+        "like": 183,
+        "comment": 17,
+        "share": 30
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 27.0,
+        "content": ":金牌:第一名｜",
+        "like": 16,
+        "comment": 1,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 1259.0,
+        "content": "活動截止～所有留言已截圖紀錄，謝謝大家參與！",
+        "like": 10,
+        "comment": 2,
+        "share": 415
+      },
+      {
+        "sentiment_score": 0.78,
+        "popularity_score": 206.0,
+        "content": "風雨無阻，只為信仰而走\n讓我們看到真正的「台灣情」！",
+        "like": 196,
+        "comment": 5,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 538.0,
+        "content": "邊白沙屯的路上邊找大家一起完成:墨镜笑脸:",
+        "like": 456,
+        "comment": 5,
+        "share": 24
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 1562.0,
+        "content": "謝謝大家的支持\n下次我們5/10回鑾見！",
+        "like": 1481,
+        "comment": 3,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 1153.0,
+        "content": "謝謝大家，辛苦了\n全數發送完畢！",
+        "like": 1094,
+        "comment": 13,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 5133.0,
+        "content": "早安:绿心:一沐日的夥伴們已經在北港準備好了",
+        "like": 4523,
+        "comment": 26,
+        "share": 186
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 2992.0,
+        "content": "「走的是路，傳的是心；一沐日同行，陪你走一路」\n我們明天，北港見！",
+        "like": 2730,
+        "comment": 38,
+        "share": 62
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 400.0,
+        "content": "今天來出任務，有遇到我們嗎",
+        "like": 392,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 2082.0,
+        "content": "這是我前三名的品項",
+        "like": 858,
+        "comment": 9,
+        "share": 402
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 536.0,
+        "content": "沒人相信，只好附上喝法了",
+        "like": 166,
+        "comment": 17,
+        "share": 112
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 19523.0,
+        "content": "我沒在開玩笑的，今日開賣",
+        "like": 3138,
+        "comment": 112,
+        "share": 5387
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 2119.0,
+        "content": "新品推出\n直接稱霸台灣夜市\n你猜得到是什麼嗎:想一想:",
+        "like": 508,
+        "comment": 102,
+        "share": 469
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 2179.0,
+        "content": "來:火上之心:有沒有什麼問題想問夥伴",
+        "like": 794,
+        "comment": 37,
+        "share": 437
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 6750.0,
+        "content": "竟然大家這麼喜歡粉粿\n只好幫他拍一個特輯了",
+        "like": 4650,
+        "comment": 150,
+        "share": 600
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 24.0,
+        "content": "加料之王，你投給誰",
+        "like": 18,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 1035.0,
+        "content": "據說下禮拜會有兩間一沐日試營運",
+        "like": 358,
+        "comment": 70,
+        "share": 179
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 566.0,
+        "content": "可以走得慢，但不能偷\n無論什麼時候\n都提醒我們自己記得初心",
+        "like": 467,
+        "comment": 9,
+        "share": 27
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 371.0,
+        "content": "如果今天威力彩中14億\n你打算喝幾杯一沐日？",
+        "like": 257,
+        "comment": 57,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 621.0,
+        "content": "每次到天氣冷的日子\n就會被許願說，粉粿不能做熱的嗎",
+        "like": 403,
+        "comment": 73,
+        "share": 24
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 212.0,
+        "content": "人家是明天開工拜拜迎財神 :张开双手:\n我們是全面開工迎粉粿",
+        "like": 200,
+        "comment": 6,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 2456.0,
+        "content": "你記得你第一次喝一沐日是什麼品項嗎",
+        "like": 1693,
+        "comment": 212,
+        "share": 113
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 817.0,
+        "content": "你有內心隱藏版的一沐日品項嗎:想一想:",
+        "like": 396,
+        "comment": 44,
+        "share": 111
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 72.0,
+        "content": "應該大家過年都是一樣的心情吧",
+        "like": 70,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.72,
+        "popularity_score": 147.0,
+        "content": "一年總會有個幾天喝不到一沐日\n應該，還忍得住吧？",
+        "like": 137,
+        "comment": 5,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 190.0,
+        "content": "謝謝天氣這麼冷，你們還是不放過任何一塊粉粿\n只好祝大家聖誕快樂，遇到聖誕老公公",
+        "like": 182,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 346.0,
+        "content": "有人冬天還是堅持要喝粉粿桂花檸檬的嗎（抖",
+        "like": 282,
+        "comment": 32,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 179.0,
+        "content": "聽不到杰倫",
+        "like": 134,
+        "comment": 18,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 86.0,
+        "content": "18:30 一起吶喊為台灣加油！",
+        "like": 80,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 214.0,
+        "content": "天冷了，你到一沐日的冬天必喝是什麼",
+        "like": 114,
+        "comment": 38,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 2239.0,
+        "content": "我們感激每一個支持，抑或者是指正與指教，因為我們能自由的說出意見，才能聽見每一則寶貴的回應！感謝各位不離不棄的沐粉，才能成就今天的一沐日，更因有著大家的喜愛，一沐日才能繼續前進與成長，謝謝大家!",
+        "like": 1425,
+        "comment": 122,
+        "share": 190
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 944.0,
+        "content": "不是這樣的吧:融化:\n大家都在哀怨竹香的離去",
+        "like": 459,
+        "comment": 70,
+        "share": 115
+      },
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 2184.0,
+        "content": "那一支「喝起來跟貓一樣的味道」準備走入歷史",
+        "like": 539,
+        "comment": 80,
+        "share": 495
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 433.0,
+        "content": "辦桌第一名肯定是米糕，不服來辯:傲慢:",
+        "like": 123,
+        "comment": 152,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 271.0,
+        "content": "每次海巡的時候都看到大家對一沐日的熱愛",
+        "like": 181,
+        "comment": 39,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 67.0,
+        "content": "好久沒吃辦桌\n已經太想念米糕的味道\n有人最近要宴客嗎:忍住泪水:",
+        "like": 45,
+        "comment": 8,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 172.0,
+        "content": "「中秋烤肉配什麼飲料最搭?",
+        "like": 139,
+        "comment": 9,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 75.0,
+        "content": "明天還有一場珍藏料神便當盒哦\n（因為颱風延期的那一場)",
+        "like": 73,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 270.0,
+        "content": "擔心還有後續的風雨\n緊急做出活動延期！",
+        "like": 220,
+        "comment": 1,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 91.0,
+        "content": "",
+        "like": 3,
+        "comment": 29,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 35.0,
+        "content": "附上營業時間/店休",
+        "like": 25,
+        "comment": 2,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 20.0,
+        "content": "珍藏料神便當盒本人:绿心:",
+        "like": 4,
+        "comment": 2,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 180.0,
+        "content": "有參加到此活動但是沒有兌換到的朋朋，沐編真的很抱歉:失望:也請大家可以在限時內去做飲品的兌換！謝謝大家",
+        "like": 61,
+        "comment": 1,
+        "share": 39
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 134.0,
+        "content": "支持台灣牧場100%使用鮮乳無其他添加",
+        "like": 129,
+        "comment": 1,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 1017.0,
+        "content": "Get！我先開動",
+        "like": 654,
+        "comment": 24,
+        "share": 105
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 9983.0,
+        "content": "我不是來業配的，是真的太多人私訊問我了\n只好在這邊統一說明",
+        "like": 2703,
+        "comment": 106,
+        "share": 2356
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 317.0,
+        "content": "應該大家都知道我們12週年\n:闪亮:特別紀念版料神便當盒了吧",
+        "like": 295,
+        "comment": 11,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 3938.0,
+        "content": "最近看了Threads的留言\n「一沐日就是一個與世無爭的品牌」",
+        "like": 3536,
+        "comment": 156,
+        "share": 30
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 842.0,
+        "content": "總經理：",
+        "like": 610,
+        "comment": 26,
+        "share": 60
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 164.0,
+        "content": "",
+        "like": 97,
+        "comment": 5,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 1899.0,
+        "content": "明天有個重大消息要宣佈",
+        "like": 1323,
+        "comment": 117,
+        "share": 114
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 1225.0,
+        "content": "「沒想到一個蕎麥讓大家沒了生活重心，為了拯救大家的靈魂，我們已經在努力恢復蕎麥茶供應！」",
+        "like": 781,
+        "comment": 75,
+        "share": 98
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 124.0,
+        "content": "昨天跟總經理說，每次發個文都有人在下面敲碗復活…\n他叫我統計一下，哪個比較紅",
+        "like": 66,
+        "comment": 29,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 76.0,
+        "content": "我是草仔粿\n不愧是一沐日當家沐編:呵呵:\n做個測驗還跟逮丸草仔粿有連結",
+        "like": 66,
+        "comment": 5,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 412.0,
+        "content": "一沐日接龍",
+        "like": 176,
+        "comment": 118,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 182.0,
+        "content": "我們應該是最容易文不對題的小編了",
+        "like": 130,
+        "comment": 26,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 133.0,
+        "content": "今天是星期五晚上，你們要？",
+        "like": 105,
+        "comment": 14,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 157.0,
+        "content": "今天是星期一，你認為適合來一杯？",
+        "like": 95,
+        "comment": 31,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 1691.0,
+        "content": "登入",
+        "like": 1473,
+        "comment": 109,
+        "share": 0
+      }
+    ],
+    "八曜": [
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 243.0,
+        "content": "在台灣東西放著通常不太會不見\n-\n但機車上掛飲料跟雞排一定會",
+        "like": 208,
+        "comment": 16,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 81.0,
+        "content": "八曜新品預告，爸爸媽媽的懷舊味道\n-\n即將登場，讓我們繼續看下去..",
+        "like": 65,
+        "comment": 2,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 503.0,
+        "content": "真冰涼！柚香覺醒307！\n-\n嘉義文化門市開幕買一送一:红心:",
+        "like": 307,
+        "comment": 5,
+        "share": 62
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 45.0,
+        "content": "文化夜市等你喔:反手食指向下指:",
+        "like": 32,
+        "comment": 5,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 43.0,
+        "content": "曜粉或許已經期待很久了～\n酸酸甜甜的..？\n-\n曜頭今天試喝了一口，丟系季勒逼:红心:",
+        "like": 5,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 100.0,
+        "content": "曜頭市調，到門市超多人點這個:反手食指向下指:\n「極韻白奶茶」超搶手～\n-\n無咖啡因的「燕麥奶」基底\n成為大家解渴又想減輕負擔的白奶茶\n大熱天來杯冰涼的「極韻白」超爽:红心:",
+        "like": 11,
+        "comment": 1,
+        "share": 29
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 24.0,
+        "content": "就像「八曜綠巨人奶茶」販售即將到尾聲\n-\n這是玉米控不願意面對的事實！",
+        "like": 13,
+        "comment": 4,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 293.0,
+        "content": ":图钉:【活動方式】\n1.標記 3 位朋友\n2.留言：「與你來一杯八曜83蜂潮奶茶，520甜甜蜜蜜」\n3.轉發這篇貼文（記得設公開！）\n-\n:日历: 活動時間：即日起至 2025/5/25(日) 23...",
+        "like": 27,
+        "comment": 10,
+        "share": 82
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 2048.0,
+        "content": "新竹東區的朋友，久等了:红心:",
+        "like": 1635,
+        "comment": 52,
+        "share": 103
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 383.0,
+        "content": "如果世界末日，世界上剩下八曜和茶\n-\n你會喝什麼？",
+        "like": 268,
+        "comment": 56,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 38.0,
+        "content": "飲料是聯繫朋友感情的橋樑\n-\n尤其是帶杯「柚香覺醒307」給朋友\n大熱天，清爽暢聊解悶一下",
+        "like": 7,
+        "comment": 2,
+        "share": 9
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 558.0,
+        "content": "晚上20:00\n兄弟們要進城\n-\n「頑童」台中勤美誠品走跳\n現場超熱，等到口渴的朋友\n-\n可以到勤美八曜解渴一下:啤酒:\n(曜頭看到一堆人滿頭大汗）",
+        "like": 547,
+        "comment": 4,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 2093.0,
+        "content": "如果八曜擬人化會是？",
+        "like": 1929,
+        "comment": 31,
+        "share": 34
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 51.0,
+        "content": "沒辦法，都怪天氣太熱了！\n不來點「柚香覺醒307」真的扛不住！",
+        "like": 14,
+        "comment": 2,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 55.0,
+        "content": "來八曜也有不同的體驗階段\n-\n開始體驗「柚香覺醒307」\n感受經典「炙燒濃乳308」\n進階高級「極韻白奶茶」\n消化道調節「ㄦㄦ菌乳茶」\n豔香華麗「舞伎406紅茶」\n回歸和風「究極308」",
+        "like": 29,
+        "comment": 1,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 37.0,
+        "content": "高雄熱河店內部2.0裝修\n-\n住在附近的粉絲們也別擔心!!\n施工期間可以到大昌門市:喇叭:\n繼續享受八曜清爽滋味呦:花痴:",
+        "like": 7,
+        "comment": 0,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 29.0,
+        "content": "感謝舞蹈Nike老師 :红心:",
+        "like": 8,
+        "comment": 0,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 80.0,
+        "content": "請媽祖喝一杯",
+        "like": 57,
+        "comment": 1,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 91.0,
+        "content": "真的很震撼",
+        "like": 55,
+        "comment": 0,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 270.0,
+        "content": "今天來參加媽祖巡禮的朋友\n口渴的朋友，我們有幫大家準備好茶呦",
+        "like": 152,
+        "comment": 2,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 125.0,
+        "content": "八曜綠巨人白奶茶\n一杯擋一餐，波滋波滋的清甜玉米\n讓你買更多玩具:红心:",
+        "like": 17,
+        "comment": 3,
+        "share": 34
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 37.0,
+        "content": "意見不合，沒關係\n但口味不合，可以選擇\n-\n極韻白奶茶\n基底5種風味讓你挑選",
+        "like": 17,
+        "comment": 1,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 69.0,
+        "content": "壓力緊繃的生活節奏\n從心理蔓延到身體\n-\n你需要來一杯無咖啡因的奶茶\n極韻白，給自己放鬆一下",
+        "like": 13,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.47,
+        "popularity_score": 108.0,
+        "content": "母親節給媽媽最好的:红心:",
+        "like": 19,
+        "comment": 1,
+        "share": 29
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 68.0,
+        "content": "母情節帶杯八曜回家\n好好抱抱媽媽聊聊天:红心:",
+        "like": 31,
+        "comment": 2,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 389.0,
+        "content": "看看誰是舞蹈小高手？\n送你八曜綠巨人限量獎品\n5/9（五）公布名單",
+        "like": 24,
+        "comment": 7,
+        "share": 117
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 837.0,
+        "content": "成年人的胃大概能裝1.2～1.6公升\n-\n代表你最多可以一次喝三杯\n「八曜綠巨人白奶茶」:玉米:",
+        "like": 628,
+        "comment": 4,
+        "share": 67
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 87.0,
+        "content": "有沒有想過，\n是你的咖啡因攝取過量？\n-\n八曜和茶無咖啡因茶品系列\n讓你傍晚解渴清爽無負擔:红心:\n-\n（極韻白奶茶真的很讚～燕麥奶的基底）",
+        "like": 25,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 690.0,
+        "content": "第一屆很多高手出沒，\n不知道第二屆還能看到多少大神出沒~\n誰是麥塊小高手？送你限量獎品\n-\n5/6(二) 公布名單",
+        "like": 88,
+        "comment": 1,
+        "share": 200
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 233.0,
+        "content": "很多迷惘來自外界的紛擾\n太多的比較造成無形的壓力\n-\n來杯八曜和茶，給自己一點空間\n用清爽的好茶冷靜一下",
+        "like": 33,
+        "comment": 1,
+        "share": 66
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 56.0,
+        "content": "上班太忙？生活趕時間？\n-\n「八曜綠巨人白奶茶」有飲也有料\n讓你邊喝邊吃香甜玉米，偷偷補給能量:红心:",
+        "like": 14,
+        "comment": 0,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 56.0,
+        "content": "波滋波滋的超有料:红心:\n「八曜綠巨人白奶茶」",
+        "like": 14,
+        "comment": 0,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 2350.0,
+        "content": "一人一杯八曜，\n電腦前情侶一起挖礦蓋房子，\n是多麼浪漫的事:玫瑰:",
+        "like": 1255,
+        "comment": 6,
+        "share": 361
+      },
+      {
+        "sentiment_score": 0.8799999999999999,
+        "popularity_score": 111.0,
+        "content": "有兄弟姊妹的好處\n每個都買一種八曜的口味\n:反手食指向右指:全部人能品嘗到",
+        "like": 23,
+        "comment": 2,
+        "share": 28
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 224.0,
+        "content": "挑戰手搖加料極限，意外好喝！？\n-\n你敢挑戰嗎？",
+        "like": 190,
+        "comment": 14,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 80.0,
+        "content": "嫌生活不夠刺激\n那就來一杯八曜綠巨人白奶茶吧",
+        "like": 30,
+        "comment": 4,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 47.0,
+        "content": "台中逛街的朋友\n一中、中友、逢甲、勤美\n-\n都有八曜可以逛逛呦:红心:",
+        "like": 11,
+        "comment": 0,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.8799999999999999,
+        "popularity_score": 61.0,
+        "content": "有時候配角可能比主角搶戲\n-\n就像「八曜綠巨人白奶茶」\n玉米波滋的感受總是與白奶茶，\n互相爭奪清爽的主角:红心:",
+        "like": 23,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 231.0,
+        "content": "為自己未來做選擇，如果你覺得很困難，",
+        "like": 196,
+        "comment": 13,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 237.0,
+        "content": "原來是還在喝飲料！\n八曜綠巨人白奶茶，玉米還在吸～\n-\n停不下來！！",
+        "like": 27,
+        "comment": 3,
+        "share": 68
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 154.0,
+        "content": "看底下留言有什麼超狂組合？\n曜頭，也來拍影片試加測試看看～",
+        "like": 4,
+        "comment": 0,
+        "share": 50
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 23.0,
+        "content": "尊榮「曜粉俱樂部」入口處",
+        "like": 5,
+        "comment": 0,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 296.0,
+        "content": "大家是不是快忘記小雞叭叭了？\n-\nchin chin ken chin ni aru aru do",
+        "like": 123,
+        "comment": 1,
+        "share": 57
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 215.0,
+        "content": "飲料的話是..\n八曜的柚香覺醒307啦:红心:",
+        "like": 15,
+        "comment": 1,
+        "share": 66
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 102.0,
+        "content": "用以上方法喝「八曜綠巨人白奶茶」\n也會跟著跳舞喔:跳舞的男人:",
+        "like": 34,
+        "comment": 1,
+        "share": 22
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 1889.0,
+        "content": "經典「曼德拉效應」例子\n很多人印象中都有看過\n這個徒手接球的影片\n-\n但大多數人印象中當時的場景\n是白天，記者是金髮女性\n-",
+        "like": 508,
+        "comment": 8,
+        "share": 455
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 33.0,
+        "content": "也可以試試八曜「極韻白」奶茶\n極致、好韻、心情不留白",
+        "like": 12,
+        "comment": 0,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 160.0,
+        "content": "八曜獨創加料風雲，\n綠巨人玉米波滋響。",
+        "like": 29,
+        "comment": 1,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 51.0,
+        "content": "奇幻飲料配奇幻影展\n雙雙奇幻:红心:",
+        "like": 15,
+        "comment": 0,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 173.0,
+        "content": "好好記錄下親朋好友\n喝完八曜綠巨人白奶茶的表情:红心:\n-\n無咖啡因，波滋波滋的清爽感～",
+        "like": 51,
+        "comment": 1,
+        "share": 40
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 201.0,
+        "content": "這樣的笑臉\n通常出現在喝完八曜綠巨人白奶茶之後",
+        "like": 97,
+        "comment": 1,
+        "share": 34
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 114.0,
+        "content": "曜頭最近的口頭禪是「八曜綠巨人」\n因為音樂聽了，停不下來..",
+        "like": 23,
+        "comment": 2,
+        "share": 29
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 817.0,
+        "content": "如果出了有人想要嗎？\n「柚香姐姐+柚香覺醒307+八曜招牌組合包」\n-\n超過1000分享考慮做出來～",
+        "like": 711,
+        "comment": 26,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 54.0,
+        "content": "用一杯..八曜綠巨人白奶茶，\n安慰一下朋友，叫他不要看手機了..",
+        "like": 22,
+        "comment": 1,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 366.0,
+        "content": "「嘉義仁愛門市」開幕！\n為了讓大家不再排隊太久，\n我們已經在內部增加人力，\n讓出茶速度提升三到四倍！\n-\n感謝每一位喜愛八曜茶品的好友，\n謝謝你們的耐心與支持，我們會繼續努力！\n-\n嘉義開幕慶「柚香覺...",
+        "like": 352,
+        "comment": 4,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 48.0,
+        "content": "今天嘉義仁愛門市\n開幕慶:红心:「柚香覺醒307」買一送一\n好康緊來嘿:OK:",
+        "like": 10,
+        "comment": 7,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 46.0,
+        "content": "4/6嘉義仁愛店開幕送:红心:\n「柚香覺醒307」買一送一\n-\n嘉義的朋友準備好了嗎～",
+        "like": 26,
+        "comment": 1,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 12.0,
+        "content": "4/4 「嘉義仁愛」門市開幕\n八曜綠巨人白奶茶同步販售中:红心:",
+        "like": 9,
+        "comment": 0,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 404.0,
+        "content": "▾▾▾抽獎資格這邊看 ▾▾▾\n:播放按钮:追蹤八曜和茶+按讚分享貼文\n:播放按钮:標記3位好友\n:播放按钮:於本貼文下方留言:\n:反手食指向下指::反手食指向下指::反手食指向下指::反手食指向下指:...",
+        "like": 49,
+        "comment": 17,
+        "share": 107
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 1043.0,
+        "content": "連假第一天\n-\n1.你還在睡 大概12點以後才會看到這篇文\n2.你正在掃墓的路上，或是被卡在國道\n3.買八曜綠巨人白奶茶的路上",
+        "like": 970,
+        "comment": 29,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 16.0,
+        "content": "4/4。玉米白奶茶「波滋波滋」見真章",
+        "like": 8,
+        "comment": 1,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 168.0,
+        "content": "連假想去哪？\n4/4 有兩個必去之處！！\n-\n:反手食指向右指:「八曜綠巨人白奶茶」正！式！販！售！\n:反手食指向右指:「嘉義站前仁愛門市」正！式！開！幕！\n-\n喝完絕對翹起來，翹起大拇指的啦！",
+        "like": 34,
+        "comment": 1,
+        "share": 44
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 79.0,
+        "content": "小孩愛喝，4月4號「波滋波滋」起來！\n無咖啡因燕麥奶，搭配好吃玉米:玉米:",
+        "like": 50,
+        "comment": 1,
+        "share": 9
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 639.0,
+        "content": "這個是巴曜綠巨人\n4/4即將登場～",
+        "like": 315,
+        "comment": 3,
+        "share": 106
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 70.0,
+        "content": "石頭！！\n-\n你竟然贏了，4/4我們八曜和茶見\n輸了來這裡:反手食指向下指:",
+        "like": 18,
+        "comment": 2,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 745.0,
+        "content": "4/4 全台門市販售:红心:\n玉米控的最愛，「波滋波滋」的快感\n-\n八曜綠巨人主題曲:反手食指向下指:聽完回不去了",
+        "like": 86,
+        "comment": 1,
+        "share": 219
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 2728.0,
+        "content": "八曜綠巨人白奶茶，波滋波滋的口感\n4/4我們八曜見:红心:",
+        "like": 290,
+        "comment": 1,
+        "share": 812
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 450.0,
+        "content": "4/4門市正式販售:红心:",
+        "like": 28,
+        "comment": 1,
+        "share": 140
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 58.0,
+        "content": "3/28即將揭曉新品預告",
+        "like": 19,
+        "comment": 0,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 66.0,
+        "content": ":三角旗: ❹/❹【嘉義站前仁愛門市】盛大開幕\n-\n只要在八曜任一社群平台\n（FB、IG、Threads）\n完成:反手食指向右指:追蹤+按讚+TAG 3位好友:反手食指向左指:\n並掃描貼文QRcode...",
+        "like": 10,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 177.0,
+        "content": "只要在留言處留下並分享轉發\n:反手食指向右指:喝八曜看幾米，4/4聽說很有料？:反手食指向左指:\n就有機會抽到..?\n-\n《幾米男孩的100次勇敢》FOCASA馬戲團\n● 演出地點：水交社文化園區旁大...",
+        "like": 9,
+        "comment": 3,
+        "share": 54
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 2485.0,
+        "content": "曜粉說八曜只有白玉珍珠\n吃起來不夠爽？\n-\n曜頭聽見大家的心聲了\n我們找到一種吃起來「波滋波滋」\n超有料的料.. 3/28預告..敬請期待..\n-\n期待打期待",
+        "like": 2316,
+        "comment": 62,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 468.0,
+        "content": "▾▾▾抽獎資格這邊看 ▾▾▾\n:播放按钮:追蹤八曜和茶+按讚分享貼文\n:播放按钮:標記3位好友\n@追蹤者\n:播放按钮:於本貼文下方留言:\n:反手食指向下指::反手食指向下指::反手食指向下指::反手食...",
+        "like": 22,
+        "comment": 4,
+        "share": 146
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 23.0,
+        "content": "煩悶、想要點無負擔清爽\n用無咖啡因的茶品來開啟一天\n-\n八曜新飲食文化的自然選擇",
+        "like": 8,
+        "comment": 0,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 480.0,
+        "content": "喝飲料看「吸管使用位置」\n就可以看出一個人的習慣\n-\n1.用吸管前段\n有品味喜歡品嚐茶品香氣的人",
+        "like": 446,
+        "comment": 2,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 123.0,
+        "content": "嘉義的朋友注意喔:警告:\n文化店裝修升級中～\n-\n怕大家嚇到:红心:",
+        "like": 118,
+        "comment": 1,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 127.0,
+        "content": "但是如果在天氣冷的時候，\n送一杯「極韻白」熱奶茶絕對超加分:红心:",
+        "like": 29,
+        "comment": 1,
+        "share": 32
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 864.0,
+        "content": "飲料冷知識\n-\n八曜和茶任一支同樣飲品\n使用「細吸管喝」跟「打開封膜喝」\n喝起來味蕾感覺不一樣\n-\n你是/吸管喝派/還是/杯子喝派/？",
+        "like": 798,
+        "comment": 30,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 5251.0,
+        "content": "如何安慰別人？\n-\n:叉号:說教。\n:叉号:傾聽。\n:叉号:擁抱。\n:红色空心圆圈:欸，我有幫你買飲料。",
+        "like": 4669,
+        "comment": 51,
+        "share": 160
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 1463.0,
+        "content": "如果你看到這段話，代表你現在很渴",
+        "like": 1370,
+        "comment": 30,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 35.0,
+        "content": "一定是太期待ㄦㄦ菌優惠，買一盒\n送一杯順暢酸爽的菌乳茶系列，高興到睡不著",
+        "like": 15,
+        "comment": 1,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 68.0,
+        "content": "世界上最好喝的白奶茶，最有心的禮物:红心:",
+        "like": 17,
+        "comment": 0,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 311.0,
+        "content": "老闆叫我介紹ㄦㄦ菌\n我直接拍一圈給你看",
+        "like": 78,
+        "comment": 1,
+        "share": 77
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 109.0,
+        "content": "解膩無負擔代表選八曜~",
+        "like": 10,
+        "comment": 0,
+        "share": 33
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 288.0,
+        "content": "故事開始 :\n-\n小時候曜頭跟柚香一起在廟裡玩\n我們還偷吃神桌上的水果\n-\n突然廟公拿著棍子跑過來\n柚香馬上把水果藏口袋\n然後假裝是神明\n-\n結果廟公過來只看到我\n於是他問我水果勒\n-\n我說在柚香口袋...",
+        "like": 217,
+        "comment": 4,
+        "share": 21
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 106.0,
+        "content": "葡萄柚一定會有微苦？\n-\n「柚香覺醒307」的甘甜酸爽不怕苦，\n清爽的口感，讓它成為你的心肝:红心:",
+        "like": 27,
+        "comment": 2,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 2471.0,
+        "content": "今天來辦個古人同樂會\n-\n一杯茶，一個故事！\n下面排隊自我介紹:反手食指向下指:",
+        "like": 1723,
+        "comment": 293,
+        "share": 54
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 159.0,
+        "content": "選八曜的好處：\n⬤無咖啡因\n⬤新機能\n⬤清爽\n⬤無負擔\n⬤不怕睡不著",
+        "like": 27,
+        "comment": 0,
+        "share": 44
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 48.0,
+        "content": "傻眼貓咪，ㄦㄦ第一天根本差點被秒殺！！",
+        "like": 12,
+        "comment": 3,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 165.0,
+        "content": "曜頭一天一包ㄦㄦ，\n感覺每天腸胃都很幸福:红心:\n-\n八曜回饋祭（買ㄦㄦ還多送一杯ㄦㄦ！\n一起當ㄦㄦ好朋友:手拉手的一男一女:\n（門市販售中）",
+        "like": 19,
+        "comment": 1,
+        "share": 48
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 83.0,
+        "content": "如果你獲得100分\n代表你是手搖達人，懂喝飲料的你\n一定要試試八曜「ㄦㄦ益生菌」感受順暢!!",
+        "like": 8,
+        "comment": 0,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.47,
+        "popularity_score": 111.0,
+        "content": "霸道總裁的魅力，\n就是讓你絕對不會口渴！\n-\n酷熱的天氣，霸道的清爽，\n來杯「柚香覺醒307」:红心:",
+        "like": 25,
+        "comment": 1,
+        "share": 28
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 690.0,
+        "content": ":高压:打雷不要怕，我來當你的雷雷好朋友:手拉手的两个人:",
+        "like": 652,
+        "comment": 13,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 990.0,
+        "content": "真的超渴！超渴！\n這時候來一杯清爽和風茶加「ㄦㄦ益生菌」\n-\n順暢解渴無負擔又可以大口喝:冰块:！！\n（無咖啡因新機能:红心:）",
+        "like": 85,
+        "comment": 10,
+        "share": 295
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 107.0,
+        "content": "好喝不用理由，八曜新飲食文化\n無咖啡因、ㄦㄦ益生菌系列\n-\n給你更好的選擇",
+        "like": 24,
+        "comment": 1,
+        "share": 27
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 159.0,
+        "content": "多少人還記得「八曜和茶」\n打開了脆與無咖啡因飲品的時代。",
+        "like": 112,
+        "comment": 1,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 489.0,
+        "content": "如果你問他要不要喝八曜\n他會回：啊啊！好啊:OK:我也要:红心:\n（情緒價值滿滿）",
+        "like": 59,
+        "comment": 2,
+        "share": 142
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 44.0,
+        "content": "想要維持朋友感情很簡單，\n約喝八曜，一杯茶一個故事，\n敘敘舊，回憶種種:红心:\n-\n世界上最好喝的奶茶「極韻白」",
+        "like": 8,
+        "comment": 3,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 218.0,
+        "content": "喝了ㄦㄦ的順暢解渴\n加上無咖啡因飲品的..無負擔\n真的..越來..越..想睡..各位明天..見",
+        "like": 27,
+        "comment": 4,
+        "share": 61
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 316.0,
+        "content": "呼喚你這麼急，\n原來是要找你到台中大墩買八曜!!\n來一杯無咖啡因下午茶吧~",
+        "like": 36,
+        "comment": 2,
+        "share": 92
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 30.0,
+        "content": "無論在什麼牌位，\n只要你手上拿著時尚的八曜，\n-\n都會在他的心裡面。",
+        "like": 14,
+        "comment": 2,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 26.0,
+        "content": "只能說，喝完整個超順的ㄦ\n一天一杯ㄦㄦ，養ㄦㄦ",
+        "like": 15,
+        "comment": 1,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 112.0,
+        "content": ":火花:【台中南屯大墩門市盛大開幕】:火花:\n:手拉手的两个女人:樓頂揪樓咖，來喝八曜享優惠:手拉手的两个人:\n-\n只要在八曜任一社群平台（FB、IG、Threads）\n完成:反手食指向右指:追蹤+按...",
+        "like": 2,
+        "comment": 1,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 83.0,
+        "content": "如果你手上拿的是八曜\n「借我喝一口」大概是整杯拿走",
+        "like": 39,
+        "comment": 1,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 79.0,
+        "content": "無咖啡因飲品加入八曜ㄦㄦ益生菌\n是不是算是補給飲料的一種?",
+        "like": 10,
+        "comment": 0,
+        "share": 23
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 152.0,
+        "content": "咖啡因攝取過多，讓你常常睡不好?\n八曜專屬無咖啡因系列，讓你解渴又放鬆",
+        "like": 60,
+        "comment": 1,
+        "share": 30
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 103.0,
+        "content": "一口飯一口清爽解膩的「好輕ㄦㄦ」\n潤口穀麥配方，讓你無負擔:红心:",
+        "like": 20,
+        "comment": 1,
+        "share": 27
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 154.0,
+        "content": "還在等訊息想他/她睡不著？\n來杯「好眠ㄦㄦ」冷靜一下，明天再暈",
+        "like": 26,
+        "comment": 1,
+        "share": 42
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 293.0,
+        "content": "曜頭會選「極韻白」奶茶\n幫你整理好前三名了:红心:",
+        "like": 54,
+        "comment": 1,
+        "share": 79
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 332.0,
+        "content": "來杯「好解ㄦㄦ」將不好的回憶化解",
+        "like": 42,
+        "comment": 1,
+        "share": 96
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 115.0,
+        "content": "冷知識：\n世界上最好喝的白奶茶在八曜",
+        "like": 38,
+        "comment": 1,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 208.0,
+        "content": "現在讀書的時候聽這個\n保證第一名:食指向上指:\n-",
+        "like": 5,
+        "comment": 1,
+        "share": 67
+      },
+      {
+        "sentiment_score": 0.32,
+        "popularity_score": 38.0,
+        "content": "以下是「官方聲明」以及「LINE詐騙群組」內容",
+        "like": 31,
+        "comment": 2,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 53.0,
+        "content": "享受幸福，不用挑戰機率\n「極韻白奶茶」極致品味200%",
+        "like": 18,
+        "comment": 1,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 172.0,
+        "content": "有些回憶的味道忘不掉\n就像「極韻白奶茶」回味無窮",
+        "like": 48,
+        "comment": 2,
+        "share": 40
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 216.0,
+        "content": "現在連偷偷跑去買個「八曜8金包」\n都被發現！！\n-\n拿在手上太顯眼想「消失」都不行！",
+        "like": 70,
+        "comment": 1,
+        "share": 48
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 229.0,
+        "content": "既然一個禮拜五杯\n你有更好的無咖啡因新選擇:红心:",
+        "like": 37,
+        "comment": 0,
+        "share": 64
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 119.0,
+        "content": "意外發現，門市夥伴都身懷絕技\n果然年輕人的場子就要盡情發揮:红心:\n-\n當天飲料不用搖，但身體要搖:举双手:",
+        "like": 81,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 382.0,
+        "content": "元宵節湯圓吃膩了嗎？\n-\n曜頭都吃八曜的「蜜漬白玉丸」\n加到最好喝的奶茶_極韻白\n-\n給自己不一樣的元宵節:红心:",
+        "like": 361,
+        "comment": 9,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 965.0,
+        "content": "恭喜夥伴得到35萬大紅包:红包:\n每年八曜超爽春酒「曜旺祭」\n-\n好運Cccccccccccccc起來",
+        "like": 853,
+        "comment": 8,
+        "share": 32
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 1696.0,
+        "content": "告訴大家八曜賓果密碼！\n這組名牌我只報一次\n-\n極韻白 店選 1分 35% 5杯",
+        "like": 1656,
+        "comment": 8,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 176.0,
+        "content": "春酒撒錢好玩到老闆都被扁（不..小心的..",
+        "like": 111,
+        "comment": 1,
+        "share": 21
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 415.0,
+        "content": "今年春酒，撒錢環節就像 superbowl\n財神爺腦袋被刻拐子（裡面其實是老闆..",
+        "like": 235,
+        "comment": 3,
+        "share": 58
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 1569.0,
+        "content": "傳訊息給朋友第一句話\n-\n：「欸 在嗎？」\n:反手食指向右指:大概30分鐘內回覆\n-\n：「欸 要不要訂八曜？」\n:反手食指向右指:30秒內回覆",
+        "like": 1513,
+        "comment": 22,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 196.0,
+        "content": "八曜全體夥伴共襄盛舉\n年度忘年會「曜旺祭」:红心:超好玩啦",
+        "like": 135,
+        "comment": 8,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 284.0,
+        "content": "電音三太子開場！！財神爺撒錢進場！！\n每年八曜的最強忘年會～\n-\n今年有門市獨得35萬現金大獎！\n包出超過100個紅包跟20幾項獎品:红心:\n-\n但最重要的是，\n看見辛苦的門市夥伴們，一起歡樂的參與盛...",
+        "like": 242,
+        "comment": 12,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 2256.0,
+        "content": "身體重要的器官都有一對，\n是為了以防萬一。\n-\n所以上天給我們一雙手，\n就是要你一次拿兩杯八曜。",
+        "like": 2107,
+        "comment": 34,
+        "share": 27
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 4635.0,
+        "content": "曜頭怕被炒掉\n上限卡個20萬好了\n-\n當作是送春酒全體員工，\n活動中的加碼獎金！！求各路曜粉支援！\n-\n如果超過10000愛心\n按愛心+分享＋留言「八曜今年超旺\n曜頭抽三位民眾送「8曜大禮包」\n-\n:...",
+        "like": 1789,
+        "comment": 280,
+        "share": 762
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 127.0,
+        "content": "建議來杯八曜極韻白，舒緩一下。",
+        "like": 50,
+        "comment": 1,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 187.0,
+        "content": "春節連假\n你當了幾天沙發馬鈴薯:土豆:",
+        "like": 140,
+        "comment": 16,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 4533.0,
+        "content": "來辦個B-Box鞭炮聲比賽\n-\n這則貼文只能用語音回覆",
+        "like": 3711,
+        "comment": 294,
+        "share": 78
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 136.0,
+        "content": "初四，一定要喝杯浪煎龍片504\n好運龍蛇來～\n-\n刮不一定得到，曜一定喝的到",
+        "like": 32,
+        "comment": 1,
+        "share": 34
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 36.0,
+        "content": "吃太飽，想睡覺但卻脹氣卡卡？\n-\n來杯八曜ㄦㄦ益生菌乳茶系列\n酸甜的口感，解膩又順暢:红心:",
+        "like": 15,
+        "comment": 0,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 198.0,
+        "content": "今年你是？",
+        "like": 166,
+        "comment": 10,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 97.0,
+        "content": "柚香配白玉，團圓又圓滿",
+        "like": 78,
+        "comment": 5,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 139.0,
+        "content": "八曜除夕部分店家沒有營業\n讓夥伴好好過年:爆竹:\n-\n可以先打電話到門市確認是否開店\n也可以到官方ig搜尋除夕開店資訊喔:红心:\n-\n來八曜來一杯極韻白\n好運ccccccc爆:摇滚:",
+        "like": 82,
+        "comment": 3,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 882.0,
+        "content": "我打電話過去..都叫ㄦㄦ！\n-\n因為「過年大魚大肉」\n一杯酸甜解膩的口感:红心:\n八曜ㄦㄦ益生菌讓你順暢ㄦㄦ",
+        "like": 103,
+        "comment": 1,
+        "share": 259
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 103.0,
+        "content": "春節不妨來一杯八曜「極韻白」\n「極致開運」:红心:\n-\n燕麥奶的絲滑口感\n是世界上最好喝的奶茶呀！",
+        "like": 19,
+        "comment": 0,
+        "share": 28
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 123.0,
+        "content": "你超級需要一杯極韻白\n沒有為什麼",
+        "like": 40,
+        "comment": 1,
+        "share": 27
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 1040.0,
+        "content": "希望大家平安，我愛大家！",
+        "like": 244,
+        "comment": 2,
+        "share": 264
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 467.0,
+        "content": "辛苦上課工作一天了，\n用世界上最好喝的奶茶「極韻白」，\n-\n剛好伸展脖子也可以用力吸一口，\n犒賞自己，\n-\n別忘了！今天才禮拜一",
+        "like": 60,
+        "comment": 1,
+        "share": 135
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 124.0,
+        "content": "離過年剩下一個禮拜，\n準備好「世界上最好喝的奶茶」\n送回去跟家人喝茶聊聊天\n-\n也抱抱好久不見的家人:红心:",
+        "like": 65,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 73.0,
+        "content": "再配上一杯「極韻白」奶茶（可做熱飲）\n-\n絲滑的口感，獨一無二的八曜奶茶\n讓你享受最完美觀影體驗:红心:",
+        "like": 20,
+        "comment": 7,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 92.0,
+        "content": "極韻白終於回來了！\n-\n急凍冷天，最適合來杯暖暖的「精品奶茶」\n用「世界上最好喝的奶茶」來暖暖手心:红心:",
+        "like": 23,
+        "comment": 6,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 1030.0,
+        "content": "天氣寒冷總需要補補身\n曜頭推薦幾個方案\n-\n1.羊肉爐+京彩舞伎紅茶\n2.火鍋+究極308\n3.薑母鴨+極韻白奶茶\n4.燒肉+柚香覺醒307\n5.壽喜燒+浪煎龍片504",
+        "like": 978,
+        "comment": 14,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 155.0,
+        "content": ":喇叭:極韻白系列回來了:闪亮:",
+        "like": 100,
+        "comment": 5,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 435.0,
+        "content": "23:50點名囉\n-\n有人這時間還在喝飲料嗎？",
+        "like": 381,
+        "comment": 27,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 173.0,
+        "content": "明天是8曜日！！\n-\n每個月8、18、28點數雙倍送:五彩纸屑球:\n集滿8點可以兌換飲品喔:红心:",
+        "like": 88,
+        "comment": 26,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 1793.0,
+        "content": "：你的耳機在聽什麼？\n：柚香覺醒307，因為很「潮」\n-",
+        "like": 200,
+        "comment": 3,
+        "share": 529
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 199.0,
+        "content": "滑手機滑到無聊，可以試試\nThreads > IG >八曜菜單 > 循環\n-",
+        "like": 71,
+        "comment": 1,
+        "share": 42
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 456.0,
+        "content": "看看當下自己擁有的，\n如果你還能夠喝上一杯八曜，\n你已經超級幸運。",
+        "like": 298,
+        "comment": 1,
+        "share": 52
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 53.0,
+        "content": "▾▾▾抽獎資格這邊看 ▾▾▾\n:播放按钮:追蹤八曜和茶+按讚分享貼文\n:播放按钮:標記3位好友\n:播放按钮:於本貼文下方留言:\n-\n:反手食指向下指::反手食指向下指::反手食指向下指::反手食指向下...",
+        "like": 21,
+        "comment": 1,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 267.0,
+        "content": "大家久等了:红心:",
+        "like": 103,
+        "comment": 1,
+        "share": 54
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 149.0,
+        "content": "親愛的顧客，您好：\n為了嚴格把關我們\n提供優質品質及服務的核心精神，\n我們將針對關於食品衛生安全\n之整體內部作業流程\n全面進行檢查與消毒清潔等控管，\n-\n＃高雄文橫門市於\n＃01月03日清潔消毒停止營...",
+        "like": 132,
+        "comment": 1,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 116.0,
+        "content": "重磅預告，2025春節經典飲品再現！",
+        "like": 66,
+        "comment": 4,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 194.0,
+        "content": "▾▾▾活動資格這邊看 ▾▾▾\n:播放按钮:追蹤八曜和茶+按讚分享貼文\n:播放按钮:標記3位好友\n:播放按钮:於本貼文下方留言:\n:反手食指向下指::反手食指向下指::反手食指向下指::反手食指向下指:...",
+        "like": 17,
+        "comment": 3,
+        "share": 57
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 651.0,
+        "content": "如果你今天買八曜去跨年，\n你會是2025年第一批喝八曜的人。\n-\n用舒服的方式幫2025開場:红心:",
+        "like": 625,
+        "comment": 10,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 566.0,
+        "content": "無論你是孤獨跨年還是親朋好友一起\n手上有一杯「柚香覺醒307」今年一定超順！\n把好運的秘訣分享給更多人",
+        "like": 532,
+        "comment": 5,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 156.0,
+        "content": "「台南永華」以及「台中水湳」門市\n營業時間延長，陪大家歡慶跨年:拉炮彩带:",
+        "like": 36,
+        "comment": 3,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 157.0,
+        "content": "新竹的朋友久等了:双感叹号::双感叹号::双感叹号:\n-\n今天竹北開幕活動最後一天\n:反手食指向右指:柚香覺醒買一送一:反手食指向左指:",
+        "like": 147,
+        "comment": 2,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 447.0,
+        "content": "考驗曜粉的團結度\n一人一句把這首歌唱完\n提示「主角帶著一隻龍跟蟋蟀」\n-\n我先：大家同心作戰",
+        "like": 370,
+        "comment": 37,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 3102.0,
+        "content": "如果有人遞給你選擇\n「一張刮刮卡」跟「一杯八曜」\n你會選哪一個？",
+        "like": 2767,
+        "comment": 151,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 391.0,
+        "content": "快！！趕緊帶一杯「柚香覺醒307」\n-\n回家看:乌贼:魷魚遊戲第二季！！",
+        "like": 378,
+        "comment": 5,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.72,
+        "popularity_score": 317.0,
+        "content": "01:40簽到囉\n-\n今天聖誕節，喝爆的舉手:举手:\n是Merry christmas 還是lonely christmas?",
+        "like": 309,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 68.0,
+        "content": "也希望收到「YO307清爽柚·香氛片」\n-\n掛在聖誕樹上還有「柚香覺醒307」的香氣\n門市限量販售中:红心:",
+        "like": 25,
+        "comment": 2,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 291.0,
+        "content": "聖誕節就是要來一杯:反手食指向下指:\n暖暖的「炙燒濃乳308」陪你:圣诞树:",
+        "like": 39,
+        "comment": 3,
+        "share": 82
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 101.0,
+        "content": "人生圖的就是尋找刺激（不要輕易嘗試\n扛..不住了..\n必須要趕快來一杯「炙燒濃乳308」暖暖身子",
+        "like": 42,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 18.0,
+        "content": "2024 台灣設計BEST100\n八曜和茶｜風格獨具的新生代強勢手搖\n創意力、設計力、整合力、行銷力、銷售力的策略性集結",
+        "like": 12,
+        "comment": 0,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.78,
+        "popularity_score": 52.0,
+        "content": "那如果八曜出超可愛的香氛片，\n你會分享給朋友嗎？",
+        "like": 39,
+        "comment": 2,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 335.0,
+        "content": "冬至很適合晚上喝杯八曜，看個拳擊賽。",
+        "like": 316,
+        "comment": 5,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 351.0,
+        "content": "冬至，湯圓吃膩了？\n-\n試試八曜溫「炙燒濃乳308」+白玉珍珠\n讓自己當個冬至Chill Guy",
+        "like": 341,
+        "comment": 2,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 65.0,
+        "content": "黃綠杯杯 & 時尚袋袋\n-\n聖誕限定:圣诞树:「YO307清爽柚•香氛片」\n交換禮物首選:红心:12/21登場",
+        "like": 40,
+        "comment": 8,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 110.0,
+        "content": "既然你還醒著，那就看一下明天要喝什麼吧",
+        "like": 26,
+        "comment": 3,
+        "share": 26
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 1128.0,
+        "content": "聖誕節交換最雷禮物是什麼？\n-\n曜頭收過PS5的盒子打開是五顆水蜜桃:桃:",
+        "like": 964,
+        "comment": 79,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 1529.0,
+        "content": "有將近7成台灣人\n-\n會吧冷「ㄌㄥˇ」說成「ㄋㄣˇ」\n不信問看看身旁的人說這句話:反手食指向下指:\n-\n「今天很冷，要不要訂八曜熱奶茶？」",
+        "like": 1381,
+        "comment": 32,
+        "share": 28
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 702.0,
+        "content": "新竹的朋友們:喇叭:!!\n八曜在新竹的第二家門市來囉:拉炮彩带:\n跨年前別忘記帶一杯八曜一起嗨:闪亮:\n-\n新竹中正門市:红心:\n地址：新竹縣竹北市中正東路238號",
+        "like": 222,
+        "comment": 6,
+        "share": 156
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 41.0,
+        "content": "沒關係，上班桌上放一杯八曜\n什麼都能迎刃而解:肌肉:",
+        "like": 20,
+        "comment": 0,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 286.0,
+        "content": "八曜8年間陪伴了許多人成長，\n看見有人從高中生變大學生，\n也陪伴大家讀書考試直至出社會。\n-\n無論每個人結果如何，\n曜頭都陪伴在你們身旁，\n與你們一起默默成長。",
+        "like": 143,
+        "comment": 1,
+        "share": 47
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 3926.0,
+        "content": "椅子陪你看電視、陪你和家人吃晚餐團圓，\n它承載的是家的回憶。\n-\n帶杯八曜回老家，\n跟坐椅子上的阿公阿嬤好好聊個天吧！",
+        "like": 640,
+        "comment": 2,
+        "share": 1094
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 83.0,
+        "content": "但我知道，通常手上拿著八曜\n都會被叫哥哥或是姊姊。",
+        "like": 38,
+        "comment": 3,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 223.0,
+        "content": "既然你都滑到了\n那就把八曜前Top5熱門介紹看完吧:红心:",
+        "like": 57,
+        "comment": 2,
+        "share": 54
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 175.0,
+        "content": "原本曜頭只是看到超認真少年舉辦的\n「空氣清淨機封面大賽」\n路過上傳個菜單XD\n-\n沒想到他真的超認真的做出來了:笑得满地打滚:\n剛剛曜頭打開試聞，空氣真的..\n「和風一樣暢快」\n-\n完整版影片:反手食...",
+        "like": 127,
+        "comment": 3,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 45.0,
+        "content": "不變的是，八曜一直都能給你溫暖的手心",
+        "like": 20,
+        "comment": 2,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 76.0,
+        "content": "人生也就這麼短，\n品嚐極品有這麼難嗎？",
+        "like": 41,
+        "comment": 1,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 195.0,
+        "content": "其實我平常聽的是八曜和茶的專輯\nSpotify跟apple music都找得到喔！",
+        "like": 151,
+        "comment": 1,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 95.0,
+        "content": "（續集）\n:男孩_较浅肤色:：開玩笑的，我圖的是妳的笑容\n:金发女_较浅肤色:：（打開塑膠袋，哇！是八曜！",
+        "like": 72,
+        "comment": 1,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 182.0,
+        "content": "那你有辦法盯著這張20秒嗎？\n-\n可以，代表你真的很愛八曜",
+        "like": 120,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 226.0,
+        "content": "好冷喔，是為了讓大家想喝熱奶茶嗎？\n真的很扯！\n-\n冬天八曜極韻白奶茶，熱熱的喝更好喝:红心:",
+        "like": 89,
+        "comment": 25,
+        "share": 29
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 30.0,
+        "content": "當然是為了找你參加！！\n新北永和盛大開幕，時尚限量一杯袋\n只送不賣，開幕限定:红心:",
+        "like": 20,
+        "comment": 2,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 393.0,
+        "content": "永和今天正式開幕囉:红心:\n感謝前來支持的粉絲～\n-\n今天排隊的朋友辛苦了\n我們會努力出杯的！\n感謝大家來共襄盛舉八曜日\n-\n隊伍會不定時發放試喝\n給辛苦等待的曜粉們:羞涩微笑:\n大家記得帶外套以免著...",
+        "like": 215,
+        "comment": 89,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 79.0,
+        "content": "永和開幕資訊這裡看:反手食指向下指:",
+        "like": 30,
+        "comment": 8,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 244.0,
+        "content": "接下來就是屬於永和人的同樂會了\n12/6 永和「樂華門市」正式開幕:红心:",
+        "like": 174,
+        "comment": 17,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 90.0,
+        "content": "永和開幕活動這裡看:反手食指向下指:",
+        "like": 25,
+        "comment": 1,
+        "share": 21
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 67.0,
+        "content": "spotify也聽得到八曜的音樂喔:红心:",
+        "like": 17,
+        "comment": 1,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 91.0,
+        "content": "幫推，用心做問卷的研究生",
+        "like": 64,
+        "comment": 3,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 59.0,
+        "content": "Chill Guy 手上通常都有一杯極韻白",
+        "like": 5,
+        "comment": 0,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.44999999999999996,
+        "popularity_score": 96.0,
+        "content": "手上拿著「極韻白奶茶」\n到哪裡都是Chill Guy",
+        "like": 39,
+        "comment": 0,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 184.0,
+        "content": "那你知道嗎？這是八曜的12345",
+        "like": 63,
+        "comment": 14,
+        "share": 31
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 168.0,
+        "content": "冬季生存好夥伴，來杯溫溫的「極韻白奶茶」\n下班下課後溫暖手心，明天繼續加油:红心:",
+        "like": 33,
+        "comment": 3,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 32.0,
+        "content": "聖誕老公公，我的要求不多..\n讓我起床就有一杯暖呼呼的「極韻白奶茶」就好\n-\n標記你的好友過來，讓他當你的聖誕老公公",
+        "like": 16,
+        "comment": 2,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 147.0,
+        "content": "12/6永和開幕倒數5天 - 「上班族篇」\n-\n「加了多少的班，熬了多少的夜，\n拼的不只是生活，也是心裡深處的那份骨氣」",
+        "like": 140,
+        "comment": 2,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 65.0,
+        "content": "【新北永和】樂華門市 12月6日正式開幕拉!!\n-\n:十点:開幕期間營業時間：10:00-22:00\n:神社:地址：新北市永和區永和路一段212號\n-\n:焰火:「全門市活動」\n12/6（五）全台門市購...",
+        "like": 15,
+        "comment": 4,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 306.0,
+        "content": "【新北永和】樂華門市 12月6日正式開幕拉!!\n-\n:十点:開幕期間營業時間：10:00-22:00\n:神社:地址：新北市永和區永和路一段212號\n-\n:焰火:「全門市活動」\n12/6（五）全台門市購...",
+        "like": 1,
+        "comment": 1,
+        "share": 101
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 216.0,
+        "content": "今天是八曜日呦\n每個月8、18、28\n會員點數雙倍送！\n-\n「點數可以幹嘛」？\n集滿8點可以兌換指定飲品\n看過有曜粉一次換20杯的:拇指向上:",
+        "like": 114,
+        "comment": 3,
+        "share": 32
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 80.0,
+        "content": "咦…怎麼空氣中有股…柚香覺醒307的味道:想一想:!?\n-\n原來是「YO307清爽柚．香氛片」!!!!\n-\n柚香覺醒307不只可以用喝的\n還可以用聞的:墨镜笑脸:\n濃郁卻清爽的葡萄柚果香:闪亮:\n-\n...",
+        "like": 38,
+        "comment": 6,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 40.0,
+        "content": "這次棒球的團結是屬於台灣人的的團結！\n-\n如果是屬於曜粉的團結，\n就是對「柚香覺醒307」的熱愛！\n-\n於是我們做出了同款香氣的香氛片\n無時無刻都可以享受柚香的清爽:红心:",
+        "like": 22,
+        "comment": 0,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 53.0,
+        "content": "白馬王子送來的溫暖 _\n精品極韻白奶茶，熱熱的喝，好愛:红心:",
+        "like": 28,
+        "comment": 2,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 96.0,
+        "content": "冬天，極韻白也可以熱熱的喝呦:红心:",
+        "like": 56,
+        "comment": 5,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 102.0,
+        "content": "告知新北朋友的最新資訊:红心:",
+        "like": 84,
+        "comment": 6,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 1706.0,
+        "content": "剛剛從窗外就聽見一陣陣歡呼聲:棒球:",
+        "like": 1674,
+        "comment": 16,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 1039.0,
+        "content": "11月、12月結束前，幸福的方法都寫在上面",
+        "like": 932,
+        "comment": 31,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 204.0,
+        "content": "目前曜粉幫大概20萬人，\n加入成為曜粉幫的一員，好康真的超讚！！\n-\n每個月8、18、28是八曜日\n消費60元有1點～\n集滿8點就可以兌換指定飲品:红心:\n-",
+        "like": 82,
+        "comment": 4,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 128.0,
+        "content": "難道說，祖克柏叔叔..\n喝到的是新品「極韻白奶茶」！？\n精品奶茶的魅力，就是給予認證的實力:红心:",
+        "like": 76,
+        "comment": 2,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 636.0,
+        "content": "這是曜頭我平常的鬧鐘",
+        "like": 108,
+        "comment": 3,
+        "share": 174
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 445.0,
+        "content": "咦…怎麼空氣中有股…柚香覺醒307的味道:想一想:!?\n-\n原來是「YO307清爽柚．香氛片」!!!!\n原來是「YO307清爽柚．香氛片」!!!!\n原來是「YO307清爽柚．香氛片」!!!!\n-\n柚香...",
+        "like": 287,
+        "comment": 4,
+        "share": 50
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 91.0,
+        "content": "來杯極韻白，用絲滑的精品奶茶\n緩和看球賽緊張的心:红心:",
+        "like": 32,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 264.0,
+        "content": "很好喝，喝了沒？\n-\n你喝過世界上最好喝的奶茶嗎？\n以為我又廣告你？\n-\n這杯好喝到，連你自己都會廣告別人",
+        "like": 171,
+        "comment": 9,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 75.0,
+        "content": "【新品猜對送大獎!! 抽獎公布】\n感謝大家的熱情參與:拉炮彩带:\n恭喜幾位中獎的幸運粉絲們:鼓掌::鼓掌:\n-\n無法超越的巔峰品味\n最好喝的奶茶!!極韻白奶茶系列上市啦:拉炮彩带:\n-\n沒得獎的粉絲們...",
+        "like": 59,
+        "comment": 5,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 73.0,
+        "content": "當天請多米大大的就是新品「極韻白」\n極白的燕麥奶韻，精品一定要給多米品嚐:红心:",
+        "like": 45,
+        "comment": 2,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 104.0,
+        "content": "人生不夠淬煉，想文縐縐發脆不知發什麼\n代表：你還沒喝「極韻白」奶茶:带吸管杯:\n-\n五年的技術堆疊，極致的精品奶茶！\n一口入喉，彷彿看見人生種種百態，\n神級別，人間無法想像的美味。",
+        "like": 51,
+        "comment": 1,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 83.0,
+        "content": "是因為！！新品「極韻白奶茶」\n-\n喝一口眉毛往上兩公分的:反手食指向下指:\n八曜獨家精品奶茶，全台登場:奖牌:\n11/11極白渾厚的絲滑口感:红心:",
+        "like": 54,
+        "comment": 1,
+        "share": 9
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 265.0,
+        "content": "謝謝您今天下雨專程跑一趟:红心:",
+        "like": 126,
+        "comment": 2,
+        "share": 45
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 279.0,
+        "content": "光棍節，看著窗外的情侶\n-\n我感慨的嘆了一口氣，\n將保時捷停在角落，整理後車廂的愛馬仕，\n輕輕靠在車身旁，喝一口八曜的極韻白！\n-\n或許沒有牽著記憶中的妳，\n但奶茶的甜，讓我想起成為光棍的理由。\n-\n...",
+        "like": 224,
+        "comment": 2,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 165.0,
+        "content": "11/11「極韻白奶茶」:红心:\n無法超越的巔峰之作，精品奶茶重磅登場！",
+        "like": 109,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 1317.0,
+        "content": "11/11難道只有光棍節？\n-\n注意！全台八曜明天即將推出..\n:双感叹号:全世界最好喝的奶茶」:双感叹号:\n-\n五款精品:反手食指向右指:「極韻·白奶茶」:反手食指向左指:\n-\n喝一口，保障眉毛往上...",
+        "like": 1166,
+        "comment": 29,
+        "share": 31
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 78.0,
+        "content": ":扩音器:台北橋門市開幕活動最新公告",
+        "like": 40,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 90.0,
+        "content": "很多粉絲私訊詢問曜頭\n曜頭統一在這邊回答～\n-\nQ1:手提袋目前還有嗎？\n:红色感叹号:手提袋我們現場目前都還有喔\n-\nQ2:加購的香氛片還有嗎？\n:红色感叹号:目前還有將近一百多片\n持續先減少中要加...",
+        "like": 64,
+        "comment": 1,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.78,
+        "popularity_score": 1489.0,
+        "content": "11/08 三重開幕活動\n重要即時公告\n-\n感謝大家對台北的喜愛\n三重台北橋門市今天營業到10:30\n目前排隊的隊伍較長\n最後一位顧客，會等到10點左右\n所以已經截止排隊囉！\n-\n晚上大家不要白跑一趟...",
+        "like": 1394,
+        "comment": 31,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 782.0,
+        "content": "曜頭來三重，現場Real無剪輯採訪\n隊伍裡大家都是八曜真鐵粉\n還有排隊變成朋朋的曜粉:红心:",
+        "like": 745,
+        "comment": 17,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 5318.0,
+        "content": "新北三重的朋友！\n一般門市通常只有一台自動智能飲料機\n三重有「兩台喔」:拇指向上:\n設備等量擴充\n-\n加上現場人力，產量已經是平常的三倍，\n請大家耐心等候，因杯數較多，\n謝謝您們的支持:红心:",
+        "like": 809,
+        "comment": 3,
+        "share": 1501
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 631.0,
+        "content": "02:20點名囉\n現在已經到新北三重排隊等開幕的簽到",
+        "like": 571,
+        "comment": 27,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 298.0,
+        "content": "開幕活動這邊看:左斜的放大镜:",
+        "like": 40,
+        "comment": 3,
+        "share": 84
+      },
+      {
+        "sentiment_score": 0.32,
+        "popularity_score": 266.0,
+        "content": "11/11正式發售 「極韻白奶茶」精品奶茶",
+        "like": 194,
+        "comment": 3,
+        "share": 22
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 228.0,
+        "content": "倒數兩天！準備好了嗎:红心:",
+        "like": 144,
+        "comment": 3,
+        "share": 26
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 645.0,
+        "content": ":播放按钮:追蹤八曜和茶+按讚分享貼文\n:播放按钮:標記3位好友@追蹤者\n:播放按钮:於本貼文下方留言:\n:反手食指向下指::反手食指向下指::反手食指向下指::反手食指向下指::反手食指向下指::反...",
+        "like": 77,
+        "comment": 26,
+        "share": 172
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 1123.0,
+        "content": "星期一 05:00起床的通常都是成功人士\n-\n成功人士這裡簽到",
+        "like": 970,
+        "comment": 72,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 3252.0,
+        "content": "我只能說新北三重開幕「我要shampoo！！」",
+        "like": 2558,
+        "comment": 116,
+        "share": 154
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 789.0,
+        "content": "這部影片，是曜頭親自獻聲配音:红心:\n帶著滿滿的感情與大家分享光點",
+        "like": 115,
+        "comment": 1,
+        "share": 224
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 328.0,
+        "content": "【 10/31 （四） #颱風 門市營業公告 】\n因 #康芮颱風 來襲\n『全門市』 配合政府暫停服務一天，\n如有不便，敬請見諒。\n-—————————————\n#康芮 #颱風公告:台风: #防颱準備 ...",
+        "like": 294,
+        "comment": 5,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 450.0,
+        "content": "哭啊，喊啊 ，叫你媽媽帶你去鳳山買八曜啊！",
+        "like": 334,
+        "comment": 13,
+        "share": 30
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 260.0,
+        "content": "來蓋個萬聖節裝扮樓:南瓜灯:\n曜頭走在路上以為在逛小北百貨",
+        "like": 223,
+        "comment": 14,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 780.0,
+        "content": "多杯飲料放一起，避免認錯的技巧",
+        "like": 731,
+        "comment": 20,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 2586.0,
+        "content": "歐美萬聖節 - 扮鬼",
+        "like": 2349,
+        "comment": 12,
+        "share": 71
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 502.0,
+        "content": "只好幫大家換個腦袋迴音了",
+        "like": 344,
+        "comment": 1,
+        "share": 52
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 483.0,
+        "content": "從「朝陽騎車到八曜」只要10分鐘？？\n到塗城覓食的同學，也順路帶杯八曜清爽一下\n-\n塗城門市開幕囉，三天活動送好送滿:红心:",
+        "like": 165,
+        "comment": 6,
+        "share": 102
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 396.0,
+        "content": "沒搶到的這裡簽到\n-\n改搶倫家的柚香覺醒307",
+        "like": 269,
+        "comment": 17,
+        "share": 31
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 982.0,
+        "content": "感謝雲林鐵粉光顧\n今天斗六門市柚香覺醒307買一送一:给我打电话:",
+        "like": 857,
+        "comment": 1,
+        "share": 41
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 70.0,
+        "content": "超狂開幕大放送！",
+        "like": 40,
+        "comment": 3,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 93.0,
+        "content": "開幕好康快來拿！",
+        "like": 47,
+        "comment": 5,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 77.0,
+        "content": "雲林斗六 / 台中塗城\n即將開幕！歡迎加爆蜜漬白玉丸:红心:",
+        "like": 43,
+        "comment": 2,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 103.0,
+        "content": "攏齁哩啦:反手食指向下指:",
+        "like": 50,
+        "comment": 1,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 809.0,
+        "content": "世紀難題\n吸管是一個洞還是兩個洞？",
+        "like": 737,
+        "comment": 33,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 143.0,
+        "content": "自己的未來自己決定，\n飲料也是。（八曜）",
+        "like": 66,
+        "comment": 1,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 107.0,
+        "content": "沒辦法看鏡頭是因為看著手上的\n限量版瓶裝「柚香覺醒307」\n-\n台中爵士音樂節 - 18:00-21:00\n勤美門市門口販售中:红心:",
+        "like": 94,
+        "comment": 2,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 470.0,
+        "content": "來台中爵士音樂節的朋友\n想要無酒精的清爽饗宴\n-\n勤美門市有幫大家準備瓶裝版「柚香覺醒307」\n讓你更快拿到呦:红心:",
+        "like": 309,
+        "comment": 1,
+        "share": 53
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 28.0,
+        "content": "你是「排隊系」還是「現成系」呢？",
+        "like": 14,
+        "comment": 1,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.72,
+        "popularity_score": 3789.0,
+        "content": "有隱藏的新品？還有神秘獨家開幕周邊？\n-\n新北開幕最新活動內容在這裡喔:反手食指向下指:",
+        "like": 3048,
+        "comment": 102,
+        "share": 179
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 191.0,
+        "content": "台中爵士音樂節10/11～10/20\nChill聽爵士配「柚香覺醒307」\n-\n市民廣場-八曜「勤美門市」等你喔:红心:",
+        "like": 79,
+        "comment": 2,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 239.0,
+        "content": "斗六開幕還有超級厲害的優惠:红心:",
+        "like": 112,
+        "comment": 2,
+        "share": 41
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 2312.0,
+        "content": "由於我們台北市區的地點，\n還正在積極的尋找，\n我們目前的能力，\n想方設法努力的推進至新北地區！\n-\n也請大家多多包含，\n同時也請大家分享台北市新地點資訊，\n我們會努力洽談與尋店，\n謝謝各位長久的支持！...",
+        "like": 271,
+        "comment": 47,
+        "share": 649
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 76.0,
+        "content": "新聞連結：\n統一發票7、8月開獎了，你中獎了嗎？\n-",
+        "like": 17,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 554.0,
+        "content": "拍照要怎麼隨便拍都好看？\n-\n很簡單，只要手上拿著八曜\n鮮明又好看的杯身，每個角度都是前衛\n你的美，自然能撐起這樣的時尚\n-\n有人要示範嗎？",
+        "like": 415,
+        "comment": 56,
+        "share": 9
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 419.0,
+        "content": "酒也是飲料的一種，有人秀一手兩手\n怎麼沒有人秀自己很會喝飲料\n-\n舉例：\n我可以Shot掉一杯全糖珍奶\n我可以正常冰一口喝完",
+        "like": 370,
+        "comment": 20,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 807.0,
+        "content": "12:25點名",
+        "like": 776,
+        "comment": 14,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 1260.0,
+        "content": "北上驚喜包內容最新畫面釋出！\n（猜得出這是什麼嗎？雙北朋友一起期待\n-\n10/07 八曜官網會釋出最新消息",
+        "like": 1141,
+        "comment": 43,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 1976.0,
+        "content": "偷偷告訴大家\n10/7官網公布第一階段消息預告",
+        "like": 460,
+        "comment": 8,
+        "share": 500
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 5770.0,
+        "content": "「八曜光點計畫」 感謝大家積極的參與\n-\n我們獲得大家提供上千筆地點資訊\n成功在台北找到地點，歡迎大家繼續填單\n讓我們繼續找到適合發光的地方:灯泡:\n-\n連結:反手食指向下指:",
+        "like": 831,
+        "comment": 50,
+        "share": 1613
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 298.0,
+        "content": "趁颱風還沒來，冰箱趕快囤幾杯八曜\n風大雨大上路危險！",
+        "like": 267,
+        "comment": 14,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 651.0,
+        "content": "結束3天的F1活動\n完售將近4000杯，曜頭中暑3次\n不過達成幫大家解渴的任務了\n-\n接下來就是..",
+        "like": 624,
+        "comment": 12,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 101.0,
+        "content": "大熱天，冰涼清爽的好貨\n對抗毒辣的太陽，清爽超好喝啦:红心:\n來收藏限量活動罐罐～",
+        "like": 69,
+        "comment": 1,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 1419.0,
+        "content": "其實是冰到發抖，冰鎮的清爽「柚香覺醒307」\n炎熱太陽下的救星:红心:星期日活動最後一天",
+        "like": 1192,
+        "comment": 10,
+        "share": 69
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 161.0,
+        "content": "感謝今天超熱情的大家\n曜頭也陪大家一整天:红心:",
+        "like": 30,
+        "comment": 1,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 120.0,
+        "content": "大家一定要注意防曬，曜頭也在現場陪大家:红心:",
+        "like": 83,
+        "comment": 2,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 55.0,
+        "content": "太熱想要解渴，可以來市府前廣場5號攤位:红心:",
+        "like": 23,
+        "comment": 1,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.72,
+        "popularity_score": 87.0,
+        "content": "天氣超炎熱，幫大家準備好清涼的飲料了\n「柚香覺醒307」和風一樣暢快:红心:\n-\n台中市政府前廣場5號攤位/六日讓你暢飲:赛车:",
+        "like": 62,
+        "comment": 2,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.44999999999999996,
+        "popularity_score": 326.0,
+        "content": "跟對面朋朋以物易物",
+        "like": 177,
+        "comment": 1,
+        "share": 49
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 198.0,
+        "content": "我們就在F1賽車模擬器旁邊:红心:\n-\n｜2024 Showrun Taichung 封街賽車展演｜\n日期 :日历: 2024/09/27(五)~09/29(日)\n時間 :三点: 10:30~17:3...",
+        "like": 67,
+        "comment": 28,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 223.0,
+        "content": "肯定是看到「柚香覺醒307」的繽紛色彩\n飆風版主題曲，重磅推出:红心:\n-\nYouTube完整版：",
+        "like": 84,
+        "comment": 5,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 85.0,
+        "content": "完整版:反手食指向下指:YouTube下方介紹有歌詞\n-",
+        "like": 5,
+        "comment": 1,
+        "share": 26
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 72.0,
+        "content": "柚香覺醒307與F1一起進場:红心:\n-\n｜2024 Showrun Taichung 封街賽車展演｜\n日期 :日历: 2024/09/27(五)~09/29(日)\n時間 :三点: 10:30~17:...",
+        "like": 31,
+        "comment": 1,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 809.0,
+        "content": "3點了，來玩鬼抓人",
+        "like": 724,
+        "comment": 41,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 911.0,
+        "content": "補充一下：\n後來老闆問我「爽」旁邊怎麼凹凹的，\n我說熱脹冷縮。",
+        "like": 676,
+        "comment": 2,
+        "share": 77
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 937.0,
+        "content": "如果你有10萬你會做什麼？",
+        "like": 771,
+        "comment": 74,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 1137.0,
+        "content": "雨下整夜，________？",
+        "like": 970,
+        "comment": 76,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 224.0,
+        "content": "懂喝的人，都喝「柚粒柚粒」，不醉但對味:红心:",
+        "like": 99,
+        "comment": 1,
+        "share": 41
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 425.0,
+        "content": "什麼是有聲音的台詞",
+        "like": 315,
+        "comment": 52,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 1301.0,
+        "content": "你贏了",
+        "like": 1235,
+        "comment": 18,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 193.0,
+        "content": "中秋節沒喝到柚粒？再給你一次機會選擇:红心:",
+        "like": 46,
+        "comment": 3,
+        "share": 47
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 191.0,
+        "content": "所以讓自己成為「柚太帥」和「柚迷人」\n一切都不再複雜，因為八曜把果肉剝好變簡單了",
+        "like": 45,
+        "comment": 1,
+        "share": 48
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 631.0,
+        "content": "中秋節只要87折？喝得到柚粒又可以省錢？",
+        "like": 209,
+        "comment": 4,
+        "share": 138
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 186.0,
+        "content": "中秋月太美，讓你捨不得睡？",
+        "like": 46,
+        "comment": 1,
+        "share": 46
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 129.0,
+        "content": "帶杯八曜，好喝到..\n中秋連嫦娥都會飛下來地球搶！",
+        "like": 48,
+        "comment": 3,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 362.0,
+        "content": "還在當..帶白吐司的朋友嗎？\n不如當帶八曜「柚粒柚粒」的朋友吧！",
+        "like": 90,
+        "comment": 1,
+        "share": 90
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 456.0,
+        "content": "柚粒柚粒也是偶數，中秋成雙的解膩飲品:红心:\n（捏一下）",
+        "like": 259,
+        "comment": 1,
+        "share": 65
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 117.0,
+        "content": "還有狼～煎～龍～片 504:OK:",
+        "like": 58,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 126.0,
+        "content": "中秋限定（柚太帥）/（柚迷人）:红心:\n這是形容，正拿著超強解膩時尚飲品的你:OK:",
+        "like": 64,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 904.0,
+        "content": "全員預購中，柚粒喝到爽方案:红心:\n好康優惠一直出～",
+        "like": 148,
+        "comment": 36,
+        "share": 228
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 352.0,
+        "content": "感謝日文警察，讓我們持續進步，\n曜頭消失兩天的時間，努力將官網持續更新，\n-\n目前所有的菜單文宣，正在做統整，\n後續將重新發包施工，再次謝謝日本警察:红心:",
+        "like": 290,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 455.0,
+        "content": "搖飲料的手勁就是不一樣\n畢竟這樣的手勁才能搖出「中秋解膩神飲」\n柚粒柚粒，果肉幫你剝好了:红心:",
+        "like": 414,
+        "comment": 1,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 1757.0,
+        "content": "我們會繼續努力改進日文的部分!!\n上個月我們有請日本的日文老師，\n做網路以及行銷輸出物後續的校正。\n-\n由於網站以及內容需要修正的資訊量較多，\n但我們一直都有持續地做修正以及改進。\n-\n目前文字稿已經...",
+        "like": 1231,
+        "comment": 8,
+        "share": 170
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 254.0,
+        "content": "釣魚的技術拿來搖飲料，一定會飛黃騰達\n歡迎加入八曜當夥伴:红心:",
+        "like": 120,
+        "comment": 1,
+        "share": 44
+      },
+      {
+        "sentiment_score": 0.44999999999999996,
+        "popularity_score": 607.0,
+        "content": "真是的，都不乖乖睡覺\n既然都還沒睡，看一下八曜的中秋廣告好了",
+        "like": 137,
+        "comment": 1,
+        "share": 156
+      },
+      {
+        "sentiment_score": 0.47,
+        "popularity_score": 311.0,
+        "content": "來八曜，不知道喝什麼？\nTop.10都在這裡了:红心:",
+        "like": 199,
+        "comment": 2,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 286.0,
+        "content": "：要不要喝八曜的柚粒柚粒",
+        "like": 29,
+        "comment": 1,
+        "share": 85
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 126.0,
+        "content": "你是誰不重要，\n但我知道會喝八曜的人就是不一樣!!",
+        "like": 82,
+        "comment": 4,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 732.0,
+        "content": "最近民眾多起，疑似帳號被盜詐騙！\n-\n如果有接到類似訊息多注意:警告:\n請直接打電話給對方確認:勾号按钮:\n-\n五萬拿來買「柚香覺醒307」還比較好",
+        "like": 398,
+        "comment": 5,
+        "share": 108
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 264.0,
+        "content": "想成為八曜和茶的夥伴:反手食指向下指:",
+        "like": 61,
+        "comment": 1,
+        "share": 67
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 83.0,
+        "content": "因為講究，所以升級\n無咖啡因茶品，質感高端的年輕人選擇:红心:",
+        "like": 24,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 644.0,
+        "content": "買得起信義區房子\n一定買得起八曜「中秋家庭飲品組合包」\n-\n9月1號-9月13號「柚粒柚粒」開始預購～\n烤肉解膩的清爽選擇:红心:",
+        "like": 60,
+        "comment": 1,
+        "share": 194
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 210.0,
+        "content": "一定是喝了「柚太帥」跟「柚迷人」的關係",
+        "like": 115,
+        "comment": 1,
+        "share": 31
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 223.0,
+        "content": "",
+        "like": 37,
+        "comment": 9,
+        "share": 56
+      },
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 177.0,
+        "content": "嗚.嗚哇哇嗚哇 . 柚粒柚粒 9月1號。恰喔",
+        "like": 98,
+        "comment": 2,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 1022.0,
+        "content": "曜頭經營的技巧就是來杯「柚太帥」&「柚迷人」",
+        "like": 563,
+        "comment": 6,
+        "share": 149
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 234.0,
+        "content": "曜頭的名人朋友還有「柚太帥」跟「柚迷人」",
+        "like": 105,
+        "comment": 6,
+        "share": 39
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 790.0,
+        "content": "還有什麼比文旦:反手食指向下指:\n「八曜幫你剝好了」更爽！\n充滿果肉大口嚼，不灌水9月1日登場",
+        "like": 64,
+        "comment": 3,
+        "share": 240
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 121.0,
+        "content": "那就不要吵了，就像馬克沒有說的\n：Suck my 八曜",
+        "like": 56,
+        "comment": 1,
+        "share": 21
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 154.0,
+        "content": "你是怎麼知道八曜和茶的？",
+        "like": 113,
+        "comment": 19,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 634.0,
+        "content": "竹北我們來了\n中秋將至，柚粒即將登場！",
+        "like": 323,
+        "comment": 22,
+        "share": 89
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 102.0,
+        "content": "一定是我「柚太帥」跟「柚迷人」\n好兄弟也想來一杯最新的中秋新品:红心:",
+        "like": 80,
+        "comment": 2,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.32,
+        "popularity_score": 49.0,
+        "content": "成為你的朋友的人\n一定是「柚太帥」跟「柚迷人」！",
+        "like": 11,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 465.0,
+        "content": "八曜開幕，要來還願了！\n今天「台中樹孝」跟「嘉義文化」",
+        "like": 117,
+        "comment": 3,
+        "share": 114
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 192.0,
+        "content": "早起的鳥兒有蟲吃，這樣才拿得到開幕優惠",
+        "like": 68,
+        "comment": 8,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 902.0,
+        "content": "沒錯！就是柚粒柚粒系列，重磅回歸了",
+        "like": 660,
+        "comment": 10,
+        "share": 74
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 103.0,
+        "content": "現場正在努力製作中\n半天已經出2000多杯了",
+        "like": 57,
+        "comment": 2,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 129.0,
+        "content": "慘了，今天太陽超大，大家真的要準備防曬",
+        "like": 73,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 102.0,
+        "content": "什麼網站？當然是八曜的官方網站",
+        "like": 46,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.8799999999999999,
+        "popularity_score": 94.0,
+        "content": "有緣作伙，不只燒酒一杯，八曜也可以拎幾杯",
+        "like": 62,
+        "comment": 1,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 740.0,
+        "content": "讓在地人知道就好，嘉義跟台中樹孝\n明天開幕好康會拿不完!!!",
+        "like": 374,
+        "comment": 21,
+        "share": 108
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 765.0,
+        "content": "「以前的手機」",
+        "like": 724,
+        "comment": 13,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 245.0,
+        "content": "上了賊船，能出淤泥而不染嗎？\n不，是出淤泥而全身塗抹均勻",
+        "like": 127,
+        "comment": 2,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 118.0,
+        "content": "不嘻嘻 + 柚香覺醒307 = 嘻嘻。三押",
+        "like": 83,
+        "comment": 1,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 436.0,
+        "content": "為什麼是50公分呢？",
+        "like": 72,
+        "comment": 2,
+        "share": 120
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 99.0,
+        "content": "武士真實對決的場面\n朔月般快斬的刀光，有如「龍片」撼動味覺\n———\n八曜和茶 x台灣甲冑武士隊\n共同展現「浪煎龍片504」的震撼體驗",
+        "like": 54,
+        "comment": 0,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.76,
+        "popularity_score": 550.0,
+        "content": "有看過武士真實對決的場面嗎？\n朔月般快斬的刀光，有如龍片撼動味覺\n———\n八曜和茶 x台灣甲冑武士隊\n共同展現「浪煎龍片504」的震撼體驗",
+        "like": 53,
+        "comment": 1,
+        "share": 165
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 281.0,
+        "content": "台灣三分之一的人，一個月會看到八曜一次\n我們會努力變成、二分之一或..每天:红心:",
+        "like": 105,
+        "comment": 1,
+        "share": 58
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 208.0,
+        "content": "覺得自己還沒長大？",
+        "like": 36,
+        "comment": 2,
+        "share": 56
+      },
+      {
+        "sentiment_score": 0.52,
+        "popularity_score": 154.0,
+        "content": "台中勤美旁邊剛好也有大橋頭喔",
+        "like": 110,
+        "comment": 1,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 738.0,
+        "content": "快要開幕了，搭造不造？",
+        "like": 337,
+        "comment": 7,
+        "share": 129
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 159.0,
+        "content": "如果開幕是同學的話：",
+        "like": 95,
+        "comment": 2,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 88.0,
+        "content": "有時候痛苦就需要甜甜的感覺來安慰\n「83蜂潮奶茶」有蜂蜜蛋糕的味道:红心:",
+        "like": 29,
+        "comment": 4,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 227.0,
+        "content": "地牛翻身，難道是為了來八曜開幕？\n好康驚天動地！！",
+        "like": 117,
+        "comment": 1,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 321.0,
+        "content": "開幕好康這裡看:红心:",
+        "like": 64,
+        "comment": 7,
+        "share": 81
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 883.0,
+        "content": "06:10點名囉",
+        "like": 819,
+        "comment": 29,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 717.0,
+        "content": "如果是曜頭，我會為了..\n告訴大家「83蜂潮奶茶」有多好喝～\n有蜂蜜蛋糕的味道！？",
+        "like": 130,
+        "comment": 4,
+        "share": 193
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 864.0,
+        "content": "3:07點名囉",
+        "like": 774,
+        "comment": 42,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 1283.0,
+        "content": ":秘:曜頭這邊定義一下「幾顆冰塊」！",
+        "like": 793,
+        "comment": 11,
+        "share": 156
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 276.0,
+        "content": "這個時候看影片最有感覺了",
+        "like": 118,
+        "comment": 1,
+        "share": 52
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 131.0,
+        "content": "猜猜看是什麼呢？\n我只知道它..超Juice..爆汁…WOW!?",
+        "like": 23,
+        "comment": 0,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 13.0,
+        "content": "恭喜幸運粉絲抽到:红心:\n【八曜xINCODER 限量祈福黑珠繩袋】",
+        "like": 4,
+        "comment": 0,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 887.0,
+        "content": "跟大家分享\n這是拿到八曜的樣子",
+        "like": 213,
+        "comment": 1,
+        "share": 224
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 317.0,
+        "content": "曜頭跟大家教學「如何在門市點飲料」:红心:",
+        "like": 178,
+        "comment": 5,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.45999999999999996,
+        "popularity_score": 312.0,
+        "content": "回饋曜粉，明天彰化中正開幕送很大:红心:",
+        "like": 140,
+        "comment": 2,
+        "share": 56
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 502.0,
+        "content": "彰化中正開幕優惠還沒完:双感叹号::双感叹号::双感叹号:\n明天繼續送:红心:",
+        "like": 260,
+        "comment": 1,
+        "share": 80
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 105.0,
+        "content": "禮物送八曜最有誠意了",
+        "like": 72,
+        "comment": 0,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 395.0,
+        "content": "正版的柚香307的貨\n都幫彰化朋友準備好了",
+        "like": 137,
+        "comment": 3,
+        "share": 84
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 142.0,
+        "content": "曜頭現場教學\n來八曜怎麼點「柚香覺醒307」",
+        "like": 65,
+        "comment": 1,
+        "share": 25
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 365.0,
+        "content": "還是正版的尚好:OK:\n因為八曜有獨家柚香清爽秘方:秘:",
+        "like": 241,
+        "comment": 5,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 162.0,
+        "content": "小7派角頭vs八曜派曜頭",
+        "like": 100,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 1170.0,
+        "content": "彰化中正門市明天「即將開幕」",
+        "like": 651,
+        "comment": 21,
+        "share": 159
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 40.0,
+        "content": "爸爸愛喝什麼，你知道嗎？",
+        "like": 16,
+        "comment": 3,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 1967.0,
+        "content": "最後我們決定叫小貓貓：八奇",
+        "like": 1559,
+        "comment": 9,
+        "share": 130
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 821.0,
+        "content": "明天88節，也是八曜生日:生日蛋糕:\n點數八倍送，快樂其實很簡單:红心:",
+        "like": 214,
+        "comment": 2,
+        "share": 201
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 275.0,
+        "content": "「柚香覺醒307」為何能成為傳說？",
+        "like": 183,
+        "comment": 1,
+        "share": 30
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 66.0,
+        "content": "那你多久沒有跟爸爸說「謝謝，辛苦了」\n8月8號帶爸爸出去玩，順便來八曜乾一杯:干杯:",
+        "like": 19,
+        "comment": 1,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 162.0,
+        "content": "還好popo大人，只是臨檢而已\n趕快再去買杯「燕香妃荔504」壓壓驚:脸发烧:",
+        "like": 129,
+        "comment": 3,
+        "share": 9
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 120.0,
+        "content": ":闪亮:【線上八倍送】門市當天也【點數八倍送】\n消費滿60元即可兌換點數一點，\n集滿八點即可兌換指定飲品，\n八月八號當天，現場買越多送越多。",
+        "like": 13,
+        "comment": 1,
+        "share": 35
+      },
+      {
+        "sentiment_score": 0.47,
+        "popularity_score": 111.0,
+        "content": "8月8號當天，8倍送8倍送8倍送！！\n與來八曜一起慶祝:拉炮彩带:",
+        "like": 60,
+        "comment": 15,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.47,
+        "popularity_score": 134.0,
+        "content": "歡慶:五彩纸屑球:8月8號當天點數8倍送！！！\n「集滿8點」可以「兌換指定飲品一杯」\n「8倍送」等於…你知道的（買越多賺越多）",
+        "like": 83,
+        "comment": 15,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 1306.0,
+        "content": "不，你找不到！\n因為清爽無咖啡因的308在八曜和茶！！！",
+        "like": 933,
+        "comment": 11,
+        "share": 117
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 486.0,
+        "content": "為什麼你總是跑廁所？？\n因為八曜的308系列回歸了！！\n清爽順口的口感，讓你喝了停不下來",
+        "like": 307,
+        "comment": 1,
+        "share": 59
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 512.0,
+        "content": "吃漢堡，也要配一杯解膩的八曜和茶吧:红色空心圆圈:",
+        "like": 373,
+        "comment": 2,
+        "share": 45
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 81.0,
+        "content": "爸要喝茶，給爸爸最好的\n新飲食文化，無咖啡因指標和風茶\n8月8號我們在八曜集合吧",
+        "like": 25,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 460.0,
+        "content": "：我剛剛買了一杯..",
+        "like": 212,
+        "comment": 4,
+        "share": 80
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 351.0,
+        "content": "所以你到底是想曜頭，還是「柚香覺醒307」？",
+        "like": 149,
+        "comment": 8,
+        "share": 62
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 100.0,
+        "content": "各位早點睡，才能早起買「柚香覺醒307」\n曜頭的賴:反手食指向下指:",
+        "like": 62,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 633.0,
+        "content": "彰化中正門市「即將開幕」\n送超大連續幾天，行事曆該設鬧鐘了:闹钟:",
+        "like": 382,
+        "comment": 19,
+        "share": 71
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 131.0,
+        "content": "那有人知道「308系列」是無咖啡因的嗎？",
+        "like": 94,
+        "comment": 2,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.48,
+        "popularity_score": 2017.0,
+        "content": "00:00點名",
+        "like": 1916,
+        "comment": 46,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 370.0,
+        "content": "今天行程：\n買杯八曜，看巴黎奧運支持台灣隊",
+        "like": 349,
+        "comment": 9,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 520.0,
+        "content": "原來你還沒喝過，清爽燕麥奶系列\n「龍香燕麥504」，難怪只能永遠讀著對白",
+        "like": 236,
+        "comment": 1,
+        "share": 94
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 228.0,
+        "content": "但我的輸入法也自動變成：\n曜不曜來一杯「浪煎龍片504」",
+        "like": 67,
+        "comment": 1,
+        "share": 53
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 549.0,
+        "content": "台中勤美/精誠門市:反手食指向右指:星期一營業異動:反手食指向左指:\n「各位注意異動時間，才不會錯過喔！」",
+        "like": 340,
+        "comment": 4,
+        "share": 67
+      },
+      {
+        "sentiment_score": 0.31,
+        "popularity_score": 89.0,
+        "content": "手拿冰涼的八曜，才能好好享受音樂:爱你的手势:",
+        "like": 35,
+        "comment": 6,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 1155.0,
+        "content": "這時間到底是剛起床，還是剛要睡\n不然等八曜開店來點「柚香覺醒307」",
+        "like": 365,
+        "comment": 8,
+        "share": 258
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 272.0,
+        "content": "禮拜六當然曜一次喝五杯啊！",
+        "like": 93,
+        "comment": 4,
+        "share": 57
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 275.0,
+        "content": "聽說八曜喝越多，越快樂",
+        "like": 127,
+        "comment": 2,
+        "share": 48
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 43.0,
+        "content": "各位，308升級後的香氣不會消失！\n等到太陽公公出來的時候，才能更加安心品嚐",
+        "like": 15,
+        "comment": 2,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 1869.0,
+        "content": "02:00點名\n平安的跟曜頭簽到",
+        "like": 1677,
+        "comment": 87,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 757.0,
+        "content": "為了顧及夥伴及民眾的安全\n八曜和茶7/25全台門市不營業",
+        "like": 386,
+        "comment": 7,
+        "share": 119
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 802.0,
+        "content": "各位注意門窗玻璃\n曜頭家公寓走廊的窗戶今天中午不見了\n7樓走廊變小颱風",
+        "like": 557,
+        "comment": 4,
+        "share": 79
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 276.0,
+        "content": "放假只好在家聽「浪煎龍片504」主題曲\n已經上架各大音樂平台囉:红心:",
+        "like": 119,
+        "comment": 2,
+        "share": 51
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 277.0,
+        "content": "讀完了依賴，我很快就…我只能選擇八曜",
+        "like": 159,
+        "comment": 5,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 581.0,
+        "content": "颱風天大家都買什麼泡麵:面条:？",
+        "like": 388,
+        "comment": 95,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 89.0,
+        "content": "颱風天:台风:口渴\n必須提前預備「浪煎龍片504」",
+        "like": 33,
+        "comment": 1,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 210.0,
+        "content": "幸福就像…八曜的新品「浪煎龍片系列」",
+        "like": 67,
+        "comment": 1,
+        "share": 47
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 114.0,
+        "content": "但有些快樂值得等待，7/26重磅回歸\n「308黃金蕎麥」經歷一個月的升級..\n更濃了，更香了，更好喝了:红心:",
+        "like": 49,
+        "comment": 1,
+        "share": 21
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 169.0,
+        "content": "後續還有兩次呦（北部）（南部）\n我們的門市夥伴也會參與演習\n13:00-14:00我們鐵門會拉下來喔:安静的脸::军用头盔:",
+        "like": 96,
+        "comment": 5,
+        "share": 21
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 108.0,
+        "content": "早起更重要的事，就是來八曜來點\n超級厲害的「燕香妃荔504」爽口荔枝甘甜:红心:",
+        "like": 28,
+        "comment": 1,
+        "share": 26
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 191.0,
+        "content": "燕麥的清爽,全新八曜「龍香燕麥奶504」:飞吻:",
+        "like": 25,
+        "comment": 2,
+        "share": 54
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 141.0,
+        "content": "魚乾大大都感到幸福，八曜ㄏㄠ吐露ㄙ！！",
+        "like": 99,
+        "comment": 0,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 62.0,
+        "content": "「浪煎龍片504」 拒絕平凡、唯有龍片",
+        "like": 23,
+        "comment": 3,
+        "share": 11
+      },
+      {
+        "sentiment_score": 0.32,
+        "popularity_score": 602.0,
+        "content": "沒錯，我就是來廣告的",
+        "like": 134,
+        "comment": 3,
+        "share": 154
+      },
+      {
+        "sentiment_score": 0.72,
+        "popularity_score": 577.0,
+        "content": "什麼是「無咖啡因」茶品，清爽無負擔？？\n那就是「308」蕎麥系列回來了",
+        "like": 65,
+        "comment": 4,
+        "share": 168
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 201.0,
+        "content": "順便在此告訴大家\n「308系列」7/26正式回歸:红心:",
+        "like": 122,
+        "comment": 5,
+        "share": 23
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 74.0,
+        "content": "您是否近距離看過..？\n「日本武士」身穿甲冑交戰的刺激緊張場景？？",
+        "like": 48,
+        "comment": 1,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 381.0,
+        "content": "上一篇簽到的\n已經加30公分了，現在再加碼30公分！！",
+        "like": 69,
+        "comment": 3,
+        "share": 102
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 745.0,
+        "content": "再再再再再（罰寫5次）",
+        "like": 110,
+        "comment": 4,
+        "share": 209
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 73.0,
+        "content": "一杯屬於成功者的味道「浪煎龍片504」",
+        "like": 14,
+        "comment": 1,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 122.0,
+        "content": "炎熱的夏天就像「擱淺」的感覺..",
+        "like": 36,
+        "comment": 1,
+        "share": 28
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 456.0,
+        "content": ":警告:史上最強「快閃消息」揭露:警告:",
+        "like": 47,
+        "comment": 14,
+        "share": 127
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 558.0,
+        "content": "幸福有很多方法，例如加強八曜的清爽程度",
+        "like": 150,
+        "comment": 3,
+        "share": 134
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 835.0,
+        "content": "除了給你一杯清涼的八曜..\n我還能做什麼？",
+        "like": 434,
+        "comment": 16,
+        "share": 123
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 175.0,
+        "content": "直到我看見「燕香妃荔504」一切都好了",
+        "like": 34,
+        "comment": 3,
+        "share": 45
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 2514.0,
+        "content": "曜頭不小心把最新的菜單撕破了\n幫我把兩張（捏一下）合起來",
+        "like": 2249,
+        "comment": 68,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 159.0,
+        "content": "超大根飲料冰棒！！？\n:冰块::冰块::冰块::冰块::冰块::冰块::冰块:\nㄦㄦ柚香菌乳茶「急速冷凍」超涼爽！！\n歡迎大家回家DIY做「八曜冰棒杯」",
+        "like": 68,
+        "comment": 2,
+        "share": 29
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 1416.0,
+        "content": "「曜頭有三個願望」感謝大家的祝福能量:祝:",
+        "like": 181,
+        "comment": 7,
+        "share": 407
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 841.0,
+        "content": "桌上一樣是放「八曜和茶」在旁邊\n炎夏解渴提升工作效率，成功者的味道504",
+        "like": 719,
+        "comment": 4,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 157.0,
+        "content": "今天的試喝是「燕香妃荔」\n感受荔枝燕麥奶，清爽嘴裡爆炸的感覺:火上之心::火上之心:",
+        "like": 68,
+        "comment": 4,
+        "share": 27
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 684.0,
+        "content": "今天 7/14 浪煎龍片504正式上市！\n「五杯屬於成功者的味道」",
+        "like": 184,
+        "comment": 1,
+        "share": 166
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 315.0,
+        "content": "這篇文的愛心浮動，跟看當沖盤一樣刺激",
+        "like": 152,
+        "comment": 2,
+        "share": 53
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 370.0,
+        "content": "渴到爛掉怎麼工作？\n順便幫同事帶一杯:红桃:柚香覺醒307",
+        "like": 114,
+        "comment": 5,
+        "share": 82
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 640.0,
+        "content": "7/14 「浪煎龍片」5杯重磅登場！！死了都要愛",
+        "like": 49,
+        "comment": 3,
+        "share": 195
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 967.0,
+        "content": "什麼是煎熬？\n就是等待「八曜X 漂遊者森林音樂祭」聯名",
+        "like": 123,
+        "comment": 2,
+        "share": 280
+      },
+      {
+        "sentiment_score": 0.72,
+        "popularity_score": 2798.0,
+        "content": "什麼？你家樓下就有八曜？",
+        "like": 445,
+        "comment": 53,
+        "share": 749
+      },
+      {
+        "sentiment_score": 0.44999999999999996,
+        "popularity_score": 231.0,
+        "content": "後來曜頭回家查查原來是偉士牌（Vespa）\n《羅馬假期》奧黛麗赫本騎的那台\n意外引出車車小編？？",
+        "like": 97,
+        "comment": 4,
+        "share": 42
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 2145.0,
+        "content": "夏天的炎熱彷彿「擱淺」一樣\n來點「柚香覺醒307」甘酸清爽解渴",
+        "like": 206,
+        "comment": 5,
+        "share": 643
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 119.0,
+        "content": "在外打拼的你，多久沒有回家了？\n帶杯飲料回家跟家人聊聊天珍惜時光。",
+        "like": 74,
+        "comment": 0,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 723.0,
+        "content": "（ㄧ）目前幾間待開幕門市\n都正在裝潢中以及進行員工訓練，開幕將至我們會另行公告日期以及優惠活動。",
+        "like": 506,
+        "comment": 5,
+        "share": 69
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 287.0,
+        "content": "品味需求直到7/14 八曜新品推出後，一次解決",
+        "like": 90,
+        "comment": 7,
+        "share": 61
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 127.0,
+        "content": "夏天也可以解放輕鬆喝的清爽聖品 504系列\n7/14烤燕麥奶的香氣:红心:無慘也擋不住的焙煎",
+        "like": 72,
+        "comment": 2,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 470.0,
+        "content": "喝太多「柚香覺醒307」想換口味？\n慶祝一次出五杯，只有八曜能超越八曜",
+        "like": 219,
+        "comment": 1,
+        "share": 83
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 113.0,
+        "content": "「燕香妃荔504燕麥奶」 7/14正式登場",
+        "like": 51,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 4477.0,
+        "content": "玲拿啊勒，打開原來是買一送一券\n曜頭決定好好發揮\n——————-\n7/14前 標記八曜和茶",
+        "like": 2330,
+        "comment": 286,
+        "share": 525
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 1572.0,
+        "content": "忘記我是在Line，不小心回老闆幹話\n完蛋…出事了阿北..",
+        "like": 1308,
+        "comment": 9,
+        "share": 82
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 339.0,
+        "content": "不忍了，直球對決祖克叔叔",
+        "like": 325,
+        "comment": 7,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 517.0,
+        "content": "如果祖克柏叔叔來台灣\n我一定會請他入境喝到出境",
+        "like": 335,
+        "comment": 1,
+        "share": 60
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 458.0,
+        "content": "不只是曜頭\n這也是八曜全體人員的努力被看見\n我們致力於與大家無論是線上還是門市",
+        "like": 178,
+        "comment": 8,
+        "share": 88
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 187.0,
+        "content": "曜頭：先生你要什麼呢？\n客人：我要一杯..*^%！\n（一台排氣管改超大聲的車衝過去）",
+        "like": 119,
+        "comment": 1,
+        "share": 22
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 75.0,
+        "content": "聽說脆上會偵測太像廣告的文\n只好派出忍術迷因之術",
+        "like": 49,
+        "comment": 1,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 100.0,
+        "content": "1902年「空調系統」誕生，\n但不是給人吹的，目的是為印刷品除濕，\n所以世界上第一個吹冷氣的，不是人類",
+        "like": 47,
+        "comment": 1,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 651.0,
+        "content": "科普一下\n村田是鬼滅最後四肢健全，活到最後的路人\n俗稱「路柱」",
+        "like": 535,
+        "comment": 4,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 331.0,
+        "content": "7月14日\n同步推出五款八曜「浪煎龍片504」系列茶品",
+        "like": 150,
+        "comment": 11,
+        "share": 53
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 67.0,
+        "content": "八曜和茶「浪煎龍片504」\n龍片問世，重新定義綠茶之姿。",
+        "like": 14,
+        "comment": 1,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 951.0,
+        "content": "天氣熱monkey喝八曜，喝到茫去",
+        "like": 862,
+        "comment": 25,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 285.0,
+        "content": "全台有12%人處於慢性失眠\n晚上明明都有睡著，起床後卻還是覺得很累",
+        "like": 196,
+        "comment": 1,
+        "share": 29
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 90.0,
+        "content": "嚇到了吧",
+        "like": 40,
+        "comment": 1,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 1150.0,
+        "content": "因為八曜就是為您創造，幸福的「第八天」\n曜是日本星期的意思，八的日文名HACHI",
+        "like": 939,
+        "comment": 5,
+        "share": 67
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 309.0,
+        "content": "念你不如念柚香覺醒307",
+        "like": 123,
+        "comment": 12,
+        "share": 54
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 349.0,
+        "content": "「歌唱音樂比賽規則」：\n1,歌詞中要提到「八曜和茶」、「漂游者」\n2,可以使用各種樂器、混音、發揮你的想像力\n3.不得使用AI音樂製作(給人類一點機會)\n4.音樂活動截止日6/26到7/1\n5.留言方...",
+        "like": 55,
+        "comment": 3,
+        "share": 96
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 607.0,
+        "content": "Like 八曜and tea 真的 good good drink",
+        "like": 485,
+        "comment": 1,
+        "share": 40
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 378.0,
+        "content": "你可能會忘記曜頭，但絕對忘不了\n柚香覺醒307",
+        "like": 149,
+        "comment": 5,
+        "share": 73
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 138.0,
+        "content": "只好靠著九妹跟魚乾剛好手上拿著的\n「柚香覺醒307」將元氣補到放假",
+        "like": 93,
+        "comment": 0,
+        "share": 15
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 495.0,
+        "content": "感謝",
+        "like": 327,
+        "comment": 0,
+        "share": 56
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 880.0,
+        "content": "觀看數超過全台人數\n都還有人不知道「柚香覺醒307」\n這可是連壽山的猴子都搶來喝過的神飲",
+        "like": 513,
+        "comment": 8,
+        "share": 117
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 844.0,
+        "content": "曜頭現在正在用Spotify聽\n「八曜ㄦㄦ菌主題曲」",
+        "like": 62,
+        "comment": 4,
+        "share": 258
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 346.0,
+        "content": "但曜頭打不過太陽，只能採取防禦措施\n就是來點清爽的柚香覺醒307，預防太陽攻擊",
+        "like": 147,
+        "comment": 2,
+        "share": 65
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 1827.0,
+        "content": "買商標包字比買衣服包色還刺激\n這種刺激大概跟帶一大包八曜回家一樣爽",
+        "like": 1323,
+        "comment": 6,
+        "share": 164
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 1794.0,
+        "content": "八曜多重宇宙，曜就一起征服",
+        "like": 1374,
+        "comment": 6,
+        "share": 136
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 136.0,
+        "content": "這麼早朋友就在裝醉是要幹嘛？",
+        "like": 74,
+        "comment": 1,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 244.0,
+        "content": "擋不住的魅力,一口讓你無法思考",
+        "like": 121,
+        "comment": 3,
+        "share": 39
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 549.0,
+        "content": "請大家接收到類似訊息，請向本人或朋友確認消息是否屬實，避免貿然提供銀行或是個人資料，以防受騙財損。",
+        "like": 325,
+        "comment": 1,
+        "share": 74
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 1993.0,
+        "content": "如果才藝太奇葩可以附上圖片或影片:爆米花:",
+        "like": 112,
+        "comment": 0,
+        "share": 627
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 93.0,
+        "content": "最近的太陽太毒辣，來一杯冰涼超順暢:冰块:",
+        "like": 52,
+        "comment": 1,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 298.0,
+        "content": "今夜是台語電台，歡迎大家畫單K歌",
+        "like": 40,
+        "comment": 0,
+        "share": 86
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 418.0,
+        "content": "排隊時站前面的突然點20杯",
+        "like": 235,
+        "comment": 6,
+        "share": 57
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 624.0,
+        "content": "今天曜頭不打廣告，就想開放討論\n大家對於「博愛座的定義」",
+        "like": 331,
+        "comment": 4,
+        "share": 95
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 275.0,
+        "content": "音樂祭，陽光火辣\n喝八曜就可以自己騎帥檔車參加",
+        "like": 71,
+        "comment": 0,
+        "share": 68
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 213.0,
+        "content": "曜頭推薦最頂飲料品項都在這裡了",
+        "like": 90,
+        "comment": 3,
+        "share": 39
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 399.0,
+        "content": "我只害怕，喝不到柚香覺醒307",
+        "like": 130,
+        "comment": 1,
+        "share": 89
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 905.0,
+        "content": "如果你按了好幾次重新整理\n代表你不止偷偷的關注曜頭長什麼樣子:红心:",
+        "like": 554,
+        "comment": 6,
+        "share": 113
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 184.0,
+        "content": "新聞連結\n話說我是「八曜和茶」不是「八曜茶坊」啦:笑哭了:",
+        "like": 116,
+        "comment": 4,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 1339.0,
+        "content": "八曜也有小彩蛋",
+        "like": 803,
+        "comment": 13,
+        "share": 170
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 966.0,
+        "content": "如果是勇者欣梅爾，他也會騎馬來八曜",
+        "like": 564,
+        "comment": 0,
+        "share": 134
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 277.0,
+        "content": "今天好熱好熱，解渴讓你好爽好爽",
+        "like": 100,
+        "comment": 3,
+        "share": 57
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 538.0,
+        "content": "通常台灣人上下班交通的時候\n腦袋大部分是怒怒在控制",
+        "like": 488,
+        "comment": 19,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 1881.0,
+        "content": "歡迎大家來杯柚香覺醒307\n來博覽會逛逛",
+        "like": 227,
+        "comment": 2,
+        "share": 550
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 260.0,
+        "content": "這是柚香覺醒307\n在袋子裡把我的手機解鎖錄到的畫面",
+        "like": 190,
+        "comment": 2,
+        "share": 22
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 651.0,
+        "content": "新聞連結:反手食指向下指:",
+        "like": 148,
+        "comment": 4,
+        "share": 165
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 302.0,
+        "content": "最膩的當然還是門市的夥伴們\n想聽八曜音樂可以到YouTube搜尋「八曜和茶」",
+        "like": 178,
+        "comment": 2,
+        "share": 40
+      },
+      {
+        "sentiment_score": 0.63,
+        "popularity_score": 623.0,
+        "content": "@跟X雖然圖案很像，常常容易按錯\n是點開完全是不同的世界",
+        "like": 527,
+        "comment": 30,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 885.0,
+        "content": "好喝的話小聲的告訴旁邊的人",
+        "like": 354,
+        "comment": 3,
+        "share": 175
+      },
+      {
+        "sentiment_score": 0.6499999999999999,
+        "popularity_score": 219.0,
+        "content": "粽子吃多了，需要來點解膩神器",
+        "like": 44,
+        "comment": 2,
+        "share": 57
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 2338.0,
+        "content": "3點了",
+        "like": 2099,
+        "comment": 64,
+        "share": 37
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 5555.0,
+        "content": "通常是男生容易被「情勒」，還是女生？\n.\n.\n.\n.\n都不是，是小編\n誰懂被一百萬個人標記回文的感覺？",
+        "like": 5152,
+        "comment": 122,
+        "share": 53
+      },
+      {
+        "sentiment_score": 0.8799999999999999,
+        "popularity_score": 443.0,
+        "content": "通常禮拜一是最辛苦的一天\n但端午節禮拜一剛好遇到放假",
+        "like": 387,
+        "comment": 28,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 349.0,
+        "content": "端午節，胡搞蝦搞",
+        "like": 311,
+        "comment": 16,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 2299.0,
+        "content": "如果你今天吃的是阿嬤親手包的肉粽",
+        "like": 1983,
+        "comment": 65,
+        "share": 62
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 1065.0,
+        "content": "其他小編你們加油\n曜頭我要去度假:沙滩伞:",
+        "like": 959,
+        "comment": 38,
+        "share": 10
+      },
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 7675.0,
+        "content": "是八「曜」和茶，\n不是八「耀」和茶，鞋感",
+        "like": 6546,
+        "comment": 179,
+        "share": 257
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 861.0,
+        "content": "今天被標記一百萬篇「召喚文」回不完",
+        "like": 751,
+        "comment": 43,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 166.0,
+        "content": "被召喚完應該也要有回血CD吧\n召喚八曜這跟開掛沒兩樣",
+        "like": 98,
+        "comment": 1,
+        "share": 22
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 656.0,
+        "content": "幫你止住那一場渴，也是我最後的溫柔",
+        "like": 166,
+        "comment": 2,
+        "share": 162
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 2125.0,
+        "content": "今天終於到第470萬個粉絲了",
+        "like": 2023,
+        "comment": 48,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 444.0,
+        "content": "端午連假，給我去八曜喔",
+        "like": 217,
+        "comment": 10,
+        "share": 69
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 337.0,
+        "content": "八曜無咖啡因系列，讓你絕對睡得著又解渴",
+        "like": 148,
+        "comment": 0,
+        "share": 63
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 252.0,
+        "content": "油膩的肉粽搭配清爽的八曜解膩:红心:\n好好放粽一下",
+        "like": 183,
+        "comment": 0,
+        "share": 23
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 875.0,
+        "content": "我們的ㄦㄦ動畫\n也是用他的RTX4080做出來的",
+        "like": 716,
+        "comment": 3,
+        "share": 51
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 177.0,
+        "content": "好喝到路上遇到魔物，被搶走的機會很高",
+        "like": 66,
+        "comment": 0,
+        "share": 37
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 74.0,
+        "content": "那就要首選8款\n超強八曜「解渴聖品」:红心:",
+        "like": 44,
+        "comment": 3,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 392.0,
+        "content": ":叉号:來我家看貓咪後空翻",
+        "like": 348,
+        "comment": 19,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 836.0,
+        "content": "今天簽到刷一排666\n到年底一路順暢666",
+        "like": 450,
+        "comment": 193,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 964.0,
+        "content": "很多人看到我，其實不太會按愛心",
+        "like": 906,
+        "comment": 29,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.78,
+        "popularity_score": 528.0,
+        "content": "沒毛病",
+        "like": 140,
+        "comment": 2,
+        "share": 128
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 164.0,
+        "content": "端午節立蛋？不如立八曜",
+        "like": 33,
+        "comment": 1,
+        "share": 43
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 996.0,
+        "content": "八曜和茶「別無他牌」之聲明",
+        "like": 896,
+        "comment": 32,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 655.0,
+        "content": "曜頭私藏最愛聽的團\n.\n.\n.\n.\n「就愛韓德爾」",
+        "like": 577,
+        "comment": 12,
+        "share": 18
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 236.0,
+        "content": "下午茶一定要選八曜和風茶吧:红心:",
+        "like": 109,
+        "comment": 2,
+        "share": 41
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 146.0,
+        "content": "以下是參與\nMinecraft 蓋門市活動的「參加獎」\n留作品曜粉可:得:「3杯柚香覺醒307」",
+        "like": 44,
+        "comment": 9,
+        "share": 28
+      }
+    ],
+    "麻古": [
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 76.0,
+        "content": "買一送一",
+        "like": 45,
+        "comment": 5,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.79,
+        "popularity_score": 56.0,
+        "content": "辦公室日常",
+        "like": 13,
+        "comment": 20,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 112.0,
+        "content": "母親節快樂:花束:",
+        "like": 8,
+        "comment": 49,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 134.0,
+        "content": "滑個手機，看到社群有人在傳好康\n但……全都是亂碼 @ @\n有人幫小編解密一下嗎？:带单片眼镜的脸:",
+        "like": 84,
+        "comment": 1,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 45.0,
+        "content": "",
+        "like": 2,
+        "comment": 20,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.69,
+        "popularity_score": 87.0,
+        "content": ":脑: 金萱知識問答篇｜你有多懂金萱？\n:风吹叶落: 1.金萱是什麼茶？\nM. 青茶\nA. 綠茶\nC. 紅茶\nU. 烏龍茶",
+        "like": 41,
+        "comment": 20,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 26.0,
+        "content": "我有超過300杯的高山金萱茶 你有超頂創意喝法嗎:吐舌:\n機會是自己爭取來的\n快參加活動:反手食指向右指:",
+        "like": 22,
+        "comment": 2,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 156.0,
+        "content": "手搖控",
+        "like": 16,
+        "comment": 40,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.33999999999999997,
+        "popularity_score": 94.0,
+        "content": "聽說最近公仔圖很紅:礼物::泰迪熊:\n那你知道麻古的蕃茄梅蜜也很紅嗎？:西红柿::爆炸:\n是說……\n蕃茄到底是蔬菜，還是水果啊？（我們放棄思考）",
+        "like": 79,
+        "comment": 6,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 160.0,
+        "content": "最愛這種挑戰時刻 :肌肉:",
+        "like": 88,
+        "comment": 15,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 1636.0,
+        "content": ":热带水果饮料:嗨大家好，我們是麻古的小編:胜利手势:\n從今天開始，我們會在 Threads 跟你們說說心裡話～",
+        "like": 906,
+        "comment": 362,
+        "share": 2
+      }
+    ],
+    "迷客夏": [
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 90.0,
+        "content": "「𝗛å𝗳𝗮 𝗔𝗱𝗮𝗶！(𝗛𝗲𝗹𝗹𝗼!)」＼喝一口，到關島／\n𝟱/𝟳 起 𝟯款芒果聯名飲品沁涼登場:芒果:",
+        "like": 33,
+        "comment": 3,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 35.0,
+        "content": "＼陽光、關島、迷客夏／𝗦𝘂𝗺𝗺𝗲𝗿 𝗶𝘀 𝗰𝗼𝗺𝗶𝗻𝗴 .ᐟ.ᐟ\n迷客夏夏季杯 𝟱/𝟳 清涼登場:闪亮:",
+        "like": 33,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.6699999999999999,
+        "popularity_score": 6877.0,
+        "content": "愚人節",
+        "like": 2707,
+        "comment": 45,
+        "share": 1360
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 81.0,
+        "content": ":闪亮:優惠➋【門市現場限定-雙週驚喜馬拉松】\n:蓝色小菱形:𝟯/𝟱~𝟯/𝟭𝟴:蓝色小菱形:\n𝟮杯茶拿鐵系列 $𝟵𝟵 (南部價) $𝟭𝟬𝟵(北部價)\n:蓝色小菱形:𝟯/𝟭𝟵~𝟰/𝟭:蓝色小菱形:\n消費...",
+        "like": 29,
+        "comment": 2,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 71.0,
+        "content": "聽說最近烏龍茶狂熱來襲:火焰:\n那怎麼還沒喝過國際認證的 #琥珀高峰烏龍？",
+        "like": 58,
+        "comment": 2,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.53,
+        "popularity_score": 851.0,
+        "content": "#迷粉福利社\n活動期間：即日起~𝟮𝟬𝟮𝟱/𝟮/𝟭𝟯(三) 中午𝟭𝟮:𝟬𝟬\n活動辦法：此篇貼文底下@𝘁𝗮𝗴 一位朋友，並寫出三題之正確解答\n迷編將抽出𝟯位幸運小迷粉，各送出 #元宵大禮包𝟭份",
+        "like": 123,
+        "comment": 334,
+        "share": 20
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 41.0,
+        "content": "迷編要蜂掉！！！\n太可愛了吧:花痴::花痴::花痴::花痴::花痴:",
+        "like": 29,
+        "comment": 6,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 14.0,
+        "content": "就是蜂蜜 就是「蜂」對決\n究竟哪一味最得路人心 ？",
+        "like": 10,
+        "comment": 2,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 18.0,
+        "content": "發現了嗎:双眼:？",
+        "like": 12,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.44999999999999996,
+        "popularity_score": 24.0,
+        "content": "\\ 這麼卡哇伊的 蜜蜂杯套 你怎麼還沒有:指向观察者的食指: /",
+        "like": 22,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 227.0,
+        "content": "#就是蜂蜜紅茶:蜂蜜:𝟭𝟬𝟬% 純龍眼蜜結合招牌人氣娜杯紅茶，花蜜香交織焦香茶韻，就是甜而不膩！\n#就是蜂蜜拿鐵:蜂蜜:純龍眼蜜融合娜杯紅茶、綠光鮮奶，甘甜滑順的絕佳搭配，就是香醇滑順！\n#祕密的蜜蜜...",
+        "like": 111,
+        "comment": 4,
+        "share": 36
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 271.0,
+        "content": "𝗕𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲𝗲..... :蜜蜂:",
+        "like": 265,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 20.0,
+        "content": "那個~如果嫌大安森林公園太遠的人\n就跟著迷編挑戰一次吸12顆珍珠求新年好運吧！",
+        "like": 18,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 75.0,
+        "content": "大安森林公園",
+        "like": 61,
+        "comment": 1,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 41.0,
+        "content": "聖誕節",
+        "like": 35,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 48.0,
+        "content": "同步感謝每一位支持迷客夏的朋友\n綠光公益計劃 「買𝟲杯捐𝟲元」持續進行𝗶𝗻𝗴...\n計劃推動以來將邁入第𝟭𝟬屆\n我們已支助 :反手食指向右指_较浅肤色:𝟯𝟮 家公益團體\n𝟮𝟬𝟮𝟰年度已捐贈 :反手食指...",
+        "like": 40,
+        "comment": 1,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 471.0,
+        "content": "chillguy",
+        "like": 326,
+        "comment": 2,
+        "share": 47
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 1103.0,
+        "content": "chillguy",
+        "like": 738,
+        "comment": 4,
+        "share": 119
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 1718.0,
+        "content": "聖誕節",
+        "like": 1445,
+        "comment": 3,
+        "share": 89
+      },
+      {
+        "sentiment_score": 0.8899999999999999,
+        "popularity_score": 3043.0,
+        "content": "12強",
+        "like": 1036,
+        "comment": 846,
+        "share": 105
+      },
+      {
+        "sentiment_score": 0.73,
+        "popularity_score": 37.0,
+        "content": "焙茶系盲測悄悄在迷客夏 總部殘酷展開.....\n同仁味覺親測，為你揭開焙茶系的風味精隨 吧(?):墨镜笑脸:",
+        "like": 23,
+        "comment": 7,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 23.0,
+        "content": "台南",
+        "like": 21,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.35,
+        "popularity_score": 19.0,
+        "content": "聞香、啜飲、猜測\n有人味覺失靈、有人信心十足\n究竟誰能精準猜出焙茶風味？",
+        "like": 17,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 196.0,
+        "content": "飲品甜點化創新風味 別錯過:反手食指向下指:\n焙茶 X 鮮奶 X 綿密芋泥，打造飲品版蒙布朗 #焙焙芋頭蒙布朗\nQ彈口感，帶焦糖&黑糖香氣 #焦糖布蕾",
+        "like": 121,
+        "comment": 9,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 486.0,
+        "content": "",
+        "like": 282,
+        "comment": 45,
+        "share": 38
+      },
+      {
+        "sentiment_score": 0.6,
+        "popularity_score": 80.0,
+        "content": ":黑心:黑糖&紫芋魔力來襲:紫心:\n萬聖節 喝了才應景:鬼:",
+        "like": 76,
+        "comment": 2,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 825.0,
+        "content": "",
+        "like": 403,
+        "comment": 70,
+        "share": 94
+      },
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 68.0,
+        "content": "朝等紅茶",
+        "like": 56,
+        "comment": 6,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 49.0,
+        "content": "",
+        "like": 34,
+        "comment": 6,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.74,
+        "popularity_score": 226.0,
+        "content": "朝等紅茶",
+        "like": 109,
+        "comment": 33,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 62.0,
+        "content": "朝等紅茶 的諧音梗\n你猜到了嗎(⁎⁍̴̛ᴗ⁍̴̛⁎) :反手食指向下指:",
+        "like": 16,
+        "comment": 2,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 384.0,
+        "content": "開學季來臨.......迷客夏新夥伴報到:举双手:",
+        "like": 146,
+        "comment": 11,
+        "share": 72
+      },
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 85.0,
+        "content": ":喇叭:迷編來號召各界帥哥美女了:喇叭:",
+        "like": 77,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 43.0,
+        "content": "謝謝",
+        "like": 41,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.5,
+        "popularity_score": 49.0,
+        "content": "文博會:双眼:",
+        "like": 45,
+        "comment": 2,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.6799999999999999,
+        "popularity_score": 78.0,
+        "content": "台灣文博會",
+        "like": 73,
+        "comment": 1,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 94.0,
+        "content": "迷粉們有發現今天的杯子出現了文博會主視覺以及𝟯大超可愛𝗜𝗣嗎？:花痴:",
+        "like": 54,
+        "comment": 20,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 53.0,
+        "content": "",
+        "like": 51,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 10440.0,
+        "content": "",
+        "like": 2254,
+        "comment": 37,
+        "share": 2704
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 50.0,
+        "content": "精彩的定向飛靶賽事迷編看得好興奮啊啊啊！！！！！！\n恭喜李孟遠拿下勝利:致敬::致敬::致敬:\n迷客夏歡慶奪牌:铜牌: 買一送一",
+        "like": 28,
+        "comment": 11,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 2143.0,
+        "content": "迷客夏國際股份有限公司是一家在台灣設立登記的公司，研發、營運等團隊皆根留台灣。現任經營團隊完全理解消費者的疑慮及困惑，因此面對前天發生的事件，我們選擇發布正式聲明，堅定立場和態度。",
+        "like": 1249,
+        "comment": 144,
+        "share": 202
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 26060.0,
+        "content": "#迷客夏是臺灣品牌",
+        "like": 19000,
+        "comment": 677,
+        "share": 1902
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 99.0,
+        "content": ":蓝色小菱形:活動日期：即日起至𝟮𝟬𝟮𝟰/𝟴/𝟭𝟭\n:蓝色小菱形:應援方式：追蹤迷客夏𝗧𝗵𝗿𝗲𝗮𝗱𝘀，在夏季限定微笑杯寫上想要加油的選手，拍照張貼在本篇貼文底下，同時寫下你想對選手說的話。\n:蓝色小菱...",
+        "like": 51,
+        "comment": 18,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 57.0,
+        "content": "輕纖蕎麥茶",
+        "like": 22,
+        "comment": 16,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.62,
+        "popularity_score": 193.0,
+        "content": "聽到有人呼喚我們:耳朵_较浅肤色:\n現在迷客夏也喝得到蕎麥茶了！！！！！！",
+        "like": 123,
+        "comment": 35,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 98.0,
+        "content": ":闪亮:粉綠豆鮮奶冰沙:闪亮:\n首！波！限！量！上！市！",
+        "like": 70,
+        "comment": 14,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8,
+        "popularity_score": 83.0,
+        "content": "國際珍奶日",
+        "like": 69,
+        "comment": 7,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 51.0,
+        "content": "到底！怎麼有這麼多葡萄？\n而且我還都認識:花痴:",
+        "like": 49,
+        "comment": 1,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 70.0,
+        "content": "",
+        "like": 47,
+        "comment": 7,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.8600000000000001,
+        "popularity_score": 177.0,
+        "content": "喝一口繼續走",
+        "like": 169,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.44999999999999996,
+        "popularity_score": 55.0,
+        "content": "指定門市消費葡萄初戀季系列飲品:葡萄:\n買𝟰杯+$𝟭𝟮𝟬元、買𝟲杯即贈𝗞𝗜𝗡𝗚𝗝𝗨𝗡野餐周邊",
+        "like": 43,
+        "comment": 6,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 1160.0,
+        "content": "大家都知道我們是「迷客夏」嗎？\n不是迷克夏也不是約克夏，望周知。",
+        "like": 990,
+        "comment": 85,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8799999999999999,
+        "popularity_score": 310.0,
+        "content": "\\ 迷點會員 限時獨享優惠 /\n:扩音器:𝟰/𝟭𝟮-𝟰/𝟭𝟰 購買初戀葡萄季，限時贈送𝟭𝟬元飲品折價券（𝟰/𝟭𝟱-𝟰/𝟭𝟳使用）！",
+        "like": 284,
+        "comment": 13,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 666.0,
+        "content": "",
+        "like": 428,
+        "comment": 119,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 517.0,
+        "content": "我就不信發迷客夏的葡萄初戀季會有人按讚",
+        "like": 437,
+        "comment": 40,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 3234.0,
+        "content": "也祝福大家有個美好的連假",
+        "like": 3216,
+        "comment": 9,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 55.0,
+        "content": "迷粉們還好嗎？:恳求的脸:\n大家要注意安全，我們都要好好的:做成心形的双手_较浅肤色:！",
+        "like": 51,
+        "comment": 2,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 68.0,
+        "content": "𝟯/𝟮𝟭-𝟯/𝟮𝟮 快閃兩日限時優惠:火焰:\n購買葡萄系列飲品 享下次消費同系列折𝟭𝟬元\n限量𝟱𝟬𝟬𝟬份 快發完了趕快上車！！！",
+        "like": 52,
+        "comment": 8,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8400000000000001,
+        "popularity_score": 84.0,
+        "content": "安安，大家好久不見！\n春天要來了，還有誰沒喝過迷客夏的葡萄初戀季呢？",
+        "like": 56,
+        "comment": 14,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 160.0,
+        "content": "",
+        "like": 64,
+        "comment": 48,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 25.0,
+        "content": "",
+        "like": 17,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 199.0,
+        "content": ":龙头:初二回娘家 新年快樂\n今天大家有沒有去哪裡玩？還是都宅在家？",
+        "like": 187,
+        "comment": 6,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 1149.0,
+        "content": "寶們 新年快樂 :焰火:\n怎麼大家都說按讚會有:龙头:跑出來\n是真的嗎？！",
+        "like": 1073,
+        "comment": 38,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8699999999999999,
+        "popularity_score": 83.0,
+        "content": "就用這隻特別的牛:奶牛头: 來跟大家拜個年～\n祝大家龍年行大運 好運龍總來:红包:",
+        "like": 77,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.32999999999999996,
+        "popularity_score": 49.0,
+        "content": "【小編掏心聊天室】",
+        "like": 41,
+        "comment": 4,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 218.0,
+        "content": "",
+        "like": 113,
+        "comment": 48,
+        "share": 3
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 190.0,
+        "content": "今天，成為全台最高手搖飲店:挥手::墨镜笑脸:\n-\n:闪亮:迷客夏臺北𝟭𝟬𝟭觀景店:闪亮: 盛大開幕\n在 𝟴𝟵𝗙 邊喝高品質飲品 邊欣賞台北景色",
+        "like": 174,
+        "comment": 8,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 660.0,
+        "content": "",
+        "like": 549,
+        "comment": 54,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 796.0,
+        "content": ":闪亮:迷客夏電子飲料折抵券* 20張:闪亮: 1位幸運小迷粉 (每張價值 $65元)\n:闪亮:新台味系列電子兌換券* 10張:闪亮: 1位幸運小迷粉\n:闪亮:KINGJUN聯名琺瑯杯* 1個:闪亮:...",
+        "like": 343,
+        "comment": 216,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 284.0,
+        "content": "",
+        "like": 250,
+        "comment": 17,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.42,
+        "popularity_score": 233.0,
+        "content": "感謝寶請我們喝下午茶\n聽說你剛剛打來要跟我說你也收到禮物了",
+        "like": 149,
+        "comment": 42,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.39,
+        "popularity_score": 961.0,
+        "content": "脆上那些說喜歡我的人 我是不知道是不是只是說說而已\n敢不敢截圖你有追蹤迷客夏IG的照片給小編看\n證明你是真的愛我的（在線等",
+        "like": 629,
+        "comment": 166,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 53.0,
+        "content": "沒在跟你開玩笑\n你說對吧",
+        "like": 47,
+        "comment": 3,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 552.0,
+        "content": "",
+        "like": 456,
+        "comment": 48,
+        "share": 0
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 517.0,
+        "content": "",
+        "like": 390,
+        "comment": 62,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.44,
+        "popularity_score": 3715.0,
+        "content": "第一則串文",
+        "like": 3474,
+        "comment": 116,
+        "share": 3
+      }
+    ],
+    "再睡五分鐘": [
+      {
+        "sentiment_score": 0.7,
+        "popularity_score": 801.0,
+        "content": "今天滑 ig只有看到白光的\n可以來測試一下視力:双眼:",
+        "like": 747,
+        "comment": 21,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.41,
+        "popularity_score": 1026.0,
+        "content": "正常心跳：___/\\_____/\\___\n薪水入帳的心跳：_/\\__/\\__/\\_\n今天搶到日幣的心跳：/\\/\\/\\/\\/\\/\\/\\\n搶到日幣發現沒有生活費的心跳：________",
+        "like": 998,
+        "comment": 2,
+        "share": 8
+      },
+      {
+        "sentiment_score": 0.5700000000000001,
+        "popularity_score": 1240.0,
+        "content": "你以為一天喝的是：\n:汗滴::汗滴::汗滴::汗滴::汗滴:",
+        "like": 1185,
+        "comment": 2,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.4,
+        "popularity_score": 653.0,
+        "content": "明天要上班上課還睡不著ㄉ\n可以試試蕎蕎洋甘菊 好眠到天亮:打呵欠:",
+        "like": 14,
+        "comment": 312,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.81,
+        "popularity_score": 374.0,
+        "content": "有人的 IG 也更新功能了嗎:双感叹号:\n終於可以自訂貼文順序:放声大哭:",
+        "like": 342,
+        "comment": 10,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.37,
+        "popularity_score": 490.0,
+        "content": "聽說今天是 4/11 國際寵物日:闪亮:\n想到門市也養了一隻可愛的樹懶\n和大家分享一下( ´▽` )ﾉ",
+        "like": 420,
+        "comment": 32,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.61,
+        "popularity_score": 6707.0,
+        "content": "明天上班的午餐也幫你想好ㄌ！\n（可以順便帶一杯牛肉麵奶蓋回去請老闆喝:伪装的脸:）",
+        "like": 69,
+        "comment": 3280,
+        "share": 26
+      },
+      {
+        "sentiment_score": 0.3,
+        "popularity_score": 4483.0,
+        "content": "闆娘好像不是開玩笑的⋯\n居然找了幫手一起練習做菜\n賣相看起來不錯 就是不知道味道如何:想一想:",
+        "like": 4182,
+        "comment": 92,
+        "share": 39
+      },
+      {
+        "sentiment_score": 0.78,
+        "popularity_score": 2055.0,
+        "content": "老闆說手搖飲做了5年，想來點新鮮的",
+        "like": 1769,
+        "comment": 140,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.75,
+        "popularity_score": 8826.0,
+        "content": "暈船仔們不要再等訊息了\nEmo 睡不著也等不到 只會等到黑眼圈",
+        "like": 63,
+        "comment": 4314,
+        "share": 45
+      },
+      {
+        "sentiment_score": 0.6599999999999999,
+        "popularity_score": 2438.0,
+        "content": "明天也想喝飲料ㄉ人\n以下偷偷放送福利:松了口气:",
+        "like": 70,
+        "comment": 1160,
+        "share": 16
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 1531.0,
+        "content": "週末到ㄌ 小幫手幫忙送的禮物大家都收到了ㄅ(´･ω･`)",
+        "like": 33,
+        "comment": 728,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.43,
+        "popularity_score": 307.0,
+        "content": "剛剛被追加一題：情人節會有禮物嗎？\n⋯只能說還沒準備禮物的各位",
+        "like": 54,
+        "comment": 119,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.59,
+        "popularity_score": 1671.0,
+        "content": "看完ㄌ 決定向鐘勳看齊\n吃完水果 洗洗睡",
+        "like": 40,
+        "comment": 787,
+        "share": 19
+      },
+      {
+        "sentiment_score": 0.55,
+        "popularity_score": 534.0,
+        "content": "好消息是再睡5分鐘療癒購物派對還有兩天\n品牌週邊全品項有85折優惠\n提供給下班後想報復性消費舒壓ㄉ上班族們",
+        "like": 40,
+        "comment": 241,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.8500000000000001,
+        "popularity_score": 1313.0,
+        "content": "\\ 再睡5分鐘 夥伴招募中！/\n年後轉職:链接:",
+        "like": 78,
+        "comment": 598,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.77,
+        "popularity_score": 534.0,
+        "content": "才剛睡5分鐘 馬上被搖醒:忍住泪水:\n大家都還好嗎:放声大哭:",
+        "like": 464,
+        "comment": 32,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.5800000000000001,
+        "popularity_score": 691.0,
+        "content": "無法體會開心果的一天沒關係\n但你一定要知道這 2 杯用 真實開心果 做成的飲料",
+        "like": 90,
+        "comment": 290,
+        "share": 7
+      },
+      {
+        "sentiment_score": 0.8200000000000001,
+        "popularity_score": 22428.0,
+        "content": "我的心意都展現在紅包袋上ㄌ！\n現在到再睡5分鐘門市結帳金額滿 88 元\n可以獲得蛇年限定品牌紅包:蛇:",
+        "like": 86,
+        "comment": 11000,
+        "share": 114
+      },
+      {
+        "sentiment_score": 0.32,
+        "popularity_score": 814.0,
+        "content": "脆很靈 別亂按\n怕你開工飲料喝太飽:松了口气:",
+        "like": 778,
+        "comment": 15,
+        "share": 2
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 616.0,
+        "content": "千萬不要滑到最後\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n不然你明天可能會飲料喝太飽:流口水:",
+        "like": 548,
+        "comment": 13,
+        "share": 14
+      },
+      {
+        "sentiment_score": 0.64,
+        "popularity_score": 4564.0,
+        "content": "現在大家都流行在留言備註區告白ㄇ？:想一想:",
+        "like": 4427,
+        "comment": 43,
+        "share": 17
+      },
+      {
+        "sentiment_score": 0.38,
+        "popularity_score": 295.0,
+        "content": ":奖杯: TEAM TAIWAN NO.1",
+        "like": 234,
+        "comment": 17,
+        "share": 9
+      },
+      {
+        "sentiment_score": 0.36,
+        "popularity_score": 504.0,
+        "content": "已購買，女友喜歡。",
+        "like": 483,
+        "comment": 3,
+        "share": 5
+      },
+      {
+        "sentiment_score": 0.51,
+        "popularity_score": 1648.0,
+        "content": "你們和朋友一起工作也會這樣嗎？",
+        "like": 1555,
+        "comment": 27,
+        "share": 13
+      },
+      {
+        "sentiment_score": 0.54,
+        "popularity_score": 259.0,
+        "content": "雖然萬聖節倒數不到2小時\n可愛的桌布還是得換起來:南瓜灯:",
+        "like": 245,
+        "comment": 1,
+        "share": 4
+      },
+      {
+        "sentiment_score": 0.49,
+        "popularity_score": 494.0,
+        "content": "全對的人現在都幾歲了？",
+        "like": 408,
+        "comment": 34,
+        "share": 6
+      },
+      {
+        "sentiment_score": 0.8799999999999999,
+        "popularity_score": 107.0,
+        "content": "聽說",
+        "like": 96,
+        "comment": 4,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.8300000000000001,
+        "popularity_score": 230.0,
+        "content": "一天喝幾杯飲料算是合理？",
+        "like": 137,
+        "comment": 45,
+        "share": 1
+      },
+      {
+        "sentiment_score": 0.56,
+        "popularity_score": 178.0,
+        "content": "今天上線的香草奶蓋和香草可可奶昔大家喝了嗎？完成度夠高嗎？",
+        "like": 140,
+        "comment": 1,
+        "share": 12
+      },
+      {
+        "sentiment_score": 0.71,
+        "popularity_score": 174.0,
+        "content": "老闆娘這個台語給過嗎？",
+        "like": 155,
+        "comment": 8,
+        "share": 1
+      }
+    ]
+  },
+  "brand_stats": {
+    "一沐日": {
+      "post_count": 60,
+      "total_likes": 41522,
+      "total_comments": 2485,
+      "total_shares": 12295,
+      "total_forwards": 5468,
+      "total_interactions": 61770,
+      "avg_interactions_per_post": 1389.6166666666666,
+      "interaction_rate": 1.3896166666666665
+    },
+    "八曜": {
+      "post_count": 508,
+      "total_likes": 164193,
+      "total_comments": 5992,
+      "total_shares": 34234,
+      "total_forwards": 165756,
+      "total_interactions": 370175,
+      "avg_interactions_per_post": 548.9744094488188,
+      "interaction_rate": 0.5489744094488188
+    },
+    "麻古": {
+      "post_count": 11,
+      "total_likes": 1304,
+      "total_comments": 540,
+      "total_shares": 66,
+      "total_forwards": 51,
+      "total_interactions": 1961,
+      "avg_interactions_per_post": 234.72727272727272,
+      "interaction_rate": 0.23472727272727273
+    },
+    "迷客夏": {
+      "post_count": 76,
+      "total_likes": 45497,
+      "total_comments": 3639,
+      "total_shares": 6905,
+      "total_forwards": 1502,
+      "total_interactions": 57543,
+      "avg_interactions_per_post": 966.9736842105264,
+      "interaction_rate": 0.9669736842105263
+    },
+    "再睡五分鐘": {
+      "post_count": 31,
+      "total_likes": 19950,
+      "total_comments": 23371,
+      "total_shares": 431,
+      "total_forwards": 14,
+      "total_interactions": 43766,
+      "avg_interactions_per_post": 2193.064516129032,
+      "interaction_rate": 2.193064516129032
+    }
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>視覺化分析 - 飲料社群粉絲專頁分析</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- 引入Plotly.js用於互動式圖表 -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>飲料社群粉絲專頁視覺化分析</h1>
+        <nav>
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="/analysis">品牌比較</a></li>
+                <li><a href="/visualization" class="active">視覺化分析</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="analysis-content">
+        <section class="section-intro">
+            <h2>機器學習分析與視覺化</h2>
+            <p>這個頁面展示了我們使用機器學習和自然語言處理技術對飲料品牌社群數據的分析結果。以下分析基於情感分析、互動率、熱度分數等指標。</p>
+        </section>
+
+        <section class="chart-section sentiment-section">
+            <h3>情感分析與熱度關係</h3>
+            <div class="brand-selector">
+                <label for="brandSelect">選擇品牌：</label>
+                <select id="brandSelect">
+                    {% for brand in brands %}
+                    <option value="{{ brand }}">{{ brand }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div id="sentiment-popularity-chart" class="chart-container"></div>
+            <p class="chart-description">情感分數（0=負面、1=正面）與貼文熱度分數（按讚+2×留言+3×分享）的關係</p>
+        </section>
+
+        <section class="chart-section model-section">
+            <h3>模型性能比較</h3>
+            <div id="model-comparison-chart" class="chart-container"></div>
+            <p class="chart-description">不同機器學習模型在預測貼文熱門度時的表現指標</p>
+        </section>
+
+        <section class="chart-section feature-section">
+            <h3>特徵重要性</h3>
+            <div id="feature-importance-chart" class="chart-container"></div>
+            <p class="chart-description">不同特徵（按讚、留言、分享、情感分數）對預測貼文熱門度的影響程度</p>
+        </section>
+
+        <section class="chart-section methodology-section">
+            <h3>分析方法說明</h3>
+            <div class="method-grid">
+                <div class="method-card">
+                    <h4>熱度分數計算</h4>
+                    <p>每則貼文的熱度分數計算方式為：<br>按讚 + 2×留言 + 3×分享</p>
+                    <p>給予留言和分享更高權重，因為這些互動行為顯示更高的用戶參與度。</p>
+                </div>
+                <div class="method-card">
+                    <h4>情感分析</h4>
+                    <p>使用中文自然語言處理工具對每則貼文內容進行情感分析，分數介於0-1之間。</p>
+                    <p>分數越高代表情感越正面，分數越低代表情感越負面。</p>
+                </div>
+                <div class="method-card">
+                    <h4>熱門貼文標籤</h4>
+                    <p>將所有貼文依熱度分數排序，熱度分數前25%的貼文標記為「熱門」。</p>
+                    <p>機器學習模型用於預測貼文是否會成為熱門貼文。</p>
+                </div>
+                <div class="method-card">
+                    <h4>模型評估指標</h4>
+                    <p>Accuracy（準確率）：預測正確的比例</p>
+                    <p>Precision（精確度）：預測為熱門中實際為熱門的比例</p>
+                    <p>Recall（召回率）：實際熱門中被正確預測的比例</p>
+                    <p>F1-Score：精確度與召回率的調和平均</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 飲料社群粉絲專頁分析 | 資料科學專案</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 選擇品牌下拉框監聽
+            const brandSelect = document.getElementById('brandSelect');
+            brandSelect.addEventListener('change', function() {
+                updateSentimentChart(this.value);
+            });
+
+            // 初始加載
+            updateSentimentChart(brandSelect.value);
+            loadModelComparisonChart();
+            loadFeatureImportanceChart();
+        });
+
+        // 情感分析與熱度圖表
+        function updateSentimentChart(brand) {
+            fetch(`/api/brand_sentiment_popularity/${brand}`)
+                .then(response => response.json())
+                .then(data => {
+                    const trace = {
+                        x: data.map(item => item.sentiment_score),
+                        y: data.map(item => item.popularity_score),
+                        mode: 'markers',
+                        type: 'scatter',
+                        marker: {
+                            size: 12,
+                            color: data.map(item => item.popularity_score),
+                            colorscale: 'Viridis',
+                            showscale: true,
+                            colorbar: {
+                                title: '熱度分數'
+                            }
+                        },
+                        text: data.map(item => 
+                            `內容: ${item.content}<br>` +
+                            `按讚: ${item.like}<br>` +
+                            `留言: ${item.comment}<br>` +
+                            `分享: ${item.share}<br>` +
+                            `熱度: ${item.popularity_score}`
+                        ),
+                        hoverinfo: 'text'
+                    };
+
+                    const layout = {
+                        title: `${brand} 品牌貼文情感分數與熱度關係`,
+                        xaxis: {
+                            title: '情感分數 (0=負面, 1=正面)'
+                        },
+                        yaxis: {
+                            title: '熱度分數'
+                        },
+                        hovermode: 'closest'
+                    };
+
+                    Plotly.newPlot('sentiment-popularity-chart', [trace], layout);
+                })
+                .catch(error => {
+                    console.error('獲取數據失敗:', error);
+                    document.getElementById('sentiment-popularity-chart').innerHTML = 
+                        '<p class="error">無法載入數據。請稍後再試。</p>';
+                });
+        }
+
+        // 模型比較圖表
+        function loadModelComparisonChart() {
+            fetch('/api/popularity_model_comparison')
+                .then(response => response.json())
+                .then(data => {
+                    const models = Object.keys(data);
+                    const metrics = ['Accuracy', 'Precision', 'Recall', 'F1-Score'];
+                    const colors = ['#636EFA', '#EF553B', '#00CC96', '#AB63FA'];
+                    
+                    const traces = metrics.map((metric, i) => {
+                        return {
+                            x: models,
+                            y: models.map(model => data[model][metric]),
+                            name: metric,
+                            type: 'bar',
+                            marker: {
+                                color: colors[i % colors.length]
+                            }
+                        };
+                    });
+
+                    const layout = {
+                        title: '不同模型預測熱門貼文的表現比較',
+                        barmode: 'group',
+                        xaxis: {
+                            title: '模型'
+                        },
+                        yaxis: {
+                            title: '分數',
+                            range: [0, 1]
+                        },
+                        legend: {
+                            orientation: 'h',
+                            y: -0.2
+                        }
+                    };
+
+                    Plotly.newPlot('model-comparison-chart', traces, layout);
+                })
+                .catch(error => {
+                    console.error('獲取數據失敗:', error);
+                    document.getElementById('model-comparison-chart').innerHTML = 
+                        '<p class="error">無法載入數據。請稍後再試。</p>';
+                });
+        }
+
+        // 特徵重要性圖表
+        function loadFeatureImportanceChart() {
+            fetch('/api/feature_importance')
+                .then(response => response.json())
+                .then(data => {
+                    const features = Object.keys(data);
+                    const values = features.map(feat => data[feat]);
+
+                    const trace = {
+                        x: features,
+                        y: values,
+                        type: 'bar',
+                        marker: {
+                            color: '#1e88e5',
+                            line: {
+                                color: '#0d47a1',
+                                width: 1.5
+                            }
+                        },
+                        text: values.map(val => (val * 100).toFixed(1) + '%'),
+                        textposition: 'auto'
+                    };
+
+                    const layout = {
+                        title: '預測貼文熱門度的特徵重要性',
+                        xaxis: {
+                            title: '特徵'
+                        },
+                        yaxis: {
+                            title: '重要性 (比例)',
+                            range: [0, Math.max(...values) * 1.1]
+                        }
+                    };
+
+                    Plotly.newPlot('feature-importance-chart', [trace], layout);
+                })
+                .catch(error => {
+                    console.error('獲取數據失敗:', error);
+                    document.getElementById('feature-importance-chart').innerHTML = 
+                        '<p class="error">無法載入數據。請稍後再試。</p>';
+                });
+        }
+    </script>
+</body>
+</html> 

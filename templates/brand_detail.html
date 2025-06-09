@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ brand_name }} 分析 - 飲料社群粉絲專頁分析</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- 引入Plotly.js用於互動式圖表 -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>{{ brand_name }} 粉絲專頁分析</h1>
+        <nav>
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="/analysis">分析結果</a></li>
+                <li><a href="/visualization">視覺化分析</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="analysis-content">
+        <section class="brand-summary">
+            <h2>{{ brand_name }} 基本數據</h2>
+            <div class="stats-container">
+                <div class="stats-card">
+                    <h3>總貼文數</h3>
+                    <p class="stats-number">{{ stats.post_count }}</p>
+                </div>
+                <div class="stats-card">
+                    <h3>總按讚數</h3>
+                    <p class="stats-number">{{ stats.total_likes }}</p>
+                </div>
+                <div class="stats-card">
+                    <h3>總留言數</h3>
+                    <p class="stats-number">{{ stats.total_comments }}</p>
+                </div>
+                <div class="stats-card">
+                    <h3>總分享數</h3>
+                    <p class="stats-number">{{ stats.total_shares }}</p>
+                </div>
+                <div class="stats-card">
+                    <h3>平均每貼文互動數</h3>
+                    <p class="stats-number">{{ "%.2f"|format(stats.avg_interactions_per_post) }}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h3>月度互動趨勢</h3>
+            <div id="monthly-trend-chart" class="chart-container"></div>
+        </section>
+
+        <section class="chart-section">
+            <h3>互動類型分佈</h3>
+            <div id="interaction-types-chart" class="chart-container"></div>
+        </section>
+
+        <section class="posts-section">
+            <h3>最近貼文分析</h3>
+            <table class="posts-table">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>內容</th>
+                        <th>按讚</th>
+                        <th>留言</th>
+                        <th>分享</th>
+                        <th>總互動</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for post in data[:10] %}
+                    <tr>
+                        <td>{{ post.date }}</td>
+                        <td class="post-content">{{ post.content }}</td>
+                        <td>{{ post.like }}</td>
+                        <td>{{ post.comment }}</td>
+                        <td>{{ post.share }}</td>
+                        <td>{{ post.like + post.comment + post.forward + post.share }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 飲料社群粉絲專頁分析 | 資料科學專案</p>
+    </footer>
+
+    <!-- 將Flask變量傳遞給JavaScript -->
+    <script>
+        // 將後端數據轉換為JavaScript變量
+        var brandName = {{ brand_name|tojson }};
+        var statsData = {
+            totalLikes: {{ stats.total_likes|tojson }},
+            totalComments: {{ stats.total_comments|tojson }},
+            totalForwards: {{ stats.total_forwards|tojson }},
+            totalShares: {{ stats.total_shares|tojson }}
+        };
+    </script>
+
+    <!-- 繪製圖表的JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 月度互動趨勢圖
+            fetch('/api/brand_detail/' + brandName)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    // 月度趨勢圖
+                    var monthlyData = data.monthly_interactions;
+                    var months = monthlyData.map(function(item) {
+                        return item.month;
+                    });
+                    
+                    var trace1 = {
+                        x: months,
+                        y: monthlyData.map(function(item) {
+                            return item.like;
+                        }),
+                        name: '按讚',
+                        type: 'scatter',
+                        mode: 'lines+markers'
+                    };
+                    
+                    var trace2 = {
+                        x: months,
+                        y: monthlyData.map(function(item) {
+                            return item.comment;
+                        }),
+                        name: '留言',
+                        type: 'scatter',
+                        mode: 'lines+markers'
+                    };
+                    
+                    var trace3 = {
+                        x: months,
+                        y: monthlyData.map(function(item) {
+                            return item.share;
+                        }),
+                        name: '分享',
+                        type: 'scatter',
+                        mode: 'lines+markers'
+                    };
+                    
+                    var layout = {
+                        title: '月度互動趨勢',
+                        xaxis: {
+                            title: '月份'
+                        },
+                        yaxis: {
+                            title: '互動數量'
+                        }
+                    };
+                    
+                    Plotly.newPlot('monthly-trend-chart', [trace1, trace2, trace3], layout);
+                    
+                    // 互動類型分佈圖
+                    var pieData = [{
+                        values: [statsData.totalLikes, statsData.totalComments, statsData.totalForwards, statsData.totalShares],
+                        labels: ['按讚', '留言', '轉發', '分享'],
+                        type: 'pie'
+                    }];
+                    
+                    var pieLayout = {
+                        title: '互動類型分佈'
+                    };
+                    
+                    Plotly.newPlot('interaction-types-chart', pieData, pieLayout);
+                })
+                .catch(function(error) {
+                    console.error('獲取數據失敗:', error);
+                });
+        });
+    </script>
+</body>
+</html> 
