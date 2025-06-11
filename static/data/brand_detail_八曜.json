@@ -1,1 +1,96 @@
-{"stats": {"post_count": 508, "total_likes": 164193, "total_comments": 5992, "total_shares": 34234, "total_forwards": 165756, "total_interactions": 370175, "avg_interactions_per_post": 548.9744094488188, "interaction_rate": 0.5489744094488188}, "monthly_interactions": [{"month": "2024-01", "like": 1200, "comment": 300, "forward": 50, "share": 200}, {"month": "2024-02", "like": 1500, "comment": 350, "forward": 60, "share": 250}, {"month": "2024-03", "like": 1800, "comment": 400, "forward": 70, "share": 300}], "content_length_analysis": [{"content_length_group": "0-50", "total_interactions": 100}, {"content_length_group": "51-100", "total_interactions": 150}, {"content_length_group": "101-150", "total_interactions": 200}], "recent_posts": [{"content": "意見不合，沒關係\n但口味不合，可以選擇\n-\n極韻白奶茶\n基底5種風味讓你挑選", "like": 17, "comment": 1, "share": 6, "forward": 0, "date": "2025-5-9", "popularity_score": 37}, {"content": "壓力緊繃的生活節奏\n從心理蔓延到身體\n-\n你需要來一杯無咖啡因的奶茶\n極韻白，給自己放鬆一下", "like": 13, "comment": 1, "share": 18, "forward": 25, "date": "2025-5-8", "popularity_score": 69}, {"content": "母親節給媽媽最好的:红心:", "like": 19, "comment": 1, "share": 29, "forward": 17, "date": "2025-5-7", "popularity_score": 108}, {"content": "母情節帶杯八曜回家\n好好抱抱媽媽聊聊天:红心:", "like": 31, "comment": 2, "share": 11, "forward": 10, "date": "2025-5-4", "popularity_score": 68}, {"content": "看看誰是舞蹈小高手？\n送你八曜綠巨人限量獎品\n5/9（五）公布名單", "like": 24, "comment": 7, "share": 117, "forward": 308, "date": "2025-5-3", "popularity_score": 389}, {"content": "成年人的胃大概能裝1.2～1.6公升\n-\n代表你最多可以一次喝三杯\n「八曜綠巨人白奶茶」:玉米:", "like": 628, "comment": 4, "share": 67, "forward": 286, "date": "2025-5-2", "popularity_score": 837}, {"content": "新竹東區的朋友，久等了:红心:", "like": 1635, "comment": 52, "share": 103, "forward": 0, "date": "2025-5-19", "popularity_score": 2048}, {"content": "如果世界末日，世界上剩下八曜和茶\n-\n你會喝什麼？", "like": 268, "comment": 56, "share": 1, "forward": 0, "date": "2025-5-18", "popularity_score": 383}, {"content": "飲料是聯繫朋友感情的橋樑\n-\n尤其是帶杯「柚香覺醒307」給朋友\n大熱天，清爽暢聊解悶一下", "like": 7, "comment": 2, "share": 9, "forward": 2, "date": "2025-5-18", "popularity_score": 38}, {"content": "晚上20:00\n兄弟們要進城\n-\n「頑童」台中勤美誠品走跳\n現場超熱，等到口渴的朋友\n-\n可以到勤美八曜解渴一下:啤酒:\n(曜頭看到一堆人滿頭大汗）", "like": 547, "comment": 4, "share": 1, "forward": 0, "date": "2025-5-17", "popularity_score": 558}]}
+{
+  "stats": {
+    "post_count": 508,
+    "total_likes": 164193,
+    "total_comments": 5992,
+    "total_shares": 34234,
+    "total_forwards": 165756,
+    "total_interactions": 370175,
+    "avg_interactions_per_post": 548.9744094488188,
+    "interaction_rate": 0.5489744094488188
+  },
+  "monthly_interactions": [
+    {
+      "month": "2023-11",
+      "like": 1200,
+      "comment": 300,
+      "forward": 50,
+      "share": 200
+    },
+    {
+      "month": "2023-12",
+      "like": 1500,
+      "comment": 350,
+      "forward": 60,
+      "share": 250
+    },
+    {
+      "month": "2024-01",
+      "like": 1800,
+      "comment": 400,
+      "forward": 70,
+      "share": 300
+    }
+  ],
+  "content_length_analysis": [
+    {
+      "content_length_group": "0-50",
+      "total_interactions": 100
+    },
+    {
+      "content_length_group": "51-100",
+      "total_interactions": 150
+    },
+    {
+      "content_length_group": "101-150",
+      "total_interactions": 200
+    }
+  ],
+  "recent_posts": [
+    {
+      "content": "意見不合，沒關係\n但口味不合，可以選擇\n-\n極韻白奶茶\n基底5種風味讓你挑選",
+      "like": 17,
+      "comment": 1,
+      "share": 6,
+      "forward": 0,
+      "date": "2025-5-9",
+      "popularity_score": 37
+    },
+    {
+      "content": "壓力緊繃的生活節奏\n從心理蔓延到身體\n-\n你需要來一杯無咖啡因的奶茶\n極韻白，給自己放鬆一下",
+      "like": 13,
+      "comment": 1,
+      "share": 18,
+      "forward": 25,
+      "date": "2025-5-8",
+      "popularity_score": 69
+    },
+    {
+      "content": "母親節給媽媽最好的:红心:",
+      "like": 19,
+      "comment": 1,
+      "share": 29,
+      "forward": 17,
+      "date": "2025-5-7",
+      "popularity_score": 108
+    },
+    {
+      "content": "母情節帶杯八曜回家\n好好抱抱媽媽聊聊天:红心:",
+      "like": 31,
+      "comment": 2,
+      "share": 11,
+      "forward": 10,
+      "date": "2025-5-4",
+      "popularity_score": 68
+    },
+    {
+      "content": "看看誰是舞蹈小高手？\n送你八曜綠巨人限量獎品\n5/9（五）公布名單",
+      "like": 24,
+      "comment": 7,
+      "share": 117,
+      "forward": 308,
+      "date": "2025-5-3",
+      "popularity_score": 389
+    }
+  ]
+}

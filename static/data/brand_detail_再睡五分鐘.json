@@ -1,1 +1,96 @@
-{"stats": {"post_count": 31, "total_likes": 19950, "total_comments": 23371, "total_shares": 431, "total_forwards": 14, "total_interactions": 43766, "avg_interactions_per_post": 2193.064516129032, "interaction_rate": 2.193064516129032}, "monthly_interactions": [{"month": "2024-01", "like": 1200, "comment": 300, "forward": 50, "share": 200}, {"month": "2024-02", "like": 1500, "comment": 350, "forward": 60, "share": 250}, {"month": "2024-03", "like": 1800, "comment": 400, "forward": 70, "share": 300}], "content_length_analysis": [{"content_length_group": "0-50", "total_interactions": 100}, {"content_length_group": "51-100", "total_interactions": 150}, {"content_length_group": "101-150", "total_interactions": 200}], "recent_posts": [{"content": "正常心跳：___/\\_____/\\___\n薪水入帳的心跳：_/\\__/\\__/\\_\n今天搶到日幣的心跳：/\\/\\/\\/\\/\\/\\/\\\n搶到日幣發現沒有生活費的心跳：________", "like": 998, "comment": 2, "share": 8, "date": "5/5/25", "forward": 0, "popularity_score": 1026}, {"content": "你以為一天喝的是：\n:汗滴::汗滴::汗滴::汗滴::汗滴:", "like": 1185, "comment": 2, "share": 17, "date": "5/4/25", "forward": 0, "popularity_score": 1240}, {"content": "今天滑 ig只有看到白光的\n可以來測試一下視力:双眼:", "like": 747, "comment": 21, "share": 4, "date": "5/20/25", "forward": 0, "popularity_score": 801}, {"content": "明天上班的午餐也幫你想好ㄌ！\n（可以順便帶一杯牛肉麵奶蓋回去請老闆喝:伪装的脸:）", "like": 69, "comment": 3280, "share": 26, "date": "4/6/25", "forward": 1, "popularity_score": 6707}, {"content": "明天要上班上課還睡不著ㄉ\n可以試試蕎蕎洋甘菊 好眠到天亮:打呵欠:", "like": 14, "comment": 312, "share": 5, "date": "4/27/25", "forward": 0, "popularity_score": 653}, {"content": "有人的 IG 也更新功能了嗎:双感叹号:\n終於可以自訂貼文順序:放声大哭:", "like": 342, "comment": 10, "share": 4, "date": "4/18/25", "forward": 0, "popularity_score": 374}, {"content": "聽說今天是 4/11 國際寵物日:闪亮:\n想到門市也養了一隻可愛的樹懶\n和大家分享一下( ´▽` )ﾉ", "like": 420, "comment": 32, "share": 2, "date": "4/11/25", "forward": 0, "popularity_score": 490}, {"content": "明天也想喝飲料ㄉ人\n以下偷偷放送福利:松了口气:", "like": 70, "comment": 1160, "share": 16, "date": "3/6/25", "forward": 4, "popularity_score": 2438}, {"content": "闆娘好像不是開玩笑的⋯\n居然找了幫手一起練習做菜\n賣相看起來不錯 就是不知道味道如何:想一想:", "like": 4182, "comment": 92, "share": 39, "date": "3/26/25", "forward": 0, "popularity_score": 4483}, {"content": "老闆說手搖飲做了5年，想來點新鮮的", "like": 1769, "comment": 140, "share": 2, "date": "3/21/25", "forward": 0, "popularity_score": 2055}]}
+{
+  "stats": {
+    "post_count": 31,
+    "total_likes": 19950,
+    "total_comments": 23371,
+    "total_shares": 431,
+    "total_forwards": 14,
+    "total_interactions": 43766,
+    "avg_interactions_per_post": 2193.064516129032,
+    "interaction_rate": 2.193064516129032
+  },
+  "monthly_interactions": [
+    {
+      "month": "2023-11",
+      "like": 1200,
+      "comment": 300,
+      "forward": 50,
+      "share": 200
+    },
+    {
+      "month": "2023-12",
+      "like": 1500,
+      "comment": 350,
+      "forward": 60,
+      "share": 250
+    },
+    {
+      "month": "2024-01",
+      "like": 1800,
+      "comment": 400,
+      "forward": 70,
+      "share": 300
+    }
+  ],
+  "content_length_analysis": [
+    {
+      "content_length_group": "0-50",
+      "total_interactions": 100
+    },
+    {
+      "content_length_group": "51-100",
+      "total_interactions": 150
+    },
+    {
+      "content_length_group": "101-150",
+      "total_interactions": 200
+    }
+  ],
+  "recent_posts": [
+    {
+      "content": "正常心跳：___/\\_____/\\___\n薪水入帳的心跳：_/\\__/\\__/\\_\n今天搶到日幣的心跳：/\\/\\/\\/\\/\\/\\/\\\n搶到日幣發現沒有生活費的心跳：________",
+      "like": 998,
+      "comment": 2,
+      "share": 8,
+      "date": "5/5/25",
+      "forward": 0,
+      "popularity_score": 1026
+    },
+    {
+      "content": "你以為一天喝的是：\n:汗滴::汗滴::汗滴::汗滴::汗滴:",
+      "like": 1185,
+      "comment": 2,
+      "share": 17,
+      "date": "5/4/25",
+      "forward": 0,
+      "popularity_score": 1240
+    },
+    {
+      "content": "今天滑 ig只有看到白光的\n可以來測試一下視力:双眼:",
+      "like": 747,
+      "comment": 21,
+      "share": 4,
+      "date": "5/20/25",
+      "forward": 0,
+      "popularity_score": 801
+    },
+    {
+      "content": "明天上班的午餐也幫你想好ㄌ！\n（可以順便帶一杯牛肉麵奶蓋回去請老闆喝:伪装的脸:）",
+      "like": 69,
+      "comment": 3280,
+      "share": 26,
+      "date": "4/6/25",
+      "forward": 1,
+      "popularity_score": 6707
+    },
+    {
+      "content": "明天要上班上課還睡不著ㄉ\n可以試試蕎蕎洋甘菊 好眠到天亮:打呵欠:",
+      "like": 14,
+      "comment": 312,
+      "share": 5,
+      "date": "4/27/25",
+      "forward": 0,
+      "popularity_score": 653
+    }
+  ]
+}

@@ -348,7 +348,7 @@ nav ul li a.active {
 /* 品牌卡片網格 */
 .brands-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     margin-top: 20px;
 }
@@ -631,7 +631,7 @@ nav ul li a i {
     }
     
     .card {
-        margin-bottom: 20px;
+        margin: 10px 0;
     }
     
     nav ul {
@@ -650,24 +650,34 @@ nav ul li a i {
     }
     
     .brand-card {
-        min-width: 100%;
+        padding: 15px 10px;
     }
     
     .posts-table {
         display: block;
         overflow-x: auto;
     }
-
+    
     .method-grid {
         grid-template-columns: 1fr;
     }
-
+    
     .hero-stats {
         flex-direction: column;
     }
     
     .stat-item {
-        margin-bottom: 15px;
+        margin: 10px 0;
+    }
+    
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .brands-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

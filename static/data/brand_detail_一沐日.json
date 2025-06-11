@@ -1,1 +1,96 @@
-{"stats": {"post_count": 60, "total_likes": 41522, "total_comments": 2485, "total_shares": 12295, "total_forwards": 5468, "total_interactions": 61770, "avg_interactions_per_post": 1389.6166666666666, "interaction_rate": 1.3896166666666665}, "monthly_interactions": [{"month": "2024-01", "like": 1200, "comment": 300, "forward": 50, "share": 200}, {"month": "2024-02", "like": 1500, "comment": 350, "forward": 60, "share": 250}, {"month": "2024-03", "like": 1800, "comment": 400, "forward": 70, "share": 300}], "content_length_analysis": [{"content_length_group": "0-50", "total_interactions": 100}, {"content_length_group": "51-100", "total_interactions": 150}, {"content_length_group": "101-150", "total_interactions": 200}], "recent_posts": [{"content": "不是這樣的吧:融化:\n大家都在哀怨竹香的離去", "like": 459, "comment": 70, "forward": 9, "share": 115, "date": "9/30/24", "popularity_score": 944}, {"content": "那一支「喝起來跟貓一樣的味道」準備走入歷史", "like": 539, "comment": 80, "forward": 38, "share": 495, "date": "9/26/24", "popularity_score": 2184}, {"content": "辦桌第一名肯定是米糕，不服來辯:傲慢:", "like": 123, "comment": 152, "forward": 1, "share": 2, "date": "9/25/24", "popularity_score": 433}, {"content": "每次海巡的時候都看到大家對一沐日的熱愛", "like": 181, "comment": 39, "forward": 1, "share": 4, "date": "9/24/24", "popularity_score": 271}, {"content": "好久沒吃辦桌\n已經太想念米糕的味道\n有人最近要宴客嗎:忍住泪水:", "like": 45, "comment": 8, "forward": 1, "share": 2, "date": "9/19/24", "popularity_score": 67}, {"content": "「中秋烤肉配什麼飲料最搭?", "like": 139, "comment": 9, "forward": 1, "share": 5, "date": "9/14/24", "popularity_score": 172}, {"content": "明天還有一場珍藏料神便當盒哦\n（因為颱風延期的那一場)", "like": 73, "comment": 1, "forward": 1, "share": 0, "date": "8/3/24", "popularity_score": 75}, {"content": "應該大家都知道我們12週年\n:闪亮:特別紀念版料神便當盒了吧", "like": 295, "comment": 11, "forward": 16, "share": 0, "date": "7/8/24", "popularity_score": 317}, {"content": "最近看了Threads的留言\n「一沐日就是一個與世無爭的品牌」", "like": 3536, "comment": 156, "forward": 13, "share": 30, "date": "7/7/24", "popularity_score": 3938}, {"content": "擔心還有後續的風雨\n緊急做出活動延期！", "like": 220, "comment": 1, "forward": 5, "share": 16, "date": "7/26/24", "popularity_score": 270}]}
+{
+  "stats": {
+    "post_count": 60,
+    "total_likes": 41522,
+    "total_comments": 2485,
+    "total_shares": 12295,
+    "total_forwards": 5468,
+    "total_interactions": 61770,
+    "avg_interactions_per_post": 1389.6166666666666,
+    "interaction_rate": 1.3896166666666665
+  },
+  "monthly_interactions": [
+    {
+      "month": "2023-11",
+      "like": 1200,
+      "comment": 300,
+      "forward": 50,
+      "share": 200
+    },
+    {
+      "month": "2023-12",
+      "like": 1500,
+      "comment": 350,
+      "forward": 60,
+      "share": 250
+    },
+    {
+      "month": "2024-01",
+      "like": 1800,
+      "comment": 400,
+      "forward": 70,
+      "share": 300
+    }
+  ],
+  "content_length_analysis": [
+    {
+      "content_length_group": "0-50",
+      "total_interactions": 100
+    },
+    {
+      "content_length_group": "51-100",
+      "total_interactions": 150
+    },
+    {
+      "content_length_group": "101-150",
+      "total_interactions": 200
+    }
+  ],
+  "recent_posts": [
+    {
+      "content": "不是這樣的吧:融化:\n大家都在哀怨竹香的離去",
+      "like": 459,
+      "comment": 70,
+      "forward": 9,
+      "share": 115,
+      "date": "9/30/24",
+      "popularity_score": 944
+    },
+    {
+      "content": "那一支「喝起來跟貓一樣的味道」準備走入歷史",
+      "like": 539,
+      "comment": 80,
+      "forward": 38,
+      "share": 495,
+      "date": "9/26/24",
+      "popularity_score": 2184
+    },
+    {
+      "content": "辦桌第一名肯定是米糕，不服來辯:傲慢:",
+      "like": 123,
+      "comment": 152,
+      "forward": 1,
+      "share": 2,
+      "date": "9/25/24",
+      "popularity_score": 433
+    },
+    {
+      "content": "每次海巡的時候都看到大家對一沐日的熱愛",
+      "like": 181,
+      "comment": 39,
+      "forward": 1,
+      "share": 4,
+      "date": "9/24/24",
+      "popularity_score": 271
+    },
+    {
+      "content": "好久沒吃辦桌\n已經太想念米糕的味道\n有人最近要宴客嗎:忍住泪水:",
+      "like": 45,
+      "comment": 8,
+      "forward": 1,
+      "share": 2,
+      "date": "9/19/24",
+      "popularity_score": 67
+    }
+  ]
+}

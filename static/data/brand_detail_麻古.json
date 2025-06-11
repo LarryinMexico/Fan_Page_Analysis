@@ -1,1 +1,96 @@
-{"stats": {"post_count": 11, "total_likes": 1304, "total_comments": 540, "total_shares": 66, "total_forwards": 51, "total_interactions": 1961, "avg_interactions_per_post": 234.72727272727272, "interaction_rate": 0.23472727272727273}, "monthly_interactions": [{"month": "2024-01", "like": 1200, "comment": 300, "forward": 50, "share": 200}, {"month": "2024-02", "like": 1500, "comment": 350, "forward": 60, "share": 250}, {"month": "2024-03", "like": 1800, "comment": 400, "forward": 70, "share": 300}], "content_length_analysis": [{"content_length_group": "0-50", "total_interactions": 100}, {"content_length_group": "51-100", "total_interactions": 150}, {"content_length_group": "101-150", "total_interactions": 200}], "recent_posts": [{"content": "滑個手機，看到社群有人在傳好康\n但……全都是亂碼 @ @\n有人幫小編解密一下嗎？:带单片眼镜的脸:", "like": 84, "comment": 1, "share": 16, "date": "5/9/25", "forward": 0, "popularity_score": 134}, {"content": NaN, "like": 2, "comment": 20, "share": 1, "date": "5/8/25", "forward": 1, "popularity_score": 45}, {"content": "買一送一", "like": 45, "comment": 5, "share": 7, "date": "5/27/25", "forward": 0, "popularity_score": 76}, {"content": "辦公室日常", "like": 13, "comment": 20, "share": 1, "date": "5/16/25", "forward": 0, "popularity_score": 56}, {"content": "母親節快樂:花束:", "like": 8, "comment": 49, "share": 2, "date": "5/10/25", "forward": 8, "popularity_score": 112}, {"content": ":脑: 金萱知識問答篇｜你有多懂金萱？\n:风吹叶落: 1.金萱是什麼茶？\nM. 青茶\nA. 綠茶\nC. 紅茶\nU. 烏龍茶", "like": 41, "comment": 20, "share": 2, "date": "4/25/25", "forward": 4, "popularity_score": 87}, {"content": "我有超過300杯的高山金萱茶 你有超頂創意喝法嗎:吐舌:\n機會是自己爭取來的\n快參加活動:反手食指向右指:", "like": 22, "comment": 2, "share": 0, "date": "4/23/25", "forward": 0, "popularity_score": 26}, {"content": "手搖控", "like": 16, "comment": 40, "share": 20, "date": "4/18/25", "forward": 1, "popularity_score": 156}, {"content": "聽說最近公仔圖很紅:礼物::泰迪熊:\n那你知道麻古的蕃茄梅蜜也很紅嗎？:西红柿::爆炸:\n是說……\n蕃茄到底是蔬菜，還是水果啊？（我們放棄思考）", "like": 79, "comment": 6, "share": 1, "date": "4/11/25", "forward": 11, "popularity_score": 94}, {"content": "最愛這種挑戰時刻 :肌肉:", "like": 88, "comment": 15, "share": 14, "date": "4/10/25", "forward": 0, "popularity_score": 160}]}
+{
+  "stats": {
+    "post_count": 11,
+    "total_likes": 1304,
+    "total_comments": 540,
+    "total_shares": 66,
+    "total_forwards": 51,
+    "total_interactions": 1961,
+    "avg_interactions_per_post": 234.72727272727272,
+    "interaction_rate": 0.23472727272727273
+  },
+  "monthly_interactions": [
+    {
+      "month": "2023-11",
+      "like": 1200,
+      "comment": 300,
+      "forward": 50,
+      "share": 200
+    },
+    {
+      "month": "2023-12",
+      "like": 1500,
+      "comment": 350,
+      "forward": 60,
+      "share": 250
+    },
+    {
+      "month": "2024-01",
+      "like": 1800,
+      "comment": 400,
+      "forward": 70,
+      "share": 300
+    }
+  ],
+  "content_length_analysis": [
+    {
+      "content_length_group": "0-50",
+      "total_interactions": 100
+    },
+    {
+      "content_length_group": "51-100",
+      "total_interactions": 150
+    },
+    {
+      "content_length_group": "101-150",
+      "total_interactions": 200
+    }
+  ],
+  "recent_posts": [
+    {
+      "content": "滑個手機，看到社群有人在傳好康\n但……全都是亂碼 @ @\n有人幫小編解密一下嗎？:带单片眼镜的脸:",
+      "like": 84,
+      "comment": 1,
+      "share": 16,
+      "date": "5/9/25",
+      "forward": 0,
+      "popularity_score": 134
+    },
+    {
+      "content": NaN,
+      "like": 2,
+      "comment": 20,
+      "share": 1,
+      "date": "5/8/25",
+      "forward": 1,
+      "popularity_score": 45
+    },
+    {
+      "content": "買一送一",
+      "like": 45,
+      "comment": 5,
+      "share": 7,
+      "date": "5/27/25",
+      "forward": 0,
+      "popularity_score": 76
+    },
+    {
+      "content": "辦公室日常",
+      "like": 13,
+      "comment": 20,
+      "share": 1,
+      "date": "5/16/25",
+      "forward": 0,
+      "popularity_score": 56
+    },
+    {
+      "content": "母親節快樂:花束:",
+      "like": 8,
+      "comment": 49,
+      "share": 2,
+      "date": "5/10/25",
+      "forward": 8,
+      "popularity_score": 112
+    }
+  ]
+}
