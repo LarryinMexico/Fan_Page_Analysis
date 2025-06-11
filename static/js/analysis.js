@@ -16,6 +16,8 @@ const darkTemplate = {
 
 // 頁面載入後初始化
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('頁面已載入，開始初始化圖表');
+    
     // 設定載入中的訊息
     document.querySelectorAll('.chart-container').forEach(container => {
         container.innerHTML = '<div class="loading-message"><i class="fas fa-spinner fa-spin"></i> 正在載入數據...</div>';
@@ -25,55 +27,58 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 載入品牌數據
     fetch('./static/data/brand_stats.json')
-        .then(response => response.json())
+        .then(response => {
+            console.log('品牌數據響應:', response);
+            if (!response.ok) {
+                throw new Error(`HTTP錯誤 ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('品牌數據載入成功:', data);
             renderCharts(data);
         })
         .catch(error => {
             console.error('獲取品牌數據失敗:', error);
             document.querySelectorAll('.chart-container').forEach(container => {
-                container.innerHTML = '<div class="error-message">載入數據失敗</div>';
+                container.innerHTML = '<div class="error-message">載入數據失敗: ' + error.message + '</div>';
             });
             document.getElementById('insights-list').innerHTML = '<li>無法載入洞察數據</li>';
         });
     
     // 載入互動比較數據
     fetch('./static/data/engagement_comparison.json')
-        .then(response => response.json())
+        .then(response => {
+            console.log('互動比較數據響應:', response);
+            if (!response.ok) {
+                throw new Error(`HTTP錯誤 ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('互動比較數據載入成功:', data);
             renderEngagementChart(data);
         })
         .catch(error => {
             console.error('獲取互動比較數據失敗:', error);
-            document.getElementById('avg-engagement-chart').innerHTML = '<div class="error-message">載入數據失敗</div>';
+            document.getElementById('avg-engagement-chart').innerHTML = '<div class="error-message">載入數據失敗: ' + error.message + '</div>';
         });
 });
 
 // 渲染圖表的函數
 function renderCharts(data) {
-    console.log('數據載入成功，開始渲染圖表');
+    console.log('開始渲染圖表');
     
     // 獲取品牌名稱列表
     const brands = Object.keys(data);
     
     // 1. 渲染貼文總數比較圖表
-    renderPostCountChart(brands, data);
-    
-    // 2. 渲染互動量比較圖表
-    renderTotalInteractionsChart(brands, data);
-    
-    // 3. 渲染互動效率比較圖表
-    renderInteractionRateChart(brands, data);
-    
-    // 4. 更新洞察列表
-    updateInsights(data);
-}
-
-// 渲染貼文總數比較圖表
-function renderPostCountChart(brands, data) {
     const postCounts = brands.map(brand => data[brand].post_count);
     
-    const trace = {
+    // 清空載入訊息
+    document.getElementById('post-count-chart').innerHTML = '';
+    
+    const postCountTrace = {
         x: brands,
         y: postCounts,
         type: 'bar',
@@ -86,7 +91,7 @@ function renderPostCountChart(brands, data) {
         }
     };
     
-    const layout = {
+    const postCountLayout = {
         title: '各品牌貼文總數比較',
         xaxis: {
             title: '品牌',
@@ -103,14 +108,16 @@ function renderPostCountChart(brands, data) {
         font: darkTemplate.font
     };
     
-    Plotly.newPlot('post-count-chart', [trace], layout);
-}
-
-// 渲染互動量比較圖表
-function renderTotalInteractionsChart(brands, data) {
+    Plotly.newPlot('post-count-chart', [postCountTrace], postCountLayout);
+    console.log('貼文總數比較圖表渲染完成');
+    
+    // 2. 渲染互動量比較圖表
     const totalInteractions = brands.map(brand => data[brand].total_interactions);
     
-    const trace = {
+    // 清空載入訊息
+    document.getElementById('total-interactions-chart').innerHTML = '';
+    
+    const interactionsTrace = {
         x: brands,
         y: totalInteractions,
         type: 'bar',
@@ -123,7 +130,7 @@ function renderTotalInteractionsChart(brands, data) {
         }
     };
     
-    const layout = {
+    const interactionsLayout = {
         title: '各品牌總互動量比較',
         xaxis: {
             title: '品牌',
@@ -140,14 +147,16 @@ function renderTotalInteractionsChart(brands, data) {
         font: darkTemplate.font
     };
     
-    Plotly.newPlot('total-interactions-chart', [trace], layout);
-}
-
-// 渲染互動效率比較圖表
-function renderInteractionRateChart(brands, data) {
+    Plotly.newPlot('total-interactions-chart', [interactionsTrace], interactionsLayout);
+    console.log('互動量比較圖表渲染完成');
+    
+    // 3. 渲染互動效率比較圖表
     const interactionRates = brands.map(brand => data[brand].interaction_rate * 1000); // 乘以1000以便更好地顯示
     
-    const trace = {
+    // 清空載入訊息
+    document.getElementById('interaction-rate-chart').innerHTML = '';
+    
+    const rateTrace = {
         x: brands,
         y: interactionRates,
         type: 'bar',
@@ -160,7 +169,7 @@ function renderInteractionRateChart(brands, data) {
         }
     };
     
-    const layout = {
+    const rateLayout = {
         title: '各品牌互動效率比較',
         xaxis: {
             title: '品牌',
@@ -177,12 +186,19 @@ function renderInteractionRateChart(brands, data) {
         font: darkTemplate.font
     };
     
-    Plotly.newPlot('interaction-rate-chart', [trace], layout);
+    Plotly.newPlot('interaction-rate-chart', [rateTrace], rateLayout);
+    console.log('互動效率比較圖表渲染完成');
+    
+    // 4. 更新洞察列表
+    updateInsights(data);
 }
 
 // 渲染互動比較圖表
 function renderEngagementChart(data) {
-    console.log('互動比較數據載入成功，開始渲染圖表');
+    console.log('開始渲染互動比較圖表');
+    
+    // 清空載入訊息
+    document.getElementById('avg-engagement-chart').innerHTML = '';
     
     const brands = data.brands;
     const likes = data.likes;
@@ -237,10 +253,13 @@ function renderEngagementChart(data) {
     };
     
     Plotly.newPlot('avg-engagement-chart', [trace1, trace2, trace3], layout);
+    console.log('互動比較圖表渲染完成');
 }
 
 // 更新洞察列表
 function updateInsights(data) {
+    console.log('更新洞察列表');
+    
     const brands = Object.keys(data);
     
     // 找出貼文數量最多的品牌
@@ -260,4 +279,5 @@ function updateInsights(data) {
         <li><strong>${highestRateBrand}</strong> 擁有最高的互動效率，每則貼文平均獲得 ${(data[highestRateBrand].interaction_rate * 1000).toFixed(2)} 互動（每千人）。</li>
         <li>整體而言，讚數是最常見的互動方式，其次是留言和分享。</li>
     `;
+    console.log('洞察列表更新完成');
 } 

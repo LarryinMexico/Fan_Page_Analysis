@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 飲料社群粉絲專頁分析
+redirect_to: ./index.html
 ---
 
 # 飲料社群粉絲專頁分析

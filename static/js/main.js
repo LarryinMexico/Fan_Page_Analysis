@@ -80,11 +80,9 @@ function loadBrandDetail(brandName) {
         el.textContent = brandName;
     });
     
-    // 嘗試多種路徑來加載品牌詳細數據
+    // 使用標準化的路徑來加載品牌詳細數據
     const paths = [
-        `./static/data/brand_detail_${brandName}.json`,
-        `./data/brand_detail_${brandName}.json`,
-        `static/data/brand_detail_${brandName}.json`
+        `./static/data/brand_detail_${brandName}.json`
     ];
     
     // 定義加載函數
