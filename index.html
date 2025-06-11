@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>飲料社群粉絲專頁分析</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
     <!-- 添加Font Awesome圖標 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- 備用內聯樣式，以防外部CSS無法加載 -->
@@ -64,13 +64,72 @@
             margin-top: 20px;
         }
         
-        /* 卡片樣式 */
-        .card {
+        .brands-grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+        
+        /* 品牌卡片樣式 */
+        .brand-card {
             background-color: #252525;
-            border-radius: 12px;
             padding: 20px;
-            margin: 15px;
+            border-radius: 12px;
+            text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+        }
+        
+        .brand-logo-placeholder {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            background-color: rgba(79, 168, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .brand-logo-placeholder i {
+            font-size: 24px;
+            color: #4fa8ff;
+        }
+        
+        .brand-card h3 {
+            margin-bottom: 15px;
+            color: #4fa8ff;
+        }
+        
+        .brand-card-hint {
+            margin-top: 15px;
+            color: #4fa8ff;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .brand-card-hint i {
+            margin-left: 8px;
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+        
+        .brand-card:hover .brand-card-hint i {
+            transform: translateX(4px);
+        }
+        
+        .brand-card-link {
+            text-decoration: none;
+            color: inherit;
         }
         
         .feature-cards {
@@ -166,9 +225,8 @@
 
         <section class="brands-section">
             <h2>品牌分析</h2>
-            <div class="brands-grid">
+            <div id="brand-cards-container" class="brands-grid">
                 <!-- 品牌卡片將由JavaScript動態生成 -->
-                <div id="brand-cards-container"></div>
             </div>
         </section>
 
@@ -185,11 +243,11 @@
     <footer>
         <p>&copy; 飲料社群粉絲專頁分析 | 機器學習概論專案</p>
         <div class="footer-links">
-            <a href="https://github.com/LarryInMexico/ML_FinalProject"><i class="fas fa-code"></i> GitHub</a>
+            <a href="https://github.com/LarryInMexico/FanPageAnalysis"><i class="fas fa-code"></i> GitHub</a>
             <a href="#"><i class="fas fa-book"></i> 專案報告</a>
         </div>
     </footer>
 
-    <script src="static/js/main.js"></script>
+    <script src="./static/js/main.js"></script>
 </body>
 </html> 

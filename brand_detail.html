@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>品牌詳情 - 飲料社群粉絲專頁分析</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
     <!-- 添加Font Awesome圖標 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* 品牌詳情頁面特定樣式 */
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', 'Apple LiGothic', sans-serif;
+            line-height: 1.6;
+            color: #e8e8e8;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header, main, footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3, h4 {
+            color: #4fa8ff;
+        }
+        
+        /* 導航樣式 */
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #e8e8e8;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 8px;
+        }
+        
+        nav ul li a.active, nav ul li a:hover {
+            background-color: rgba(79, 168, 255, 0.15);
+        }
+        
         .brand-header {
             text-align: center;
             margin-bottom: 2rem;
@@ -96,6 +142,38 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        /* 按鈕樣式 */
+        .btn-view {
+            display: inline-block;
+            background: linear-gradient(to right, #4fa8ff, #1e73e0);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 15px;
+            border: none;
+            box-shadow: 0 4px 12px rgba(79, 168, 255, 0.3);
+            font-weight: 500;
+        }
+        
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            #brand-stats {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -141,9 +219,13 @@
 
     <footer>
         <p>&copy; 飲料社群粉絲專頁分析 | 機器學習概論專案</p>
+        <div class="footer-links">
+            <a href="https://github.com/LarryInMexico/FanPageAnalysis"><i class="fas fa-code"></i> GitHub</a>
+            <a href="#"><i class="fas fa-book"></i> 專案報告</a>
+        </div>
     </footer>
 
-    <script src="static/js/main.js"></script>
+    <script src="./static/js/main.js"></script>
     <script>
         // 確保DOM加載完成後執行
         document.addEventListener('DOMContentLoaded', function() {
@@ -159,84 +241,125 @@
                     el.textContent = brandParam;
                 });
                 
-                // 載入品牌詳細數據
-                fetch(`static/data/brand_detail_${brandParam}.json`)
-                    .then(response => {
-                        if (!response.ok) {
-                            // 嘗試替代路徑
-                            return fetch(`static/data/brand_detail_${brandParam}.json`);
-                        }
-                        return response;
-                    })
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('品牌數據不存在');
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        console.log('載入的品牌數據:', data);
-                        
-                        // 填充統計數據
-                        if (data.stats) {
-                            const statsContainer = document.getElementById('brand-stats');
-                            statsContainer.innerHTML = '';
-                            
-                            // 添加各項統計數據
-                            const statsItems = [
-                                { label: '總貼文數', value: data.stats.post_count || 0 },
-                                { label: '總讚數', value: data.stats.total_likes || 0 },
-                                { label: '總留言數', value: data.stats.total_comments || 0 },
-                                { label: '總分享數', value: data.stats.total_shares || 0 }
-                            ];
-                            
-                            statsItems.forEach(item => {
-                                const statElement = document.createElement('div');
-                                statElement.className = 'stat-item';
-                                statElement.innerHTML = `
-                                    <span class="stat-number">${item.value}</span>
-                                    <span class="stat-label">${item.label}</span>
-                                `;
-                                statsContainer.appendChild(statElement);
-                            });
+                // 嘗試多種路徑來加載品牌詳細數據
+                const paths = [
+                    `static/data/brand_detail_${brandParam}.json`,
+                    `data/brand_detail_${brandParam}.json`,
+                    `./static/data/brand_detail_${brandParam}.json`
+                ];
+                
+                // 定義加載函數
+                function loadBrandData() {
+                    let currentPathIndex = 0;
+                    
+                    function tryNextPath() {
+                        if (currentPathIndex >= paths.length) {
+                            // 所有路徑都嘗試過了但失敗了
+                            handleError(new Error('無法找到品牌數據'));
+                            return;
                         }
                         
-                        // 填充最近貼文
-                        if (data.recent_posts && data.recent_posts.length > 0) {
-                            const postsContainer = document.getElementById('recent-posts');
-                            postsContainer.innerHTML = '';
-                            
-                            data.recent_posts.forEach(post => {
-                                const postElement = document.createElement('div');
-                                postElement.className = 'post-item';
-                                
-                                postElement.innerHTML = `
-                                    <div class="post-date">${post.date || '無日期'}</div>
-                                    <div class="post-content">${post.content || '無內容'}</div>
-                                    <div class="post-stats">
-                                        <span><i class="fas fa-thumbs-up"></i> ${post.like || 0}</span>
-                                        <span><i class="fas fa-comment"></i> ${post.comment || 0}</span>
-                                        <span><i class="fas fa-share"></i> ${post.share || 0}</span>
-                                    </div>
-                                `;
-                                
-                                postsContainer.appendChild(postElement);
+                        const currentPath = paths[currentPathIndex];
+                        console.log(`嘗試從路徑加載: ${currentPath}`);
+                        
+                        fetch(currentPath)
+                            .then(response => {
+                                if (!response.ok) {
+                                    // 嘗試下一個路徑
+                                    currentPathIndex++;
+                                    return tryNextPath();
+                                }
+                                return response.json();
+                            })
+                            .then(data => {
+                                if (!data) {
+                                    currentPathIndex++;
+                                    return tryNextPath();
+                                }
+                                // 數據加載成功，處理數據
+                                handleData(data);
+                            })
+                            .catch(error => {
+                                console.error(`從 ${currentPath} 加載數據失敗:`, error);
+                                // 嘗試下一個路徑
+                                currentPathIndex++;
+                                tryNextPath();
                             });
-                        } else {
-                            document.getElementById('recent-posts').innerHTML = '<p>沒有貼文數據</p>';
-                        }
-                    })
-                    .catch(error => {
-                        console.error('載入品牌詳細數據失敗:', error);
-                        document.querySelector('main').innerHTML = `
-                            <div class="error-container">
-                                <h2>載入品牌數據時發生錯誤</h2>
-                                <p>${error.message}</p>
-                                <p>無法找到 ${brandParam} 的詳細數據。</p>
-                                <a href="index.html" class="btn-view">返回首頁</a>
-                            </div>
-                        `;
-                    });
+                    }
+                    
+                    // 開始嘗試第一個路徑
+                    tryNextPath();
+                }
+                
+                // 處理數據的函數
+                function handleData(data) {
+                    console.log('載入的品牌數據:', data);
+                    
+                    // 填充統計數據
+                    if (data.stats) {
+                        const statsContainer = document.getElementById('brand-stats');
+                        statsContainer.innerHTML = '';
+                        
+                        // 添加各項統計數據
+                        const statsItems = [
+                            { label: '總貼文數', value: data.stats.post_count || 0 },
+                            { label: '總讚數', value: data.stats.total_likes || 0 },
+                            { label: '總留言數', value: data.stats.total_comments || 0 },
+                            { label: '總分享數', value: data.stats.total_shares || 0 }
+                        ];
+                        
+                        statsItems.forEach(item => {
+                            const statElement = document.createElement('div');
+                            statElement.className = 'stat-item';
+                            statElement.innerHTML = `
+                                <span class="stat-number">${item.value}</span>
+                                <span class="stat-label">${item.label}</span>
+                            `;
+                            statsContainer.appendChild(statElement);
+                        });
+                    }
+                    
+                    // 填充最近貼文
+                    if (data.recent_posts && data.recent_posts.length > 0) {
+                        const postsContainer = document.getElementById('recent-posts');
+                        postsContainer.innerHTML = '';
+                        
+                        data.recent_posts.forEach(post => {
+                            const postElement = document.createElement('div');
+                            postElement.className = 'post-item';
+                            
+                            postElement.innerHTML = `
+                                <div class="post-date">${post.date || '無日期'}</div>
+                                <div class="post-content">${post.content || '無內容'}</div>
+                                <div class="post-stats">
+                                    <span><i class="fas fa-thumbs-up"></i> ${post.like || 0}</span>
+                                    <span><i class="fas fa-comment"></i> ${post.comment || 0}</span>
+                                    <span><i class="fas fa-share"></i> ${post.share || 0}</span>
+                                </div>
+                            `;
+                            
+                            postsContainer.appendChild(postElement);
+                        });
+                    } else {
+                        document.getElementById('recent-posts').innerHTML = '<p>沒有貼文數據</p>';
+                    }
+                }
+                
+                // 處理錯誤的函數
+                function handleError(error) {
+                    console.error('載入品牌詳細數據失敗:', error);
+                    document.querySelector('main').innerHTML = `
+                        <div class="error-container">
+                            <h2>載入品牌數據時發生錯誤</h2>
+                            <p>${error.message}</p>
+                            <p>無法找到 ${brandParam} 的詳細數據。</p>
+                            <a href="index.html" class="btn-view">返回首頁</a>
+                        </div>
+                    `;
+                }
+                
+                // 開始加載數據
+                loadBrandData();
             } else {
                 // 如果沒有品牌參數，顯示錯誤訊息
                 document.querySelector('main').innerHTML = `
