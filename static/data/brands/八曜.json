@@ -1,0 +1,100 @@
+{
+  "name": "八曜",
+  "total_posts": 508,
+  "total_likes": 164193,
+  "total_comments": 5992,
+  "total_shares": 34234,
+  "monthly_stats": [
+    {
+      "month": "2024-10",
+      "likes": 14868,
+      "comments": 498,
+      "shares": 3761,
+      "posts": 31
+    },
+    {
+      "month": "2024-11",
+      "likes": 13160,
+      "comments": 443,
+      "shares": 2662,
+      "posts": 36
+    },
+    {
+      "month": "2024-12",
+      "likes": 10987,
+      "comments": 547,
+      "shares": 1961,
+      "posts": 46
+    },
+    {
+      "month": "2024-6",
+      "likes": 36856,
+      "comments": 1084,
+      "shares": 5021,
+      "posts": 63
+    },
+    {
+      "month": "2024-7",
+      "likes": 21314,
+      "comments": 917,
+      "shares": 6372,
+      "posts": 72
+    },
+    {
+      "month": "2024-8",
+      "likes": 13872,
+      "comments": 359,
+      "shares": 3769,
+      "posts": 64
+    },
+    {
+      "month": "2024-9",
+      "likes": 11295,
+      "comments": 408,
+      "shares": 2099,
+      "posts": 41
+    },
+    {
+      "month": "2025-05",
+      "likes": 668,
+      "comments": 44,
+      "shares": 192,
+      "posts": 8
+    },
+    {
+      "month": "2025-1",
+      "likes": 3353,
+      "comments": 121,
+      "shares": 1535,
+      "posts": 23
+    },
+    {
+      "month": "2025-2",
+      "likes": 13675,
+      "comments": 727,
+      "shares": 2003,
+      "posts": 36
+    },
+    {
+      "month": "2025-3",
+      "likes": 13287,
+      "comments": 521,
+      "shares": 2383,
+      "posts": 32
+    },
+    {
+      "month": "2025-4",
+      "likes": 5376,
+      "comments": 152,
+      "shares": 1933,
+      "posts": 36
+    },
+    {
+      "month": "2025-5",
+      "likes": 5482,
+      "comments": 171,
+      "shares": 543,
+      "posts": 20
+    }
+  ]
+}

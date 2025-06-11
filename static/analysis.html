@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌比較 - 飲料社群粉絲專頁分析</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 添加Font Awesome圖標 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 添加Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>飲料社群粉絲專頁分析</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <li><a href="analysis.html" class="active"><i class="fas fa-chart-bar"></i> 品牌比較</a></li>
+                <li><a href="visualization.html"><i class="fas fa-chart-line"></i> 視覺化分析</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="analysis-header">
+            <div class="container">
+                <h2>品牌比較分析</h2>
+                <p>比較不同飲料品牌在社群媒體上的表現，包括互動量、互動率和貼文效果等關鍵指標。</p>
+                <div id="loading-indicator">載入中...</div>
+            </div>
+        </section>
+
+        <section class="comparison-charts">
+            <div class="container">
+                <div class="chart-container">
+                    <h3>平均互動數比較</h3>
+                    <div id="avg-interactions-chart" class="chart"></div>
+                </div>
+                
+                <div class="chart-container">
+                    <h3>互動類型分佈比較</h3>
+                    <div id="interaction-types-chart" class="chart"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand-stats-comparison">
+            <div class="container">
+                <h3>品牌統計數據比較</h3>
+                <div class="table-responsive">
+                    <table id="comparison-table" class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>品牌</th>
+                                <th>總貼文數</th>
+                                <th>總讚數</th>
+                                <th>總留言數</th>
+                                <th>總分享數</th>
+                                <th>平均互動數</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 表格數據將由JavaScript動態生成 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-link">
+            <div class="container">
+                <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> 返回首頁</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 飲料社群粉絲專頁分析 | 機器學習概論專案</p>
+        <div class="footer-links">
+            <a href="#"><i class="fas fa-code"></i> GitHub</a>
+            <a href="#"><i class="fas fa-book"></i> 專案報告</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingIndicator = document.getElementById('loading-indicator');
+            
+            // 載入品牌比較數據
+            fetch('data/comparison.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('無法載入比較數據');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // 隱藏載入指示器
+                    loadingIndicator.style.display = 'none';
+                    
+                    // 繪製平均互動數比較圖
+                    const brands = data.map(item => item.name);
+                    const avgLikes = data.map(item => item.avg_likes);
+                    const avgComments = data.map(item => item.avg_comments);
+                    const avgShares = data.map(item => item.avg_shares);
+                    
+                    const barData = [
+                        {
+                            x: brands,
+                            y: avgLikes,
+                            name: '平均讚數',
+                            type: 'bar',
+                            marker: { color: '#4e73df' }
+                        },
+                        {
+                            x: brands,
+                            y: avgComments,
+                            name: '平均留言數',
+                            type: 'bar',
+                            marker: { color: '#1cc88a' }
+                        },
+                        {
+                            x: brands,
+                            y: avgShares,
+                            name: '平均分享數',
+                            type: 'bar',
+                            marker: { color: '#f6c23e' }
+                        }
+                    ];
+                    
+                    const barLayout = {
+                        title: '各品牌平均互動數比較',
+                        barmode: 'group',
+                        autosize: true,
+                        responsive: true
+                    };
+                    
+                    Plotly.newPlot('avg-interactions-chart', barData, barLayout);
+                    
+                    // 繪製互動類型分佈比較圖
+                    const pieData = brands.map(brand => {
+                        const brandData = data.find(item => item.name === brand);
+                        const total = brandData.avg_likes + brandData.avg_comments + brandData.avg_shares;
+                        
+                        return {
+                            labels: ['讚', '留言', '分享'],
+                            values: [
+                                brandData.avg_likes / total * 100,
+                                brandData.avg_comments / total * 100,
+                                brandData.avg_shares / total * 100
+                            ],
+                            type: 'pie',
+                            name: brand,
+                            domain: { row: 0, column: 0 },
+                            title: brand,
+                            hole: 0.4,
+                            marker: {
+                                colors: ['#4e73df', '#1cc88a', '#f6c23e']
+                            }
+                        };
+                    });
+                    
+                    const pieLayout = {
+                        title: '互動類型分佈比較',
+                        grid: { rows: Math.ceil(brands.length / 2), columns: 2 },
+                        autosize: true,
+                        responsive: true
+                    };
+                    
+                    // 設置每個餅圖的位置
+                    pieData.forEach((pie, i) => {
+                        pie.domain = {
+                            row: Math.floor(i / 2),
+                            column: i % 2
+                        };
+                    });
+                    
+                    Plotly.newPlot('interaction-types-chart', pieData, pieLayout);
+                    
+                    // 填充比較表格
+                    const tableBody = document.querySelector('#comparison-table tbody');
+                    tableBody.innerHTML = '';
+                    
+                    // 載入品牌統計數據
+                    return fetch('data/brand_stats.json');
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('無法載入品牌統計數據');
+                    }
+                    return response.json();
+                })
+                .then(statsData => {
+                    // 填充比較表格
+                    const tableBody = document.querySelector('#comparison-table tbody');
+                    
+                    Object.entries(statsData).forEach(([brand, stats]) => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td><a href="brand_detail.html?brand=${brand}">${brand}</a></td>
+                            <td>${stats.post_count}</td>
+                            <td>${stats.total_likes}</td>
+                            <td>${stats.total_comments}</td>
+                            <td>${stats.total_shares}</td>
+                            <td>${stats.avg_interactions_per_post.toFixed(1)}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                    
+                    // 調整圖表大小以適應容器
+                    window.addEventListener('resize', function() {
+                        Plotly.relayout('avg-interactions-chart', {
+                            width: document.getElementById('avg-interactions-chart').offsetWidth
+                        });
+                        Plotly.relayout('interaction-types-chart', {
+                            width: document.getElementById('interaction-types-chart').offsetWidth
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading data:', error);
+                    loadingIndicator.innerHTML = 
+                        `<div class="error-message">載入數據時發生錯誤: ${error.message}</div>`;
+                });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "一沐日",
+    "avg_likes": 692.0333333333333,
+    "avg_comments": 41.416666666666664,
+    "avg_shares": 204.91666666666666,
+    "total_posts": 60
+  },
+  {
+    "name": "八曜",
+    "avg_likes": 323.21456692913387,
+    "avg_comments": 11.795275590551181,
+    "avg_shares": 67.38976377952756,
+    "total_posts": 508
+  },
+  {
+    "name": "麻古",
+    "avg_likes": 118.54545454545455,
+    "avg_comments": 49.09090909090909,
+    "avg_shares": 6.0,
+    "total_posts": 11
+  },
+  {
+    "name": "迷客夏",
+    "avg_likes": 598.6447368421053,
+    "avg_comments": 47.88157894736842,
+    "avg_shares": 90.85526315789474,
+    "total_posts": 76
+  },
+  {
+    "name": "再睡五分鐘",
+    "avg_likes": 643.5483870967741,
+    "avg_comments": 753.9032258064516,
+    "avg_shares": 13.903225806451612,
+    "total_posts": 31
+  }
+]

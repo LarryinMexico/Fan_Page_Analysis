@@ -7,40 +7,47 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- 引入Plotly.js用於互動式圖表 -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- 添加Font Awesome圖標 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>{{ brand_name }} 粉絲專頁分析</h1>
         <nav>
             <ul>
-                <li><a href="/">首頁</a></li>
-                <li><a href="/analysis">分析結果</a></li>
-                <li><a href="/visualization">視覺化分析</a></li>
+                <li><a href="/"><i class="fas fa-home"></i> 首頁</a></li>
+                <li><a href="/analysis"><i class="fas fa-chart-bar"></i> 品牌比較</a></li>
+                <li><a href="/visualization"><i class="fas fa-chart-line"></i> 視覺化分析</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="analysis-content">
         <section class="brand-summary">
-            <h2>{{ brand_name }} 基本數據</h2>
+            <h2><i class="fas fa-mug-hot"></i> {{ brand_name }} 基本數據</h2>
             <div class="stats-container">
                 <div class="stats-card">
+                    <i class="fas fa-clipboard stats-icon"></i>
                     <h3>總貼文數</h3>
                     <p class="stats-number">{{ stats.post_count }}</p>
                 </div>
                 <div class="stats-card">
+                    <i class="fas fa-thumbs-up stats-icon"></i>
                     <h3>總按讚數</h3>
                     <p class="stats-number">{{ stats.total_likes }}</p>
                 </div>
                 <div class="stats-card">
+                    <i class="fas fa-comment stats-icon"></i>
                     <h3>總留言數</h3>
                     <p class="stats-number">{{ stats.total_comments }}</p>
                 </div>
                 <div class="stats-card">
+                    <i class="fas fa-share stats-icon"></i>
                     <h3>總分享數</h3>
                     <p class="stats-number">{{ stats.total_shares }}</p>
                 </div>
                 <div class="stats-card">
+                    <i class="fas fa-chart-line stats-icon"></i>
                     <h3>平均每貼文互動數</h3>
                     <p class="stats-number">{{ "%.2f"|format(stats.avg_interactions_per_post) }}</p>
                 </div>
@@ -48,26 +55,21 @@
         </section>
 
         <section class="chart-section">
-            <h3>月度互動趨勢</h3>
-            <div id="monthly-trend-chart" class="chart-container"></div>
-        </section>
-
-        <section class="chart-section">
-            <h3>互動類型分佈</h3>
+            <h3><i class="fas fa-chart-pie"></i> 互動類型分佈</h3>
             <div id="interaction-types-chart" class="chart-container"></div>
         </section>
 
         <section class="posts-section">
-            <h3>最近貼文分析</h3>
+            <h3><i class="fas fa-list"></i> 最近貼文分析</h3>
             <table class="posts-table">
                 <thead>
                     <tr>
-                        <th>日期</th>
-                        <th>內容</th>
-                        <th>按讚</th>
-                        <th>留言</th>
-                        <th>分享</th>
-                        <th>總互動</th>
+                        <th><i class="fas fa-calendar"></i> 日期</th>
+                        <th><i class="fas fa-align-left"></i> 內容</th>
+                        <th><i class="fas fa-thumbs-up"></i> 按讚</th>
+                        <th><i class="fas fa-comment"></i> 留言</th>
+                        <th><i class="fas fa-share"></i> 分享</th>
+                        <th><i class="fas fa-chart-bar"></i> 總互動</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,7 +89,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 飲料社群粉絲專頁分析 | 資料科學專案</p>
+        <p>&copy; 飲料社群粉絲專頁分析 | 機器學習概論專案</p>
+        <div class="footer-links">
+            <a href="#"><i class="fas fa-code"></i> GitHub</a>
+            <a href="#"><i class="fas fa-book"></i> 專案報告</a>
+        </div>
     </footer>
 
     <!-- 將Flask變量傳遞給JavaScript -->
@@ -104,77 +110,66 @@
 
     <!-- 繪製圖表的JavaScript -->
     <script>
+        // 定義繪製圖表的函數
+        function renderInteractionPieChart() {
+            // 設定Plotly深色主題
+            var darkTemplate = {
+                paper_bgcolor: '#252525',
+                plot_bgcolor: '#252525',
+                font: {
+                    color: '#e8e8e8'
+                },
+                legend: {
+                    bgcolor: '#252525'
+                }
+            };
+            
+            try {
+                // 清空容器內容
+                document.getElementById('interaction-types-chart').innerHTML = '';
+                
+                // 互動類型分佈圖
+                var pieData = [{
+                    values: [statsData.totalLikes, statsData.totalComments, statsData.totalForwards, statsData.totalShares],
+                    labels: ['按讚', '留言', '轉發', '分享'],
+                    type: 'pie',
+                    textinfo: 'label+percent',
+                    insidetextorientation: 'radial',
+                    marker: {
+                        colors: ['#4fa8ff', '#ff6b9d', '#ff9800', '#4caf50']
+                    }
+                }];
+                
+                var pieLayout = {
+                    title: '互動類型分佈',
+                    height: 400,
+                    paper_bgcolor: darkTemplate.paper_bgcolor,
+                    plot_bgcolor: darkTemplate.plot_bgcolor,
+                    font: darkTemplate.font,
+                    legend: darkTemplate.legend
+                };
+                
+                Plotly.newPlot('interaction-types-chart', pieData, pieLayout);
+            } catch (error) {
+                console.error('繪製互動類型分佈圖失敗:', error);
+                document.getElementById('interaction-types-chart').innerHTML = 
+                    '<div class="error-container">' +
+                    '<p class="error"><i class="fas fa-exclamation-triangle"></i> 無法載入圖表。' + error.message + '</p>' +
+                    '<button class="retry-btn" onclick="location.reload()">' +
+                    '<i class="fas fa-redo"></i> 重試' +
+                    '</button>' +
+                    '</div>';
+            }
+        }
+
+        // 頁面載入後執行
         document.addEventListener('DOMContentLoaded', function() {
-            // 月度互動趨勢圖
-            fetch('/api/brand_detail/' + brandName)
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(data) {
-                    // 月度趨勢圖
-                    var monthlyData = data.monthly_interactions;
-                    var months = monthlyData.map(function(item) {
-                        return item.month;
-                    });
-                    
-                    var trace1 = {
-                        x: months,
-                        y: monthlyData.map(function(item) {
-                            return item.like;
-                        }),
-                        name: '按讚',
-                        type: 'scatter',
-                        mode: 'lines+markers'
-                    };
-                    
-                    var trace2 = {
-                        x: months,
-                        y: monthlyData.map(function(item) {
-                            return item.comment;
-                        }),
-                        name: '留言',
-                        type: 'scatter',
-                        mode: 'lines+markers'
-                    };
-                    
-                    var trace3 = {
-                        x: months,
-                        y: monthlyData.map(function(item) {
-                            return item.share;
-                        }),
-                        name: '分享',
-                        type: 'scatter',
-                        mode: 'lines+markers'
-                    };
-                    
-                    var layout = {
-                        title: '月度互動趨勢',
-                        xaxis: {
-                            title: '月份'
-                        },
-                        yaxis: {
-                            title: '互動數量'
-                        }
-                    };
-                    
-                    Plotly.newPlot('monthly-trend-chart', [trace1, trace2, trace3], layout);
-                    
-                    // 互動類型分佈圖
-                    var pieData = [{
-                        values: [statsData.totalLikes, statsData.totalComments, statsData.totalForwards, statsData.totalShares],
-                        labels: ['按讚', '留言', '轉發', '分享'],
-                        type: 'pie'
-                    }];
-                    
-                    var pieLayout = {
-                        title: '互動類型分佈'
-                    };
-                    
-                    Plotly.newPlot('interaction-types-chart', pieData, pieLayout);
-                })
-                .catch(function(error) {
-                    console.error('獲取數據失敗:', error);
-                });
+            // 顯示加載中的訊息
+            document.getElementById('interaction-types-chart').innerHTML = 
+                '<div class="loading-message"><i class="fas fa-spinner fa-spin"></i> 正在載入數據...</div>';
+            
+            // 延遲一小段時間後繪製圖表，確保DOM已完全載入
+            setTimeout(renderInteractionPieChart, 100);
         });
     </script>
 </body>

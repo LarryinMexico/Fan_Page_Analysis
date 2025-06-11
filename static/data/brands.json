@@ -1,0 +1,37 @@
+[
+  {
+    "id": "97041a13a4eb804004f8d445d826493d",
+    "name": "一沐日",
+    "total_posts": 60,
+    "total_interactions": 56302,
+    "avg_interactions": 938.3666666666667
+  },
+  {
+    "id": "40dd8f22e1dade0166d29a28cf2b7da1",
+    "name": "八曜",
+    "total_posts": 508,
+    "total_interactions": 204419,
+    "avg_interactions": 402.3996062992126
+  },
+  {
+    "id": "97357508f1b5dfdd475f0bfaa81f5f94",
+    "name": "麻古",
+    "total_posts": 11,
+    "total_interactions": 1910,
+    "avg_interactions": 173.63636363636363
+  },
+  {
+    "id": "8f51a6bb66577fc5f69af2a5e9dd43c4",
+    "name": "迷客夏",
+    "total_posts": 76,
+    "total_interactions": 56041,
+    "avg_interactions": 737.3815789473684
+  },
+  {
+    "id": "f4d76b67e49210fc00e62069f6af1d2a",
+    "name": "再睡五分鐘",
+    "total_posts": 31,
+    "total_interactions": 43752,
+    "avg_interactions": 1411.3548387096773
+  }
+]
