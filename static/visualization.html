@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>視覺化分析 - 飲料社群粉絲專頁分析</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="css/style.css">
     <!-- 引入Plotly.js用於互動式圖表 -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- 添加Font Awesome圖標 -->
@@ -15,9 +15,9 @@
         <h1>飲料社群粉絲專頁視覺化分析</h1>
         <nav>
             <ul>
-                <li><a href="/"><i class="fas fa-home"></i> 首頁</a></li>
-                <li><a href="/analysis"><i class="fas fa-chart-bar"></i> 品牌比較</a></li>
-                <li><a href="/visualization" class="active"><i class="fas fa-chart-line"></i> 視覺化分析</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <li><a href="analysis.html"><i class="fas fa-chart-bar"></i> 品牌比較</a></li>
+                <li><a href="visualization.html" class="active"><i class="fas fa-chart-line"></i> 視覺化分析</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +33,7 @@
             <div class="brand-selector">
                 <label for="brandSelect">選擇品牌：</label>
                 <select id="brandSelect">
-                    {% for brand in brands %}
-                    <option value="{{ brand }}">{{ brand }}</option>
-                    {% endfor %}
+                    <!-- 品牌選項將由JavaScript動態生成 -->
                 </select>
             </div>
             <div id="sentiment-popularity-chart" class="chart-container"></div>
@@ -122,7 +120,7 @@
             document.getElementById('sentiment-popularity-chart').innerHTML = 
                 '<div class="loading-message"><i class="fas fa-spinner fa-spin"></i> 正在載入數據...</div>';
                 
-            fetch(`/api/brand_sentiment_popularity/${brand}`)
+            fetch(`data/brand_sentiment_${brand}.json`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP 錯誤 ${response.status}`);
@@ -213,7 +211,7 @@
             document.getElementById('model-comparison-chart').innerHTML = 
                 '<div class="loading-message"><i class="fas fa-spinner fa-spin"></i> 正在載入數據...</div>';
                 
-            fetch('/api/popularity_model_comparison')
+            fetch('data/popularity_model_comparison.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP 錯誤 ${response.status}`);
@@ -295,7 +293,7 @@
             document.getElementById('feature-importance-chart').innerHTML = 
                 '<div class="loading-message"><i class="fas fa-spinner fa-spin"></i> 正在載入數據...</div>';
                 
-            fetch('/api/feature_importance')
+            fetch('data/feature_importance.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP 錯誤 ${response.status}`);
@@ -366,6 +364,39 @@
                 });
         }
 
+        // 載入品牌選項
+        function loadBrandOptions() {
+            fetch('data/brands.json')
+                .then(response => response.json())
+                .then(brands => {
+                    const brandSelect = document.getElementById('brandSelect');
+                    
+                    // 清空現有選項
+                    brandSelect.innerHTML = '';
+                    
+                    // 按名稱排序品牌
+                    brands.sort((a, b) => a.name.localeCompare(b.name));
+                    
+                    // 添加選項
+                    brands.forEach(brand => {
+                        const option = document.createElement('option');
+                        option.value = brand.name;
+                        option.textContent = brand.name;
+                        brandSelect.appendChild(option);
+                    });
+                    
+                    // 初始加載第一個品牌的圖表
+                    if (brands.length > 0) {
+                        updateSentimentChart(brands[0].name);
+                    }
+                })
+                .catch(error => {
+                    console.error('載入品牌選項失敗:', error);
+                    document.getElementById('brandSelect').innerHTML = 
+                        '<option value="">無法載入品牌</option>';
+                });
+        }
+
         // 頁面載入後初始化
         document.addEventListener('DOMContentLoaded', function() {
             // 選擇品牌下拉框監聽
@@ -375,7 +406,7 @@
             });
 
             // 初始加載
-            updateSentimentChart(brandSelect.value);
+            loadBrandOptions();
             loadModelComparisonChart();
             loadFeatureImportanceChart();
         });

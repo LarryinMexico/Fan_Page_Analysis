@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>品牌詳細分析 - 飲料社群粉絲專頁分析</title>
+    <title>品牌詳情 - 飲料社群粉絲專頁分析</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- 添加Font Awesome圖標 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- 添加Plotly.js -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,205 +21,15 @@
     </header>
 
     <main>
-        <section class="brand-header">
-            <div class="container">
-                <h2 id="brand-title">品牌詳細分析</h2>
-                <div id="loading-indicator">載入中...</div>
-            </div>
-        </section>
-
-        <section class="brand-stats">
-            <div class="container">
-                <div class="stats-grid" id="stats-container">
-                    <!-- 統計數據將由JavaScript動態生成 -->
-                </div>
-            </div>
-        </section>
-
-        <section class="interaction-trends">
-            <div class="container">
-                <h3>月度互動趨勢</h3>
-                <div id="monthly-chart" class="chart-container"></div>
-            </div>
-        </section>
-
-        <section class="recent-posts">
-            <div class="container">
-                <h3>最近貼文</h3>
-                <div id="posts-container" class="posts-grid">
-                    <!-- 貼文數據將由JavaScript動態生成 -->
-                </div>
-            </div>
-        </section>
-
-        <section class="back-link">
-            <div class="container">
-                <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> 返回首頁</a>
-            </div>
-        </section>
+        <h2 class="brand-title">載入中...</h2>
+        <div id="brand-stats"></div>
+        <div id="recent-posts"></div>
     </main>
 
     <footer>
         <p>&copy; 飲料社群粉絲專頁分析 | 機器學習概論專案</p>
-        <div class="footer-links">
-            <a href="#"><i class="fas fa-code"></i> GitHub</a>
-            <a href="#"><i class="fas fa-book"></i> 專案報告</a>
-        </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // 從URL獲取品牌名稱
-            const urlParams = new URLSearchParams(window.location.search);
-            const brandName = urlParams.get('brand');
-            
-            if (!brandName) {
-                document.getElementById('loading-indicator').innerHTML = 
-                    '<div class="error-message">未指定品牌名稱</div>';
-                return;
-            }
-            
-            // 更新頁面標題
-            document.getElementById('brand-title').textContent = `${brandName} 詳細分析`;
-            document.title = `${brandName} 詳細分析 - 飲料社群粉絲專頁分析`;
-            
-            // 載入品牌統計數據
-            fetch(`data/brands/${brandName}.json`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('找不到品牌數據');
-                    }
-                    return response.json();
-                })
-                .then(stats => {
-                    // 隱藏載入指示器
-                    document.getElementById('loading-indicator').style.display = 'none';
-                    
-                    // 顯示統計數據
-                    const statsContainer = document.getElementById('stats-container');
-                    statsContainer.innerHTML = `
-                        <div class="stat-card">
-                            <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
-                            <div class="stat-value">${stats.total_posts}</div>
-                            <div class="stat-label">總貼文數</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon"><i class="fas fa-thumbs-up"></i></div>
-                            <div class="stat-value">${stats.total_likes}</div>
-                            <div class="stat-label">總讚數</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon"><i class="fas fa-comment"></i></div>
-                            <div class="stat-value">${stats.total_comments}</div>
-                            <div class="stat-label">總留言數</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon"><i class="fas fa-share"></i></div>
-                            <div class="stat-value">${stats.total_shares}</div>
-                            <div class="stat-label">總分享數</div>
-                        </div>
-                    `;
-                    
-                    // 繪製月度互動趨勢圖
-                    if (stats.monthly_stats && stats.monthly_stats.length > 0) {
-                        const months = stats.monthly_stats.map(item => item.month);
-                        const likes = stats.monthly_stats.map(item => item.likes);
-                        const comments = stats.monthly_stats.map(item => item.comments);
-                        const shares = stats.monthly_stats.map(item => item.shares);
-                        
-                        const data = [
-                            {
-                                x: months,
-                                y: likes,
-                                type: 'scatter',
-                                mode: 'lines+markers',
-                                name: '讚',
-                                marker: { color: '#4e73df' }
-                            },
-                            {
-                                x: months,
-                                y: comments,
-                                type: 'scatter',
-                                mode: 'lines+markers',
-                                name: '留言',
-                                marker: { color: '#1cc88a' }
-                            },
-                            {
-                                x: months,
-                                y: shares,
-                                type: 'scatter',
-                                mode: 'lines+markers',
-                                name: '分享',
-                                marker: { color: '#f6c23e' }
-                            }
-                        ];
-                        
-                        const layout = {
-                            title: '月度互動趨勢',
-                            xaxis: { title: '月份' },
-                            yaxis: { title: '互動數量' },
-                            autosize: true,
-                            responsive: true
-                        };
-                        
-                        Plotly.newPlot('monthly-chart', data, layout);
-                        
-                        // 調整圖表大小以適應容器
-                        window.addEventListener('resize', function() {
-                            Plotly.relayout('monthly-chart', {
-                                width: document.getElementById('monthly-chart').offsetWidth
-                            });
-                        });
-                    } else {
-                        document.getElementById('monthly-chart').innerHTML = 
-                            '<p class="no-data-message">無月度互動數據</p>';
-                    }
-                    
-                    // 載入最近貼文數據
-                    return fetch(`data/brand_detail_${brandName}.json`);
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('找不到品牌詳細數據');
-                    }
-                    return response.json();
-                })
-                .then(detailData => {
-                    // 顯示最近貼文
-                    const postsContainer = document.getElementById('posts-container');
-                    
-                    if (detailData.recent_posts && detailData.recent_posts.length > 0) {
-                        detailData.recent_posts.forEach(post => {
-                            const postElement = document.createElement('div');
-                            postElement.className = 'post-card';
-                            
-                            // 截斷內容
-                            const content = post.content.length > 100 
-                                ? post.content.substring(0, 100) + '...' 
-                                : post.content;
-                            
-                            postElement.innerHTML = `
-                                <div class="post-date">${post.date || '無日期'}</div>
-                                <div class="post-content">${content}</div>
-                                <div class="post-stats">
-                                    <span><i class="fas fa-thumbs-up"></i> ${post.like || 0}</span>
-                                    <span><i class="fas fa-comment"></i> ${post.comment || 0}</span>
-                                    <span><i class="fas fa-share"></i> ${post.share || 0}</span>
-                                </div>
-                            `;
-                            
-                            postsContainer.appendChild(postElement);
-                        });
-                    } else {
-                        postsContainer.innerHTML = '<p class="no-data-message">無最近貼文數據</p>';
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading brand data:', error);
-                    document.getElementById('loading-indicator').innerHTML = 
-                        `<div class="error-message">載入數據時發生錯誤: ${error.message}</div>`;
-                });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html> 
