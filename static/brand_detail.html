@@ -103,7 +103,7 @@
         <h1>飲料社群粉絲專頁分析</h1>
         <nav>
             <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> 首頁</a></li>
+                <li><a href="../index.html"><i class="fas fa-home"></i> 首頁</a></li>
                 <li><a href="analysis.html"><i class="fas fa-chart-bar"></i> 品牌比較</a></li>
                 <li><a href="visualization.html"><i class="fas fa-chart-line"></i> 視覺化分析</a></li>
             </ul>
@@ -161,6 +161,13 @@
                 
                 // 載入品牌詳細數據
                 fetch(`data/brand_detail_${brandParam}.json`)
+                    .then(response => {
+                        if (!response.ok) {
+                            // 嘗試替代路徑
+                            return fetch(`../static/data/brand_detail_${brandParam}.json`);
+                        }
+                        return response;
+                    })
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('品牌數據不存在');
@@ -226,7 +233,7 @@
                                 <h2>載入品牌數據時發生錯誤</h2>
                                 <p>${error.message}</p>
                                 <p>無法找到 ${brandParam} 的詳細數據。</p>
-                                <a href="index.html" class="btn-view">返回首頁</a>
+                                <a href="../index.html" class="btn-view">返回首頁</a>
                             </div>
                         `;
                     });
@@ -236,7 +243,7 @@
                     <div class="error-container">
                         <h2>品牌參數缺失</h2>
                         <p>請指定要查看的品牌。</p>
-                        <a href="index.html" class="btn-view">返回首頁</a>
+                        <a href="../index.html" class="btn-view">返回首頁</a>
                     </div>
                 `;
             }

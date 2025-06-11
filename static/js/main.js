@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 加載品牌卡片
 function loadBrandCards() {
-    fetch('data/brands.json')
+    fetch('static/data/brands.json')
         .then(response => response.json())
         .then(brands => {
             const container = document.getElementById('brand-cards-container');
@@ -38,7 +38,7 @@ function loadBrandCards() {
             // 為每個品牌創建卡片
             brands.forEach(brand => {
                 const brandLink = document.createElement('a');
-                brandLink.href = `brand_detail.html?brand=${brand.name}`;
+                brandLink.href = `static/brand_detail.html?brand=${brand.name}`;
                 brandLink.className = 'brand-card-link';
                 
                 const brandCard = document.createElement('div');
