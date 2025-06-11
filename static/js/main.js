@@ -38,7 +38,7 @@ function loadBrandCards() {
             // 為每個品牌創建卡片
             brands.forEach(brand => {
                 const brandLink = document.createElement('a');
-                brandLink.href = `static/brand_detail.html?brand=${brand.name}`;
+                brandLink.href = `brand_detail.html?brand=${brand.name}`;
                 brandLink.className = 'brand-card-link';
                 
                 const brandCard = document.createElement('div');
@@ -75,7 +75,7 @@ function loadBrandDetail(brandName) {
     });
     
     // 加載品牌詳細數據
-    fetch(`data/brand_detail_${brandName}.json`)
+    fetch(`static/data/brand_detail_${brandName}.json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('品牌數據不存在');
