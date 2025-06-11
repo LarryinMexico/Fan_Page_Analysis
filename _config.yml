@@ -1,6 +1,2 @@
 theme: jekyll-theme-minimal
 title: 飲料社群粉絲專頁分析
-baseurl: ""
-url: ""
-include: [".nojekyll"]
-exclude: ["venv", "notebooks"] 
