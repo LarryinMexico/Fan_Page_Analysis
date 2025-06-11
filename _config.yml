@@ -1,14 +1,2 @@
 theme: jekyll-theme-minimal
-title: 飲料社群粉絲專頁分析
-description: 分析飲料品牌的社群媒體表現
-baseurl: ""
-url: ""
-exclude:
-  - .git/
-  - venv/
-  - notebooks/
-  - data/
-  - "*.py"
-  - requirements.txt
-include:
-  - .nojekyll 
+title: 飲料社群粉絲專頁分析 
